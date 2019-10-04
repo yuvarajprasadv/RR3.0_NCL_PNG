@@ -536,8 +536,8 @@ public class Utils {
 	    		if(!utls.FileExists(SourceFile))
 			{
 	    				//RR file not exists
-		    			Action.UpdateErrorStatus("23"); //file not exists
-		    			System.out.println("ERR status " + MessageQueue.MSGID + " " + "23");
+		    			Action.UpdateErrorStatusWithRemark("23", "File Path or File does not exists : " + SourceFile); //file not exists
+		    			
 					log.error("File path doesn't exists: " + SourceFile);
 					ThrowException.CustomExit(new Exception("File Path or File does not exists "), "File path or File not exist: " + SourceFile);
 			}
@@ -559,13 +559,13 @@ public class Utils {
 		    	catch(java.nio.file.AccessDeniedException fileAccessDenied)
 		    	{
 		    		//RR file access permission denied status
-		    		Action.UpdateErrorStatus("21"); //RR file access permission denied (21) status to Tornado API
+		    		Action.UpdateErrorStatusWithRemark("21", "File or Folder access denied: " +  ToDestinationFolder);
 		    		return "access denied";
 		    	}
 		    	catch(java.nio.file.NoSuchFileException noSuchFile)
 		    	{
 		    		//RR no such file exception
-		    		Action.UpdateErrorStatus("23"); //RR no such file exception
+		    		Action.UpdateErrorStatusWithRemark("23", "File or Folder not found: " +  fromSourceFile);
 		    		return "no such file";
 		    	}
 
@@ -582,8 +582,7 @@ public class Utils {
 	    		if(!utls.FileExists(fromSourceFile))
 			{
 	    				//RR file not exists
-		    			Action.UpdateErrorStatus("23"); //file not exists
-		    			System.out.println("ERR status " + MessageQueue.MSGID + " " + "23");
+		    			Action.UpdateErrorStatusWithRemark("23", "File path doesn't exists: " + fromSourceFile);
 					log.error("File path doesn't exists: " + fromSourceFile);
 					ThrowException.CustomExit(new Exception("File Path or File does not exists "), "File path or File not exist: " + fromSourceFile);
 			}
@@ -605,13 +604,13 @@ public class Utils {
 		    	catch(java.nio.file.AccessDeniedException fileAccessDenied)
 		    	{
 		    		//RR file access permission denied status
-		    		Action.UpdateErrorStatus("21"); //RR file access permission denied (21) status to Tornado API
+		    		Action.UpdateErrorStatusWithRemark("21", "File or Folder access denied: " +  ToDestinationFolder);
 		    		return "access denied";
 		    	}
 		    	catch(java.nio.file.NoSuchFileException noSuchFile)
 		    	{
 		    		//RR no such file exception
-		    		Action.UpdateErrorStatus("23"); //RR no such file exception
+		    		Action.UpdateErrorStatusWithRemark("23", "File or Folder not found: " +  fromSourceFile);
 		    		return "no such file";
 		    	}
 

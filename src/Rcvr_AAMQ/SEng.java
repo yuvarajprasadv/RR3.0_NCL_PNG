@@ -1,6 +1,7 @@
 package Rcvr_AAMQ;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -143,7 +144,8 @@ public class SEng{
 		 ExecuteAppleScript(scriptString);
 	 	}
 	 
-	 public static String SwatchTest(String arryStr[]) throws Exception  {
+	 public static String SwatchTest(String arryStr[]) throws Exception  
+	 {
 
 		 Utils utils = new Utils();
 		 String pathString = utils.GetPathFromResource("SwatchTest.js");
@@ -152,8 +154,20 @@ public class SEng{
 			+ "end timeout \n"
 			+ "end tell";
 		 return ExecuteAppleScript(scriptString);
-	 	}
+	 }
 	 
+	 public static String SetLayerVisibleOff() throws Exception  
+	 {
+		 String[] arryStr1 = new String[1];
+		 arryStr1[0] = "none";
+		 Utils utils = new Utils();
+		 String pathString = utils.GetPathFromResource("LayerOff.js");
+		 String scriptString = "tell application "+ '"' +"Applications:Adobe Illustrator "+ MessageQueue.VERSION +":Adobe Illustrator.app"+'"' +"\n with timeout of "+ timeOutSec +" seconds \n"
+			+ "do javascript (file "+'"'+pathString+'"'+")  with arguments {"+ '"'+arryStr1[0]+'"' +"} \n"
+			+ "end timeout \n"
+			+ "end tell";
+		 return ExecuteAppleScript(scriptString);
+	 }
 	 
 	 public static void ApplyStyleOverFlow(String arryStr[]) throws Exception
 	 {
@@ -278,15 +292,39 @@ public class SEng{
 		 
 	 	}
 	 
-	 public static void ExecuteIllustratorActions(String arryStr[]) throws Exception  {
+	 public static String ExecuteIllustratorActions(String arryStr[]) throws Exception  {
 
 		 String scriptString = "tell application "+ '"' +"Applications:Adobe Illustrator "+ MessageQueue.VERSION +":Adobe Illustrator.app"+'"' +"\n with timeout of "+ timeOutSec +" seconds \n"
-			+ "do script "+'"'+arryStr[0]+'"'+" from "+'"'+arryStr[1]+'"'+" without dialogs \n"
+			+ "tell application "+'"'+"Adobe Illustrator"+'"'+"'s document 1 \n"
+			+ "set spot "+ '"'+ arryStr[0] +'"'+"'s color to spot "+ '"'+ arryStr[1] +'"'+"'s color \n"
+			+ "delay 1 \n"
+			+ "do script "+'"'+ "Select All Unused"+'"'+" from "+'"'+ "Merge Swatches"+'"'+" without dialogs \n"
+			+ "delete swatch "+'"'+arryStr[1]+'"'+" \n"
+			+ "delay 1 \n"
+			+ "set name of swatch " +'"' + arryStr[0] + '"' +  " to " + '"' + arryStr[1] + '"' + " \n"
+			+ "end tell \n"
 			+ "end timeout \n"
 			+ "end tell";
-		 ExecuteAppleScript(scriptString);
+		return ExecuteAppleScript(scriptString);
 		 
 	 	}
+	 
+	 /*
+	  	 public static String ExecuteIllustratorActions(String arryStr[]) throws Exception  {
+
+		 String scriptString = "tell application "+ '"' +"Applications:Adobe Illustrator "+ MessageQueue.VERSION +":Adobe Illustrator.app"+'"' +"\n with timeout of "+ timeOutSec +" seconds \n"
+			+ "tell application "+'"'+"Adobe Illustrator"+'"'+"'s document 1 \n"
+			+ "set spot "+ '"'+ arryStr[0] +'"'+"'s color to spot "+ '"'+ arryStr[1] +'"'+"'s color \n"
+			+ "do script "+'"'+ "Select All Unused"+'"'+" from "+'"'+ "Merge Swatches"+'"'+" without dialogs \n"
+			+ "delete swatch "+'"'+arryStr[1]+'"'+"\n"
+			+ "end tell \n"
+			+ "end timeout \n"
+			+ "end tell";
+		return ExecuteAppleScript(scriptString);
+		 
+	 	} 
+	  
+	  */
 	 
 	 public static void OnError() throws Exception  {
 
@@ -337,7 +375,7 @@ public class SEng{
 	 
 	 public static void main(String[] args) throws Exception
 	 {
-		/* List<String>fruitList = new ArrayList<String>();  
+			/* List<String>fruitList = new ArrayList<String>();  
 		  
 	        fruitList.add("Mango");  
 	        fruitList.add("Banana");  
@@ -352,7 +390,7 @@ public class SEng{
 		 
 		 List<String> SwatchListFromXML = new ArrayList<String>();
 		 XmlUtiility xmlUtils = new XmlUtiility();
-		 SwatchListFromXML = xmlUtils.ParsePrivateElementSwatchColor("/Users/yuvaraj/Downloads/GS1_40154035801_22.xml","SL_ColorName", "P&G");
+		 SwatchListFromXML = xmlUtils.ParsePrivateElementSwatchColor("/Users/yuvaraj/Desktop/GS1_40160649301_10.xml","SL_ColorName", "PANTONE");
 		 System.out.println(SwatchListFromXML);
 		 
 		 
@@ -360,15 +398,16 @@ public class SEng{
 		 arryStr[0] = "";
 		 arryStr[1] = "";
 		 MessageQueue.VERSION  = "CC 2018";
-		// MergeSwatch(arryStr);
-		/* 
+		 
+		 System.out.println(SetLayerVisibleOff());
+		 /*
 		 String swatchString = SwatchTest(arryStr);
 		 
 		 String[] arrSwatch = swatchString.split("~");
 		 List<String> pngSwatchList = new ArrayList<String>();
 		 for (int i=0; i<arrSwatch.length; i++)
 		 {
-			 if(arrSwatch[i].contains("P&G"))
+			 if(arrSwatch[i].contains("PANTONE"))
 				 pngSwatchList.add(arrSwatch[i]);
 				 
 				 
@@ -384,16 +423,17 @@ public class SEng{
 		 for(int i=0; i<swatchListCount; i++)
 		 {
 			 
-			 arryStr[0] = SwatchListFromXML.get(i);
-			 arryStr[1] = pngSwatchList.get(i);
+			 arryStr[1] = SwatchListFromXML.get(i);
+			 arryStr[0] = pngSwatchList.get(i);
+			 System.out.println(arryStr[0]+" Y  " +  arryStr[1]);
 			 if(!arryStr[0].equals(arryStr[1]))
-				 MergeSwatch(arryStr);
+			 {
+				 System.out.println(ExecuteIllustratorActions(arryStr));
+				// MergeSwatch(arryStr);
+			 }
 		 }
-		 */
-		 arryStr[0] = "Note";
-		 arryStr[1] = "New";
-		 ExecuteIllustratorActions(arryStr);
-		 
+
+		  */
 	 }
 
 

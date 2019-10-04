@@ -64,7 +64,7 @@ public class Action {
 
 		Thread.sleep(1000);
 		////Swatch from xml // for  PNG
-	//	SwatchMergeFromXML(jspr.geFilePathFromJson(jsonObj, "XMLFile"), "SL_ColorName","PANTONE");
+		SwatchMergeFromXML(jspr.geFilePathFromJson(jsonObj, "XMLFile"), "SL_ColorName","PANTONE");
 	//	SwatchMergeFromXML(jspr.geFilePathFromJson(jsonObj, "XMLFile"), "SL_ColorName","P&G");
 		////
 		
@@ -178,24 +178,20 @@ public class Action {
 						newArryStr[0] = newArryStr[0].replace("\"", "'");
 						
 						SEng.CallTyphoonShadow(newArryStr);
-						
+						Thread.sleep(4000);
+					//	SEng.SetLayerVisibleOff(); //**// only for NCL PNG
+						Thread.sleep(1000);
 						String fileRenameString = jspr.getJsonValueForKey(jsonObj, "WO") + "_3dxml";
 						
-						fileNameToSave = jspr.getJsonValueForKey(jsonObj, "WO");
+						
 						fileName[0] = "none"; // dummy
 						fileName[1] = "none"; // dummy
-						fileName[2] = GetLastIndex(docPath[2]) + "/" + fileRenameString;
-						fileName[3] = GetLastIndex(docPath[1]) + "/" + fileRenameString;
+						fileName[0] = utils.RemoveForwardSlash((String) jspr.getJsonValueForKey(jsonObj, "Path") + "999_Delete_at_Archive/");
+						fileName[2] = fileName[0] + fileRenameString;
+						fileName[3] = fileName[0] + fileRenameString;
 						SEng.PostDocumentProcessForSingleJobFilename(fileName);
 						
-						/*
-						String sourceFilePath = fileName[3] + ".ai";
-						String toDestinationFolder = jsonPars.getJsonValueFromGroupKey(jsonObj, "aaw", "Path") + "999_Delete_at_Archive/";
-						utls.CopyFileFromSourceToDestRaw(sourceFilePath, toDestinationFolder);
-						
-						String archiveSourceFilePath = toDestinationFolder + jspr.getJsonValueForKey(jsonObj, "WO") + ".ai";
-						utls.RenameFile(archiveSourceFilePath, fileRenameString);
-						*/
+
 					}
 					
 					////----PNG---
@@ -224,8 +220,10 @@ public class Action {
 		log.info("Completed process for job id  '" + MessageQueue.MSGID + "' ");
 		Thread.sleep(1000);
 
+		
 		Action.UpdateToServer(jsonObj, "xmlcompare");
 		log.info("Xml comparision completed..");
+		
 
 		Action.UpdateReport(jsonObj, fls.ReadFileReport("Report.txt"));
 
@@ -234,7 +232,7 @@ public class Action {
 		MessageQueue.ERROR = "";
 		
 		//RR completed  status with remark
-		Action.UpdateErrorStatusWithRemark("14", (String) MessageQueue.ERROR); //RR completed 85) status with remark
+		//Action.UpdateErrorStatusWithRemark("", (String) MessageQueue.ERROR); //RR completed 85) status with remark
 		
 		Thread.sleep(1000);
 		MessageQueue.GATE = true;
@@ -421,10 +419,10 @@ public class Action {
 		 for(int i=0; i<swatchListCount; i++)
 		 {
 			 
-			 arryStr[0] = SwatchListFromXML.get(i);
-			 arryStr[1] = pngSwatchList.get(i);
+			 arryStr[1] = SwatchListFromXML.get(i);
+			 arryStr[0] = pngSwatchList.get(i);
 			 if(!arryStr[0].equals(arryStr[1]))
-				 SEng.MergeSwatch(arryStr);
+				 SEng.ExecuteIllustratorActions(arryStr);
 		 }
 		 
 	}
@@ -615,8 +613,8 @@ public class Action {
 	public static void UpdateErrorStatus(String reportStr) throws IOException {
 		try {
 			HttpsConnection httpsCon = new HttpsConnection();
-		    System.out.println( httpsCon.excuteErrorStatusHttpJsonPost(MessageQueue.TORNADO_HOST + "/rest/pub/rr/updatestatus",
-					MessageQueue.MSGID, reportStr));
+		    httpsCon.excuteErrorStatusHttpJsonPost(MessageQueue.TORNADO_HOST + "/rest/pub/rr/updatestatus",
+					MessageQueue.MSGID, reportStr);
 		} catch (Exception ex) {
 			log.error((String) ex.getMessage());
 		}
@@ -624,8 +622,8 @@ public class Action {
 	public static void UpdateErrorStatusWithRemark(String reportStr, String remarks) throws IOException {
 		try {
 			HttpsConnection httpsCon = new HttpsConnection();
-		    System.out.println( httpsCon.excuteErrorStatusHttpJsonPostWithRemark(MessageQueue.TORNADO_HOST + "/rest/pub/rr/updatestatus",
-					MessageQueue.MSGID, reportStr, remarks));
+		    httpsCon.excuteErrorStatusHttpJsonPostWithRemark(MessageQueue.TORNADO_HOST + "/rest/pub/rr/updatestatus",
+					MessageQueue.MSGID, reportStr, remarks);
 		} catch (Exception ex) {
 			log.error((String) ex.getMessage());
 		}
@@ -678,7 +676,7 @@ public class Action {
 				String status = SEng.MountVolume(row[0], "", "", row[row.length - inc - 1]);
 				if(status.contains("Error"))
 				{
-					Action.UpdateErrorStatus("20"); //File not found error status to Tornado API
+					Action.UpdateErrorStatusWithRemark("20", "Volume not able to mount, " + "server: " + row[0] + " share directory: " + row[row.length - inc - 1]);
 				}
 			}
 		}

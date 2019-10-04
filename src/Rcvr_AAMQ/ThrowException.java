@@ -15,7 +15,7 @@ public class ThrowException {
 		Action.sendRespStatusMsg("exit on error");
 		SEng.OnError();
 		//RR Error exit status
-		Action.UpdateErrorStatus("14"); //RR error exit (14) status to Tornado API
+		Action.UpdateErrorStatusWithRemark("14", "Roadrunner exits on error, refer previous staus errors");//RR error exit (14) status to Tornado API
 		MessageQueue.GATE = true;
 		}
 	}
@@ -35,7 +35,7 @@ public class ThrowException {
 		Action.sendRespStatusMsg("exit on error");
 		SEng.OnError();
 		//RR Error exit status
-		Action.UpdateErrorStatus("14"); //RR error exit (14) status to Tornado API
+		Action.UpdateErrorStatusWithRemark("14", "Roadrunner exits on error, refer previous staus errors");//RR error exit (14) status to Tornado API
 		MessageQueue.GATE = true;
 		}
 	}

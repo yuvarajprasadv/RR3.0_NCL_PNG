@@ -33,7 +33,7 @@ public class JsonParser {
 		String xmlFolderPath = utils.RemoveForwardSlash((String) jsonRegionArr.get("Path") + (String) jsonRegionArr.get(keyString));
 		if(!Utils.IsFolderExists(xmlFolderPath))
 		{
-			Action.UpdateErrorStatus("23"); //File not found error status to Tornado API
+			Action.UpdateErrorStatusWithRemark("23", "Folder path does not exists: " + xmlFolderPath);
 			log.error("Folder doesn't exists: " + xmlFolderPath);
 			ThrowException.CustomExit(new Exception("Folder path does not exists "), "Folder path does not exists " + "--" + xmlFolderPath);
 		}
@@ -48,7 +48,7 @@ public String geFilePathFromJson(JSONObject jsonObj, String keyString) throws Ex
 	String docFilePath = utils.RemoveForwardSlash((String) jsonRegionArr.get("Path") + (String) jsonRegionArr.get(keyString));
 	if(!utils.FileExists(docFilePath))
 	{
-		Action.UpdateErrorStatus("23"); //File not found error status to Tornado API
+		Action.UpdateErrorStatusWithRemark("23", "Folder path does not exists: " + docFilePath);  //File not found error status to Tornado API
 		log.error("Folder or File doesn't exists: " + docFilePath);
 		ThrowException.CustomExit(new Exception("Folder path or File does not exists "), "Folder path or file does not exists ");
 	}
@@ -72,8 +72,9 @@ public String[] getMultiPath(JSONObject jsonObj, String xmlFileName) throws Numb
 	if(!utils.FileExists(docFile[2]))
 		docFile[2] = utils.RemoveForwardSlash((String) jsonRegionArr.get("Path") +  "//080_QC//");
 	rtArray = utils.ArrayOfFileExists(docFile);
-	if(rtArray[1] != "TRUE"){
-		Action.UpdateErrorStatus("23"); //File not found error status to Tornado API
+	if(rtArray[1] != "TRUE")
+	{
+		Action.UpdateErrorStatusWithRemark("23", "Folder path does not exists: " + docFile[Integer.parseInt(rtArray[0])]);  //File not found error status to Tornado API
 		log.error("File path doesn't exists: " + docFile[Integer.parseInt(rtArray[0])]);
 		ThrowException.CustomExit(new Exception("File Path or File does not exists "), "File path or file does not exists " + docFile[Integer.parseInt(rtArray[0])]);
 	}
@@ -136,7 +137,7 @@ public  String[] getPath(JSONObject jsonObj) throws NumberFormatException, Excep
 		docFile[2] = utils.RemoveForwardSlash((String) jsonRegionArr.get("Path") +  "//080_QC//");
 	rtArray = utils.ArrayOfFileExists(docFile);
 	if(rtArray[1] != "TRUE"){
-		Action.UpdateErrorStatus("23"); //File not found error status to Tornado API
+		Action.UpdateErrorStatusWithRemark("23", "File Path or File does not exists  " + docFile[Integer.parseInt(rtArray[0])]);
 		log.error("File path doesn't exists: " + docFile[Integer.parseInt(rtArray[0])]);
 		ThrowException.CustomExit(new Exception("File Path or File does not exists "), "File path or file does not exists " + docFile[Integer.parseInt(rtArray[0])]);
 	}
