@@ -109,7 +109,9 @@ public class Action {
 
 			if (MessageQueue.sPdfNormal) {
 				if (fileNameToSave != null)
+				{
 					SEng.PostDocumentProcessForSingleJobFilename(fileName);
+				}
 				else
 					SEng.PostDocumentProcess(jspr.getPath(jsonObj));
 			} else if (MessageQueue.sPdfPreset) {
@@ -165,7 +167,7 @@ public class Action {
 			log.info("Pdf and xml generated..");
 			
 			
-					////----PNG---
+					////----PNG---// Only 3D xml
 					JsonParser jsonPars = new JsonParser();
 					boolean is3DXMLAI = jsonPars.getJsonBooleanValueForKey(jsonObj, "region", "RR3DXML");
 					if(is3DXMLAI)
@@ -179,7 +181,7 @@ public class Action {
 						
 						SEng.CallTyphoonShadow(newArryStr);
 						Thread.sleep(4000);
-					//	SEng.SetLayerVisibleOff(); //**// only for NCL PNG
+						SEng.SetLayerVisibleOff(); //// only for NCL PNG
 						Thread.sleep(1000);
 						String fileRenameString = jspr.getJsonValueForKey(jsonObj, "WO") + "_3dxml";
 						
@@ -460,7 +462,12 @@ public class Action {
 			eskoPdfPlugin = "/Applications/Adobe Illustrator " + MessageQueue.VERSION
 					+ "/Plug-ins.localized/Esko/Data Exchange/PDF Export/PDFExport_MAI21r.aip";
 			eskoPluginbool = utls.FileExists(eskoPdfPlugin);
+		} else if (MessageQueue.VERSION.equalsIgnoreCase("CC 2018")) {
+			eskoPdfPlugin = "/Applications/Adobe Illustrator " + MessageQueue.VERSION
+					+ "/Plug-ins.localized/Esko/Data Exchange/PDF Export/PDFExport_MAI22r.aip";
+			eskoPluginbool = utls.FileExists(eskoPdfPlugin);
 		}
+		
 
 		if (!eskoPluginbool) {
 			MessageQueue.ERROR += "PDF cannot be generated following plugin missing : " + eskoPdfPlugin + "\n";

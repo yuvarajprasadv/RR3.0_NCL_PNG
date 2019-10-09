@@ -662,3 +662,167 @@
 2019-10-03 13:02:04 INFO  Action:165 - Pdf and xml generated..
 2019-10-03 13:02:38 INFO  Action:220 - Completed process for job id  '5604af67-3371-4f1c-8c5f-515a48d40085' 
 2019-10-03 13:02:40 INFO  Action:225 - Xml comparision completed..
+2019-10-04 16:31:30 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-10-04 16:31:31 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-10-04 16:31:41 INFO  Action:556 - Message received acknowledgement for job id  '719a2644-4c6b-4900-83e8-86b14d1ebe72' 
+2019-10-04 16:31:42 INFO  Action:28 - Illustrator activated to load file..
+2019-10-04 16:31:52 INFO  Action:34 - AI file and other dependend file opening..
+2019-10-04 16:31:54 INFO  Action:71 - TyphoonShadow called
+2019-10-04 16:31:54 INFO  Action:167 - Pdf and xml generated..
+2019-10-04 16:32:28 INFO  Action:222 - Completed process for job id  '719a2644-4c6b-4900-83e8-86b14d1ebe72' 
+2019-10-04 16:32:30 INFO  Action:227 - Xml comparision completed..
+2019-10-04 16:57:20 INFO  Action:556 - Message received acknowledgement for job id  'faccde17-314d-46a9-a283-3e3a243b9199' 
+2019-10-04 16:57:22 INFO  Action:28 - Illustrator activated to load file..
+2019-10-04 16:57:37 INFO  Action:34 - AI file and other dependend file opening..
+2019-10-04 16:57:42 INFO  Action:71 - TyphoonShadow called
+2019-10-04 16:57:42 INFO  Action:167 - Pdf and xml generated..
+2019-10-04 16:58:19 INFO  Action:222 - Completed process for job id  'faccde17-314d-46a9-a283-3e3a243b9199' 
+2019-10-04 16:58:20 INFO  Action:227 - Xml comparision completed..
+2019-10-04 17:01:59 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-10-04 17:01:59 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-10-04 17:02:40 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-10-04 17:02:41 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-10-04 17:02:45 INFO  Action:556 - Message received acknowledgement for job id  '1dc286b2-fff8-459e-9257-0f0398f1f25e' 
+2019-10-04 17:02:55 INFO  Action:28 - Illustrator activated to load file..
+2019-10-04 17:02:57 INFO  Action:34 - AI file and other dependend file opening..
+2019-10-04 17:02:59 INFO  Action:71 - TyphoonShadow called
+2019-10-04 17:04:57 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-10-04 17:04:57 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-10-04 17:05:04 INFO  Action:556 - Message received acknowledgement for job id  '7ce60cae-4d83-4ba6-8dca-3aa367aa762d' 
+2019-10-04 17:05:05 INFO  Action:28 - Illustrator activated to load file..
+2019-10-04 17:05:15 INFO  Action:34 - AI file and other dependend file opening..
+2019-10-04 17:05:17 INFO  Action:71 - TyphoonShadow called
+2019-10-04 17:05:17 INFO  Action:167 - Pdf and xml generated..
+2019-10-04 17:05:51 INFO  Action:222 - Completed process for job id  '7ce60cae-4d83-4ba6-8dca-3aa367aa762d' 
+2019-10-04 17:05:52 INFO  Action:227 - Xml comparision completed..
+2019-10-04 17:06:26 INFO  Action:561 - Message received acknowledgement for job id  '8e960154-9161-4f11-a6e1-3875e33d66c1' 
+2019-10-04 17:06:27 INFO  Action:28 - Illustrator activated to load file..
+2019-10-04 17:06:35 INFO  Action:34 - AI file and other dependend file opening..
+2019-10-04 17:06:37 INFO  Action:71 - TyphoonShadow called
+2019-10-04 17:06:56 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-10-04 17:06:57 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-10-04 17:07:08 INFO  Action:556 - Message received acknowledgement for job id  'f6ed4240-bf63-4e78-84a8-89b76b495fdb' 
+2019-10-04 17:07:09 INFO  Action:28 - Illustrator activated to load file..
+2019-10-04 17:07:17 INFO  Action:34 - AI file and other dependend file opening..
+2019-10-04 17:07:20 INFO  Action:71 - TyphoonShadow called
+2019-10-04 17:07:20 INFO  Action:167 - Pdf and xml generated..
+2019-10-04 17:07:52 INFO  Action:222 - Completed process for job id  'f6ed4240-bf63-4e78-84a8-89b76b495fdb' 
+2019-10-04 17:07:54 INFO  Action:227 - Xml comparision completed..
+2019-10-04 17:14:58 INFO  Action:561 - Message received acknowledgement for job id  '73f34303-470e-45d5-9929-99102fac2f08' 
+2019-10-04 17:14:59 INFO  Action:28 - Illustrator activated to load file..
+2019-10-04 17:15:08 INFO  Action:34 - AI file and other dependend file opening..
+2019-10-04 17:15:11 INFO  Action:71 - TyphoonShadow called
+2019-10-04 17:16:08 INFO  Action:167 - Pdf and xml generated..
+2019-10-04 17:16:54 INFO  Action:222 - Completed process for job id  '73f34303-470e-45d5-9929-99102fac2f08' 
+2019-10-04 17:16:56 INFO  Action:227 - Xml comparision completed..
+2019-10-04 17:19:08 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-10-04 17:19:09 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-10-04 17:19:43 INFO  Action:556 - Message received acknowledgement for job id  '4da3f0ac-e936-48bc-9cba-3c2456b33022' 
+2019-10-04 17:19:43 INFO  Action:28 - Illustrator activated to load file..
+2019-10-04 17:19:51 INFO  Action:34 - AI file and other dependend file opening..
+2019-10-04 17:19:54 INFO  Action:71 - TyphoonShadow called
+2019-10-04 17:19:54 INFO  Action:167 - Pdf and xml generated..
+2019-10-04 17:20:26 INFO  Action:222 - Completed process for job id  '4da3f0ac-e936-48bc-9cba-3c2456b33022' 
+2019-10-04 17:20:28 INFO  Action:227 - Xml comparision completed..
+2019-10-04 17:21:48 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-10-04 17:21:48 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-10-04 17:22:08 INFO  Action:561 - Message received acknowledgement for job id  'b076d52e-f9e8-441c-aad9-ce3fc96e28bd' 
+2019-10-04 17:22:08 INFO  Action:28 - Illustrator activated to load file..
+2019-10-04 17:22:17 INFO  Action:34 - AI file and other dependend file opening..
+2019-10-04 17:22:19 INFO  Action:71 - TyphoonShadow called
+2019-10-04 17:22:33 INFO  Action:167 - Pdf and xml generated..
+2019-10-04 17:23:05 INFO  Action:222 - Completed process for job id  'b076d52e-f9e8-441c-aad9-ce3fc96e28bd' 
+2019-10-04 17:23:07 INFO  Action:227 - Xml comparision completed..
+2019-10-04 17:23:40 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-10-04 17:23:41 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-10-04 17:23:45 INFO  Action:561 - Message received acknowledgement for job id  '2773be40-8458-4185-ac3c-f0473b521cc4' 
+2019-10-04 17:23:46 INFO  Action:28 - Illustrator activated to load file..
+2019-10-04 17:23:55 INFO  Action:34 - AI file and other dependend file opening..
+2019-10-04 17:23:57 INFO  Action:71 - TyphoonShadow called
+2019-10-04 17:24:11 INFO  Action:167 - Pdf and xml generated..
+2019-10-04 17:24:47 INFO  Action:222 - Completed process for job id  '2773be40-8458-4185-ac3c-f0473b521cc4' 
+2019-10-04 17:24:49 INFO  Action:227 - Xml comparision completed..
+2019-10-04 17:37:05 INFO  Action:561 - Message received acknowledgement for job id  '9af49be4-c365-431e-b654-2d2c8f43db67' 
+2019-10-04 17:37:06 INFO  Action:28 - Illustrator activated to load file..
+2019-10-04 17:37:17 INFO  Action:34 - AI file and other dependend file opening..
+2019-10-04 17:37:21 INFO  Action:71 - TyphoonShadow called
+2019-10-04 17:37:50 INFO  Action:167 - Pdf and xml generated..
+2019-10-04 17:38:26 INFO  Action:222 - Completed process for job id  '9af49be4-c365-431e-b654-2d2c8f43db67' 
+2019-10-04 17:38:27 INFO  Action:227 - Xml comparision completed..
+2019-10-08 09:55:46 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-10-08 09:55:46 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-10-08 09:59:36 INFO  Action:561 - Message received acknowledgement for job id  'f5bdfd94-bb98-42b9-9443-5fc68a1194f1' 
+2019-10-08 09:59:37 INFO  Action:28 - Illustrator activated to load file..
+2019-10-08 09:59:50 INFO  Action:34 - AI file and other dependend file opening..
+2019-10-08 09:59:55 INFO  Action:71 - TyphoonShadow called
+2019-10-08 09:59:55 INFO  Action:167 - Pdf and xml generated..
+2019-10-08 10:00:35 INFO  Action:222 - Completed process for job id  'f5bdfd94-bb98-42b9-9443-5fc68a1194f1' 
+2019-10-08 10:00:37 INFO  Action:227 - Xml comparision completed..
+2019-10-08 10:03:34 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-10-08 10:03:34 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-10-08 10:03:38 INFO  Action:561 - Message received acknowledgement for job id  '93409b6a-efc4-4cef-bdbb-f2968c40349e' 
+2019-10-08 10:03:40 INFO  Action:28 - Illustrator activated to load file..
+2019-10-08 10:03:48 INFO  Action:34 - AI file and other dependend file opening..
+2019-10-08 10:03:52 INFO  Action:71 - TyphoonShadow called
+2019-10-08 10:05:37 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-10-08 10:05:37 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-10-08 10:05:40 INFO  Action:561 - Message received acknowledgement for job id  '66ade9f4-b365-4720-a259-072a35a3cd3a' 
+2019-10-08 10:05:41 INFO  Action:28 - Illustrator activated to load file..
+2019-10-08 10:05:58 INFO  Action:34 - AI file and other dependend file opening..
+2019-10-08 10:06:03 INFO  Action:71 - TyphoonShadow called
+2019-10-08 10:06:29 INFO  Action:167 - Pdf and xml generated..
+2019-10-08 10:07:07 INFO  Action:222 - Completed process for job id  '66ade9f4-b365-4720-a259-072a35a3cd3a' 
+2019-10-08 10:07:09 INFO  Action:227 - Xml comparision completed..
+2019-10-08 10:53:43 ERROR JsonParser:141 - File path doesn't exists: /Users/yuvaraj/Downloads/PnG/102196907/401400544/100_XML/A01/GS1_40136885601_2.xml
+2019-10-08 10:55:12 INFO  Action:561 - Message received acknowledgement for job id  '4decce38-7dc6-48da-9252-d5e79bf9d1d8' 
+2019-10-08 10:55:13 INFO  Action:28 - Illustrator activated to load file..
+2019-10-08 10:55:24 INFO  Action:34 - AI file and other dependend file opening..
+2019-10-08 10:55:29 INFO  Action:71 - TyphoonShadow called
+2019-10-08 10:55:49 INFO  Action:167 - Pdf and xml generated..
+2019-10-08 10:56:38 INFO  Action:222 - Completed process for job id  '4decce38-7dc6-48da-9252-d5e79bf9d1d8' 
+2019-10-08 10:56:40 INFO  Action:227 - Xml comparision completed..
+2019-10-08 10:59:05 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-10-08 10:59:05 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-10-08 10:59:43 INFO  Action:561 - Message received acknowledgement for job id  'ac894363-5ff1-46a1-8543-96d93dfd257c' 
+2019-10-08 10:59:44 INFO  Action:28 - Illustrator activated to load file..
+2019-10-08 10:59:53 INFO  Action:34 - AI file and other dependend file opening..
+2019-10-08 10:59:58 INFO  Action:71 - TyphoonShadow called
+2019-10-08 11:00:18 INFO  Action:167 - Pdf and xml generated..
+2019-10-08 11:04:02 INFO  Action:222 - Completed process for job id  'ac894363-5ff1-46a1-8543-96d93dfd257c' 
+2019-10-08 11:04:04 INFO  Action:227 - Xml comparision completed..
+2019-10-08 11:05:23 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-10-08 11:05:23 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-10-08 11:05:31 INFO  Action:561 - Message received acknowledgement for job id  '3310c77b-f638-4c11-bbe0-d28e63536d4b' 
+2019-10-08 11:05:50 INFO  Action:28 - Illustrator activated to load file..
+2019-10-08 11:05:52 INFO  Action:34 - AI file and other dependend file opening..
+2019-10-08 11:05:54 INFO  Action:71 - TyphoonShadow called
+2019-10-08 11:05:54 INFO  Action:167 - Pdf and xml generated..
+2019-10-08 11:06:02 INFO  Action:222 - Completed process for job id  '3310c77b-f638-4c11-bbe0-d28e63536d4b' 
+2019-10-08 11:06:04 INFO  Action:227 - Xml comparision completed..
+2019-10-08 11:07:31 INFO  Action:561 - Message received acknowledgement for job id  '0b47b6a6-2125-4204-9185-035d1af4a552' 
+2019-10-08 11:07:32 INFO  Action:28 - Illustrator activated to load file..
+2019-10-08 11:07:34 INFO  Action:34 - AI file and other dependend file opening..
+2019-10-08 11:07:36 INFO  Action:71 - TyphoonShadow called
+2019-10-08 11:07:36 INFO  Action:167 - Pdf and xml generated..
+2019-10-08 11:07:44 INFO  Action:222 - Completed process for job id  '0b47b6a6-2125-4204-9185-035d1af4a552' 
+2019-10-08 11:07:46 INFO  Action:227 - Xml comparision completed..
+2019-10-08 11:07:59 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-10-08 11:07:59 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-10-08 11:08:13 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-10-08 11:08:13 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-10-08 11:08:20 INFO  Action:561 - Message received acknowledgement for job id  '00926669-ff55-4052-bd62-fb8f4fae8bff' 
+2019-10-08 11:08:21 INFO  Action:28 - Illustrator activated to load file..
+2019-10-08 11:08:40 INFO  Action:34 - AI file and other dependend file opening..
+2019-10-08 11:08:45 INFO  Action:71 - TyphoonShadow called
+2019-10-08 11:09:09 INFO  Action:167 - Pdf and xml generated..
+2019-10-08 11:09:29 INFO  Action:222 - Completed process for job id  '00926669-ff55-4052-bd62-fb8f4fae8bff' 
+2019-10-08 11:09:30 INFO  Action:227 - Xml comparision completed..
+2019-10-08 11:16:05 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-10-08 11:16:05 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-10-08 11:16:16 INFO  Action:561 - Message received acknowledgement for job id  'bd6df3a5-6855-448f-a282-65e0fa914613' 
+2019-10-08 11:16:17 INFO  Action:28 - Illustrator activated to load file..
+2019-10-08 11:16:28 INFO  Action:34 - AI file and other dependend file opening..
+2019-10-08 11:16:32 INFO  Action:71 - TyphoonShadow called
+2019-10-08 11:16:46 INFO  Action:167 - Pdf and xml generated..
+2019-10-08 11:17:00 INFO  Action:222 - Completed process for job id  'bd6df3a5-6855-448f-a282-65e0fa914613' 
+2019-10-08 11:17:01 INFO  Action:227 - Xml comparision completed..
