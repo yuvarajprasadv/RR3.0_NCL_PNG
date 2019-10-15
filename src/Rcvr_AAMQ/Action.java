@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Set;
 import org.apache.log4j.Logger;
 import org.json.simple.JSONObject;
+import Rcvr_AAMQ.Utils;
 
 public class Action {
 	static Logger log = LogMQ.monitor("Rcvr_AAMQ.Action");
@@ -185,14 +186,17 @@ public class Action {
 						Thread.sleep(1000);
 						String fileRenameString = jspr.getJsonValueForKey(jsonObj, "WO") + "_3dxml";
 						
+						String road_runnerDirPath = utils.RemoveForwardSlash((String) jspr.getJsonValueForKey(jsonObj, "Path") + "999_Delete_at_Archive/road_runner");
+						if(!Utils.IsFolderExists(road_runnerDirPath))
+						{
+							utils.CreateNewDirectory(road_runnerDirPath, false);
+						}
 						
-						fileName[0] = "none"; // dummy
-						fileName[1] = "none"; // dummy
 						fileName[0] = utils.RemoveForwardSlash((String) jspr.getJsonValueForKey(jsonObj, "Path") + "999_Delete_at_Archive/");
+						fileName[1] = road_runnerDirPath + "/" + fileRenameString;
 						fileName[2] = fileName[0] + fileRenameString;
 						fileName[3] = fileName[0] + fileRenameString;
-						SEng.PostDocumentProcessForSingleJobFilename(fileName);
-						
+						SEng.PostDocumentProcessFor3DXML(fileName);
 
 					}
 					
@@ -247,7 +251,7 @@ public class Action {
 		FileSystem fls = new FileSystem();
 		Utils utils = new Utils();
 
-		utils.CreateNewDirectory(jspr.getXmlFolderPathFromJson(jsonObj, "XMLFile") + "DummyFolder");
+		utils.CreateNewDirectory(jspr.getXmlFolderPathFromJson(jsonObj, "XMLFile") + "DummyFolder", true);
 
 		String pdfPreset[] = utils.getPresetFileFromDirectory(
 				utils.GetParentPath(jspr.geFilePathFromJson(jsonObj, "Master")), "joboptions");

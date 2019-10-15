@@ -246,6 +246,16 @@ public class SEng{
 			+ "end tell";
 		 ExecuteAppleScript(scriptString);
 	 	}
+	 public static void PostDocumentProcessFor3DXML(String arryStr[]) throws Exception  {
+
+		 Utils utils = new Utils();
+		 String pathString = utils.GetPathFromResource("PostDocumentFor3D.js");
+		 String scriptString = "tell application "+ '"' +"Applications:Adobe Illustrator "+ MessageQueue.VERSION +":Adobe Illustrator.app"+'"' +"\n with timeout of "+ timeOutSec +" seconds \n"
+			+ "do javascript (file "+'"'+pathString+'"'+")  with arguments {"+ '"'+arryStr[2]+'"' +", "+ '"'+arryStr[3]+'"' +", "+ '"'+arryStr[1]+'"' +"} \n"
+			+ "end timeout \n"
+			+ "end tell";
+		 ExecuteAppleScript(scriptString);
+	 	}
 	 
 	 public static String PostDocumentMultipleProcess(String arryStr[]) throws Exception
 	 {
