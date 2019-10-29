@@ -356,7 +356,8 @@ public class Utils {
 			   if(folder.isDirectory() && !folder.exists())
 			   {
 				   log.error("Folder path doesn't exists: " + directoryPath);
-				   ThrowException.CustomExit(new Exception("Folder path does not exists"), "Folder path does not exists");
+				//   ThrowException.CustomExit(new Exception("Folder path does not exists"), "Folder path does not exists : " + directoryPath);
+				   ThrowException.CustomExitWithErrorMsgID(new Exception("Folder path does not exists "), directoryPath, "23");
 			   }
 			   File[] listOfFiles = folder.listFiles();
 			   ArrayList<String> fileLists = new ArrayList<String>();
@@ -374,7 +375,8 @@ public class Utils {
 		       if(fileLists.size() == 0)
 		       {
 		    	   		log.error("Xml file doesn't exists in following path: " + directoryPath);
-		    	   		ThrowException.CustomExit(new Exception("Xml file doesn't exists "), "Xml file doesn't exists in following path : " + directoryPath);
+		    	   	//	ThrowException.CustomExit(new Exception("Xml file doesn't exists "), "Xml file doesn't exists in following path : " + directoryPath);
+		    	   		ThrowException.CustomExitWithErrorMsgID(new Exception("Xml file doesn't exists "), directoryPath, "23");
 		       }
 		       String[] arrFiles = new String[fileLists.size()];
 		       arrFiles = fileLists.toArray(arrFiles);
@@ -397,7 +399,8 @@ public class Utils {
 			   if(folder.isDirectory() && !folder.exists())
 			   {
 				   log.error("Folder path doesn't exists: " + directoryPath);
-				   ThrowException.CustomExit(new Exception("Folder path does not exists"), "Folder path does not exists");
+				//   ThrowException.CustomExit(new Exception("Folder path does not exists"), "Folder path does not exists: "+directoryPath);
+	    	   		   ThrowException.CustomExitWithErrorMsgID(new Exception("Folder path does not exists "), directoryPath, "23");
 			   }
 			   File[] listOfFiles = folder.listFiles();
 			   ArrayList<String> fileLists = new ArrayList<String>();
@@ -465,7 +468,8 @@ public class Utils {
 					if(!utls.FileExists(xmlPath))
 					{
 						log.error("File path doesn't exists: " + xmlPath);
-						ThrowException.CustomExit(new Exception("File Path or File does not exists "), "File path or File not exist: " + xmlPath);
+					//	ThrowException.CustomExit(new Exception("File Path or File does not exists "), "File path or File not exist: " + xmlPath);
+		    	   		    ThrowException.CustomExitWithErrorMsgID(new Exception("File Path or File does not exists "), xmlPath, "23");
 					}
 				}
 		}
@@ -508,7 +512,9 @@ public class Utils {
 	    		if(!utls.FileExists(SourceFile))
 				{
 					log.error("File path doesn't exists: " + SourceFile);
-					ThrowException.CustomExit(new Exception("File Path or File does not exists "), "File path or File not exist: " + SourceFile);
+				//	ThrowException.CustomExit(new Exception("File Path or File does not exists "), "File path or File not exist: " + SourceFile);
+					ThrowException.CustomExitWithErrorMsgID(new Exception("File Path or File does not exists "), SourceFile, "23");
+					
 				}
 		    	try
 		    	{
@@ -539,7 +545,9 @@ public class Utils {
 		    			Action.UpdateErrorStatusWithRemark("23", "File Path or File does not exists : " + SourceFile); //file not exists
 		    			
 					log.error("File path doesn't exists: " + SourceFile);
-					ThrowException.CustomExit(new Exception("File Path or File does not exists "), "File path or File not exist: " + SourceFile);
+				//	ThrowException.CustomExit(new Exception("File Path or File does not exists "), "File path or File not exist: " + SourceFile);
+					ThrowException.CustomExitWithErrorMsgID(new Exception("File Path or File does not exists "), SourceFile, "23");
+					
 			}
 	    		
 		    	try
@@ -584,7 +592,9 @@ public class Utils {
 	    				//RR file not exists
 		    			Action.UpdateErrorStatusWithRemark("23", "File path doesn't exists: " + fromSourceFile);
 					log.error("File path doesn't exists: " + fromSourceFile);
-					ThrowException.CustomExit(new Exception("File Path or File does not exists "), "File path or File not exist: " + fromSourceFile);
+				//	ThrowException.CustomExit(new Exception("File Path or File does not exists "), "File path or File not exist: " + fromSourceFile);
+					ThrowException.CustomExitWithErrorMsgID(new Exception("File Path or File does not exists "), fromSourceFile, "23");
+					
 			}
 	    		
 		    	try
@@ -626,7 +636,9 @@ public class Utils {
 	    		if(!utls.FileExists(fromSourceFile))
 			{
 					log.error("File path doesn't exists: " + fromSourceFile);
-					ThrowException.CustomExit(new Exception("File Path or File does not exists "), "File path or File not exist: " + fromSourceFile);
+				//	ThrowException.CustomExit(new Exception("File Path or File does not exists "), "File path or File not exist: " + fromSourceFile);
+					ThrowException.CustomExitWithErrorMsgID(new Exception("File Path or File does not exists "), fromSourceFile, "23");
+					
 			}
 	    		
 		    	try
@@ -653,7 +665,6 @@ public class Utils {
 			    	while(FileExists(filePathString)) 
 			    	{
 			    		File file = new File(filePathString);
-			    	//	String newFileNamePath = file.getParent() + "/" + FilenameUtils.removeExtension(file.getName()) + "_3dxml" + ".ai";
 			    		String newFileNamePath = file.getParent() + "/" + fileRenameString;
 			    		File newName = new File(newFileNamePath);
 			    		if(FileExists(newName.getAbsolutePath()))
@@ -670,7 +681,8 @@ public class Utils {
 		    	catch(Exception ex)
 		    	{
 		    		log.error("Issue with file renaming: " + filePathString);
-				ThrowException.CustomExit(new Exception("Not able to rename file 'File may be accessed by others' "), "File not accessable : " + filePathString);
+			//	ThrowException.CustomExit(new Exception("Not able to rename file 'File may be accessed by others' "), "File not accessable : " + filePathString);
+				ThrowException.CustomExitWithErrorMsgID(new Exception("File access permission denied "), filePathString, "21");
 		    	}
 			return false;
 	    }
@@ -699,7 +711,8 @@ public class Utils {
 		    	catch(Exception ex)
 		    	{
 		    		log.error("Issue with file renaming: " + filePathString);
-				ThrowException.CustomExit(new Exception("Not able to rename file 'File may be accessed by others' "), "File not accessable : " + filePathString);
+			//	ThrowException.CustomExit(new Exception("Not able to rename file 'File may be accessed by others' "), "File not accessable : " + filePathString);
+				ThrowException.CustomExitWithErrorMsgID(new Exception("File access permission denied "), filePathString, "21");
 		    	}
 				return false;
 	    }
@@ -727,7 +740,8 @@ public class Utils {
 		    	catch(Exception ex)
 		    	{
 		    		log.error("Issue with file renaming: " + filePathString);
-				ThrowException.CustomExit(new Exception("Not able to rename file 'File may be accessed by others' "), "File not accessable : " + filePathString);
+			//	ThrowException.CustomExit(new Exception("Not able to rename file 'File may be accessed by others' "), "File not accessable : " + filePathString);
+				ThrowException.CustomExitWithErrorMsgID(new Exception("File access permission denied "), filePathString, "21");
 		    	}
 				return "";
 	    }

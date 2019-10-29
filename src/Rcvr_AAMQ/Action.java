@@ -67,7 +67,7 @@ public class Action {
 		////Swatch from xml // for  PNG
 		SwatchMergeFromXML(jspr.geFilePathFromJson(jsonObj, "XMLFile"), "SL_ColorName","PANTONE");
 	//	SwatchMergeFromXML(jspr.geFilePathFromJson(jsonObj, "XMLFile"), "SL_ColorName","P&G");
-		////
+		////Swatch from xml // for  PNG
 		
 		log.info("TyphoonShadow called");
 
@@ -75,7 +75,6 @@ public class Action {
 		if (errorMsg.contains("\n") && errorMsg.length() != 1)
 			MessageQueue.STATUS = false;
 
-		// if(MessageQueue.STATUS)
 		{
 
 			INIReader ini = new INIReader();
@@ -182,7 +181,9 @@ public class Action {
 						
 						SEng.CallTyphoonShadow(newArryStr);
 						Thread.sleep(4000);
-						SEng.SetLayerVisibleOff(); //// only for NCL PNG
+						
+					//	SEng.SetLayerVisibleOff(); //// only for NCL  P  - N  -  G
+						
 						Thread.sleep(1000);
 						String fileRenameString = jspr.getJsonValueForKey(jsonObj, "WO") + "_3dxml";
 						
@@ -236,9 +237,6 @@ public class Action {
 		MessageQueue.ERROR += errorMsg;
 		Action.sendStatusMsg((String) MessageQueue.ERROR);
 		MessageQueue.ERROR = "";
-		
-		//RR completed  status with remark
-		//Action.UpdateErrorStatusWithRemark("", (String) MessageQueue.ERROR); //RR completed 85) status with remark
 		
 		Thread.sleep(1000);
 		MessageQueue.GATE = true;
@@ -315,11 +313,10 @@ public class Action {
 			arrString[0] = utils.RemoveForwardSlash(arrString[0]);
 			arrString[0] = arrString[0].replace("\"", "'");
 
-			System.out.println(arrString[0]);
+
 
 			SEng.CallTyphoonShadow(arrString);
 
-			// SEng.CallTyphoonShadow(docPath);
 			log.info("TyphoonShadow called");
 
 			String[] fileName = new String[4];
@@ -378,7 +375,6 @@ public class Action {
 		log.info("Completed process for job id  '" + MessageQueue.MSGID + "' ");
 
 		Action.UpdateToServer(jsonObj, "xmlcompare");
-		// Action.UpdateToServer(jsonObj, "xmlcompare&type=multi");
 		log.info("Xml comparision completed..");
 
 		Action.sendStatusMsg(arrConsolidateErrorReport.toString());
@@ -509,7 +505,8 @@ public class Action {
 			}
 		} catch (Exception ex) {
 			log.error("xml err: " + ex);
-			ThrowException.CatchException(ex);
+		//	ThrowException.CatchException(ex);
+			ThrowException.CatchExceptionWithErrorMsgId(ex,"Error in xml" ,"14");
 		}
 	}
 
@@ -525,18 +522,8 @@ public class Action {
 		INetwork iNet = new INetwork();
 
 		MessageQueue.MSGID = (String) jsonObj.get("Id");
-	//	Action.AddVolumes(); // mount volume after creating message id.
+		//Action.AddVolumes(); // mount volume after creating message id.
 
-		// ***PnG***// This is to copy from "052_master"
-	/*	JsonParser jsonPars = new JsonParser();
-		Utils utls = new Utils();
-		String masterAIFilePath = jsonPars.getMasterAIWithoutPathValidate(jsonObj, "Master");
-		String copyFileStatus = "";
-		copyFileStatus = utls.CopyFileFromSourceToDestination(masterAIFilePath); */
-		// ***PnG**//
-//	if(copyFileStatus != "") 
-		
-		
 		// ***PnG***// This is to copy from different part to 050_Production.
 		JsonParser jsonPars = new JsonParser();
 		Utils utls = new Utils();
@@ -558,7 +545,8 @@ public class Action {
 				log.error(Ex.getMessage());
 				MessageQueue.ERROR += "\nInvalid Json request";
 				fls.AppendFileString("\nInvalid Json request:" + " \n");
-				ThrowException.CustomExit(Ex, "Invalid JSON request from Tornado");
+			//	ThrowException.CustomExit(Ex, "Invalid JSON request from Tornado");
+				ThrowException.CustomExitWithErrorMsgID(Ex, "Invalid JSON request from Tornado", "14");
 			}
 			try {
 				sendRespStatusMsg("received" + "::" + iNet.GetClientIPAddr());
@@ -603,8 +591,6 @@ public class Action {
 			URL urlStr = new URL(
 					MessageQueue.TORNADO_HOST + "/rest/pub/aaw/" + actionStr + "?mqid=" + (String) jsonObj.get("Id"));
 			connection = (httpsCon.getURLConnection(urlStr, true));
-			// System.out.println("xml Compare response " +
-			// connection.getResponseMessage());
 			System.out.println("XML Compare : " + connection.getResponseCode());
 		} catch (Exception ex) {
 			log.error((String) ex.getMessage());

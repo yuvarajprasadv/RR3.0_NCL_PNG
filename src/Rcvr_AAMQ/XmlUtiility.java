@@ -81,7 +81,8 @@ public class XmlUtiility
 				log.error(Ex.getMessage());
 				MessageQueue.ERROR += "\n XML File or file path not found: "+ filePath;
 				fls.AppendFileString("\nXML File or file path not found :"+ filePath.toString()+"\n");
-				ThrowException.CustomExit(Ex, "File or File path Invalid");
+		//		ThrowException.CustomExit(Ex, "File or File path Invalid: "+ filePath.toString());
+				ThrowException.CustomExitWithErrorMsgID(Ex, filePath.toString(), "23");
 				throw Ex;
 			}
 			catch(org.xml.sax.SAXParseException Ex)
@@ -89,7 +90,8 @@ public class XmlUtiility
 				log.error(Ex.getMessage());
 				MessageQueue.ERROR += "\n Invalid XML: "+ filePath;
 				fls.AppendFileString("\nInvalid XML file path: " + filePath.toString()+"\n");
-				ThrowException.CustomExit(Ex, "Invalid xml");
+			//	ThrowException.CustomExit(Ex, "Invalid xml: "+ filePath.toString());
+				ThrowException.CustomExitWithErrorMsgID(Ex, filePath.toString(), "23");
 				throw Ex;
 			}
 			catch(Exception Ex) 
@@ -97,7 +99,9 @@ public class XmlUtiility
 				log.error(Ex.getMessage());
 				MessageQueue.ERROR += "\n Invalid XML: "+ filePath;
 				fls.AppendFileString("\nInvalid XML file: "+ filePath.toString()+"\n");
-				ThrowException.CustomExit(Ex, "Invalid file");
+			//	ThrowException.CustomExit(Ex, "Invalid file: "+filePath.toString());
+				ThrowException.CustomExitWithErrorMsgID(Ex, filePath.toString(), "23");
+				
 				throw Ex;
 			} 
 	   }

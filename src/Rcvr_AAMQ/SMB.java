@@ -21,7 +21,6 @@ public class SMB{
 
 	    static final String USER_NAME = "chautoscript";
 	    static final String PASSWORD = "TeamI#di@";
-	    //e.g. Assuming your network folder is: \my.myserver.netsharedpublicphotos
 	    static final String NETWORK_FOLDER = "smb://10.33.7.14/RMQ/LogBackup/";
 	    
 	   
@@ -33,7 +32,6 @@ public class SMB{
 	    		
 	    		 Config.setProperty("jcifs.smb.SmbTransport.soTimeout", "180000");
 	    		System.out.println(jcifs.smb.SmbTransport.SO_TIMEOUT);
-/*	    		Config.setProperty("jcifs.smb.client.responseTimeout", "180000");*/ 
 	    		Config.setProperty( "jcifs.smb.SmbFile.soTimeout", "180000" ); 
 	    		System.out.println(jcifs.smb.SmbFile.SO_TIMEOUT);
 	    		Config.setProperty( "jcifs.netbios.cachePolicy", "1200" ); 
@@ -52,7 +50,6 @@ public class SMB{
 	        String fileContent = "This is a test files";
 	        new SMB().SetProp();
 	        new SMB().copyFiles(fileContent, "1.txt");
-	//    	 new SMB().Fetch(args);
 	    	
 	    }
 	 
@@ -105,7 +102,6 @@ public class SMB{
 
 				String path = "smb:" + server_path;
 				SmbFile sFile = new SmbFile(path, auth);
-				//System.out.println(sFile);
 				if (sFile.exists())
 				{
 					if (sFile.isDirectory())
@@ -116,12 +112,10 @@ public class SMB{
 							int find_flag=0;
 							for (SmbFile file : files)
 							{
-								//System.out.print(workorder+".xml  " + file.getName());
 								String fname = file.getName();
 								if (fname.equals(workorder + ".xml"))
 								{
 									find_flag=1;
-									//System.out.print(dir + "\\xml_bank\\" + file.getName());
 									String fullpath1 = dir + "\\xml_bank\\" + fname;
 									File outoutfile = new File(fullpath1);
 
@@ -160,10 +154,8 @@ public class SMB{
 				{
 					return "Invalid Path";
 				}
-				//JOptionPane.showMessageDialog(null, sFile.exists());
 			} catch (MalformedURLException | SmbException e)
 			{
-				//JOptionPane.showMessageDialog(null, "Invalid Path");
 				File writer = new File("checking.txt");
 				if (!writer.exists())
 				{
