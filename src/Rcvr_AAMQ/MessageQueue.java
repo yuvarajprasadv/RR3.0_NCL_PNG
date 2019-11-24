@@ -13,8 +13,8 @@ public class MessageQueue extends Action {
 	  protected final static String PASSWORD = "aaw";
 	  protected final static String VHOST = "AAW";
 	  
-//	  protected final static String TORNADO_HOST = "http://172.28.42.168:8080/tornado_rr"; // JAVA LIVE IP for PITAA[PNG] Only.
-	  protected final static String TORNADO_HOST = "http://172.28.42.151:8082/tornado"; // JAVA DEV IP for PITAA [PNG] Only.
+	  protected final static String TORNADO_HOST = "http://172.28.42.168:8080/tornado_rr"; // JAVA LIVE IP for PITAA[PNG] Only.
+//	  protected final static String TORNADO_HOST = "http://172.28.42.151:8082/tornado"; // JAVA DEV IP for PITAA [PNG] Only.
 		  
 //	  protected final static String TORNADO_HOST = "http://172.28.42.157:8080/tornado"; // JAVA LIVE IP
 //	  protected final static String TORNADO_HOST = "https://172.28.42.157:8443/tornado"; // JAVA LIVE IP with Secure
@@ -40,7 +40,7 @@ public class MessageQueue extends Action {
 	  public static boolean mPdfNormalised = false;
 	  
 
-//	 protected final static String HOST_IP = "10.112.98.50";			// local system
+//	 protected final static String HOST_IP = "10.52.8.31";			// local system
 //	 protected final static String HOST_IP = "192.168.43.10";			// local system
 //	 protected final static String HOST_IP = "172.28.42.158";			// LIVE
 	 protected final static String HOST_IP =  "S2PTTRNMSGQ01P.asia.schawk.com"; //LIVE Dns

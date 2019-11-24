@@ -60,7 +60,12 @@ for(var j = 0; j < app.activeDocument.layers.length; j++)
 	{
 		layerObj  = app.activeDocument.layers[j];
 		var layerName = layerObj.name;
-		if(layerName.indexOf(".ARD") > 0)
+		if(layerName.lastIndexOf(".ARD") > 0)
+		{
+			layerObj.visible = false;
+			break;
+		}
+		else if(layerName.lastIndexOf(".ard") > 0)
 		{
 			layerObj.visible = false;
 			break;

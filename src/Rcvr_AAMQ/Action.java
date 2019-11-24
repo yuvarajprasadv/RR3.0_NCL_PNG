@@ -182,7 +182,18 @@ public class Action {
 						SEng.CallTyphoonShadow(newArryStr);
 						Thread.sleep(4000);
 						
-					//	SEng.SetLayerVisibleOff(); //// only for NCL  P  - N  -  G
+						
+						
+						
+						
+						
+						SEng.SetLayerVisibleOff(); //// only for NCL  P  - N  -  G
+						
+						
+						
+						
+						
+						
 						
 						Thread.sleep(1000);
 						String fileRenameString = jspr.getJsonValueForKey(jsonObj, "WO") + "_3dxml";
@@ -616,6 +627,18 @@ public class Action {
 			log.error((String) ex.getMessage());
 		}
 	}
+	public static void UpdateClientMachineRunningStatus(String ipAddress, String locationKey, String category) throws IOException {
+		try 
+		{
+		//	https://172.28.42.168:8443/tornado_rr/rest/pub/rr/rrstatusOfHeartBeat
+			HttpsConnection httpsCon = new HttpsConnection();
+		    httpsCon.excuteClientMachineStatusHttpJsonPost(MessageQueue.TORNADO_HOST + "/rest/pub/rr/rrstatusOfHeartBeat",
+					ipAddress, locationKey, category);
+		} catch (Exception ex) {
+			log.error((String) ex.getMessage());
+		}
+	}
+	
 	public static void UpdateErrorStatusWithRemark(String reportStr, String remarks) throws IOException {
 		try {
 			HttpsConnection httpsCon = new HttpsConnection();

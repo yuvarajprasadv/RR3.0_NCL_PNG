@@ -890,3 +890,126 @@
 2019-10-15 11:27:17 INFO  Action:168 - Pdf and xml generated..
 2019-10-15 11:27:48 INFO  Action:226 - Completed process for job id  '8cfc327a-b45b-4c1d-844c-539df26b0ab6' 
 2019-10-15 11:27:49 INFO  Action:231 - Xml comparision completed..
+2019-11-07 11:49:25 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-11-07 11:49:25 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-11-07 11:53:06 INFO  Action:553 - Message received acknowledgement for job id  'e8223f28-d385-4ef1-9d1e-8cf2be0655a6' 
+2019-11-07 11:53:07 INFO  Action:29 - Illustrator activated to load file..
+2019-11-07 11:53:23 INFO  Action:35 - AI file and other dependend file opening..
+2019-11-07 11:53:27 INFO  Action:72 - TyphoonShadow called
+2019-11-07 11:53:41 INFO  Action:167 - Pdf and xml generated..
+2019-11-07 11:54:11 INFO  Action:227 - Completed process for job id  'e8223f28-d385-4ef1-9d1e-8cf2be0655a6' 
+2019-11-07 11:54:13 INFO  Action:232 - Xml comparision completed..
+2019-11-12 10:04:33 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-11-12 10:04:33 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-11-12 10:05:55 INFO  Action:564 - Message received acknowledgement for job id  '75dcafe4-08e1-481d-87b0-5749e1ccd3a9' 
+2019-11-12 10:06:27 INFO  Action:29 - Illustrator activated to load file..
+2019-11-12 10:06:38 INFO  Action:35 - AI file and other dependend file opening..
+2019-11-12 10:06:40 INFO  Action:72 - TyphoonShadow called
+2019-11-12 10:06:40 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
+2019-11-12 10:16:05 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-11-12 10:16:05 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-11-12 10:16:11 INFO  Action:564 - Message received acknowledgement for job id  '81ad59b2-8ba7-4b95-b4ba-ddf90bb383a4' 
+2019-11-12 10:16:13 INFO  Action:29 - Illustrator activated to load file..
+2019-11-12 10:16:21 INFO  Action:35 - AI file and other dependend file opening..
+2019-11-12 10:16:23 INFO  Action:72 - TyphoonShadow called
+2019-11-12 10:16:23 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
+2019-11-12 10:25:12 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-11-12 10:25:12 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-11-12 10:25:24 INFO  Action:564 - Message received acknowledgement for job id  '7a198bc6-ed63-41fc-b4e6-1abc467fc0d3' 
+2019-11-12 10:25:26 INFO  Action:29 - Illustrator activated to load file..
+2019-11-12 10:25:34 INFO  Action:35 - AI file and other dependend file opening..
+2019-11-12 10:25:37 INFO  Action:72 - TyphoonShadow called
+2019-11-12 10:25:37 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
+2019-11-12 10:32:47 INFO  Action:564 - Message received acknowledgement for job id  'feadcfd1-cf58-4ccf-8619-4ab2ea76a098' 
+2019-11-12 10:32:48 INFO  Action:29 - Illustrator activated to load file..
+2019-11-12 10:32:57 INFO  Action:35 - AI file and other dependend file opening..
+2019-11-12 10:32:59 INFO  Action:72 - TyphoonShadow called
+2019-11-12 10:32:59 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
+2019-11-12 10:36:41 INFO  Action:564 - Message received acknowledgement for job id  'f4879eb4-8ec1-47fc-800d-4fc7a1c2c3af' 
+2019-11-12 10:36:41 INFO  Action:29 - Illustrator activated to load file..
+2019-11-12 10:36:50 INFO  Action:35 - AI file and other dependend file opening..
+2019-11-12 10:36:52 INFO  Action:72 - TyphoonShadow called
+2019-11-12 10:36:52 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
+2019-11-12 10:44:36 INFO  Action:564 - Message received acknowledgement for job id  '5e11e530-1eb2-4682-8534-c9868bbc12a6' 
+2019-11-12 10:44:36 INFO  Action:29 - Illustrator activated to load file..
+2019-11-12 10:44:45 INFO  Action:35 - AI file and other dependend file opening..
+2019-11-12 10:44:47 INFO  Action:72 - TyphoonShadow called
+2019-11-12 10:44:47 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
+2019-11-12 10:51:04 INFO  Action:564 - Message received acknowledgement for job id  'dda7052a-cf94-4de7-a1e1-b436d5974199' 
+2019-11-12 10:51:04 INFO  Action:29 - Illustrator activated to load file..
+2019-11-12 10:51:13 INFO  Action:35 - AI file and other dependend file opening..
+2019-11-12 10:51:15 INFO  Action:72 - TyphoonShadow called
+2019-11-12 10:51:15 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
+2019-11-12 10:53:26 INFO  Action:564 - Message received acknowledgement for job id  'b62f2e73-4906-48db-a272-1c92b6a67f93' 
+2019-11-12 10:53:26 INFO  Action:29 - Illustrator activated to load file..
+2019-11-12 10:53:35 INFO  Action:35 - AI file and other dependend file opening..
+2019-11-12 10:53:37 INFO  Action:72 - TyphoonShadow called
+2019-11-12 10:53:37 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
+2019-11-12 10:59:21 INFO  Action:564 - Message received acknowledgement for job id  'cc5956f6-987f-46b5-8ba6-f6450ffce378' 
+2019-11-12 10:59:22 INFO  Action:29 - Illustrator activated to load file..
+2019-11-12 10:59:30 INFO  Action:35 - AI file and other dependend file opening..
+2019-11-12 10:59:32 INFO  Action:72 - TyphoonShadow called
+2019-11-12 10:59:32 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
+2019-11-12 11:00:30 INFO  Action:564 - Message received acknowledgement for job id  '785ef311-33e7-4094-a2c9-ebe3e3f30fba' 
+2019-11-12 11:00:30 INFO  Action:29 - Illustrator activated to load file..
+2019-11-12 11:00:39 INFO  Action:35 - AI file and other dependend file opening..
+2019-11-12 11:00:41 INFO  Action:72 - TyphoonShadow called
+2019-11-12 11:00:41 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
+2019-11-12 11:10:08 INFO  Action:564 - Message received acknowledgement for job id  '5eee6209-6e0f-46fc-94a0-80a915087f1a' 
+2019-11-12 11:10:08 INFO  Action:29 - Illustrator activated to load file..
+2019-11-12 11:10:17 INFO  Action:35 - AI file and other dependend file opening..
+2019-11-12 11:10:19 INFO  Action:72 - TyphoonShadow called
+2019-11-12 11:10:19 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
+2019-11-12 11:28:56 INFO  Action:564 - Message received acknowledgement for job id  '347f8ec1-9082-4b2e-9ba4-48889df77913' 
+2019-11-12 11:28:56 INFO  Action:29 - Illustrator activated to load file..
+2019-11-12 11:29:05 INFO  Action:35 - AI file and other dependend file opening..
+2019-11-12 11:29:07 INFO  Action:72 - TyphoonShadow called
+2019-11-12 11:29:07 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
+2019-11-18 11:59:42 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-11-18 11:59:42 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-11-18 12:00:21 INFO  Action:564 - Message received acknowledgement for job id  '9c43c92d-2b34-4e74-aea9-9d29cbc31832' 
+2019-11-18 12:00:23 INFO  Action:29 - Illustrator activated to load file..
+2019-11-18 12:00:32 INFO  Action:35 - AI file and other dependend file opening..
+2019-11-18 12:00:37 INFO  Action:72 - TyphoonShadow called
+2019-11-18 12:00:37 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
+2019-11-18 12:03:55 INFO  Action:564 - Message received acknowledgement for job id  '22e19f12-e98b-4a5a-af3e-9febf09804df' 
+2019-11-18 12:03:57 INFO  Action:29 - Illustrator activated to load file..
+2019-11-18 12:04:06 INFO  Action:35 - AI file and other dependend file opening..
+2019-11-18 12:04:11 INFO  Action:72 - TyphoonShadow called
+2019-11-18 12:04:22 INFO  Action:167 - Pdf and xml generated..
+2019-11-18 12:04:53 INFO  Action:238 - Completed process for job id  '22e19f12-e98b-4a5a-af3e-9febf09804df' 
+2019-11-18 12:04:55 INFO  Action:243 - Xml comparision completed..
+2019-11-18 12:19:32 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-11-18 12:19:32 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-11-18 12:19:44 INFO  Action:564 - Message received acknowledgement for job id  'd37e9512-fdb5-45f8-b49c-6774c2cdda43' 
+2019-11-18 12:19:45 INFO  Action:29 - Illustrator activated to load file..
+2019-11-18 12:19:55 INFO  Action:35 - AI file and other dependend file opening..
+2019-11-18 12:19:59 INFO  Action:72 - TyphoonShadow called
+2019-11-18 12:20:09 INFO  Action:167 - Pdf and xml generated..
+2019-11-18 12:20:40 INFO  Action:238 - Completed process for job id  'd37e9512-fdb5-45f8-b49c-6774c2cdda43' 
+2019-11-18 12:20:42 INFO  Action:243 - Xml comparision completed..
+2019-11-18 12:21:09 INFO  Action:564 - Message received acknowledgement for job id  '7806be80-c036-4627-8be6-77ed95ac4d0a' 
+2019-11-18 12:21:10 INFO  Action:29 - Illustrator activated to load file..
+2019-11-18 12:21:19 INFO  Action:35 - AI file and other dependend file opening..
+2019-11-18 12:21:23 INFO  Action:72 - TyphoonShadow called
+2019-11-18 12:21:33 INFO  Action:167 - Pdf and xml generated..
+2019-11-18 12:22:04 INFO  Action:238 - Completed process for job id  '7806be80-c036-4627-8be6-77ed95ac4d0a' 
+2019-11-18 12:22:05 INFO  Action:243 - Xml comparision completed..
+2019-11-18 14:29:53 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-11-18 14:29:53 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-11-18 14:32:11 INFO  Action:564 - Message received acknowledgement for job id  '99f7d6b9-b538-4d76-80f0-3d946e6e396f' 
+2019-11-18 14:32:12 INFO  Action:29 - Illustrator activated to load file..
+2019-11-18 14:32:22 INFO  Action:35 - AI file and other dependend file opening..
+2019-11-18 14:32:26 INFO  Action:72 - TyphoonShadow called
+2019-11-18 14:32:36 INFO  Action:167 - Pdf and xml generated..
+2019-11-18 14:33:07 INFO  Action:238 - Completed process for job id  '99f7d6b9-b538-4d76-80f0-3d946e6e396f' 
+2019-11-18 14:33:09 INFO  Action:243 - Xml comparision completed..
+2019-11-18 14:34:51 INFO  Action:564 - Message received acknowledgement for job id  'e16caed1-5363-4094-a6dc-d1b4227d94c2' 
+2019-11-18 14:34:52 INFO  Action:29 - Illustrator activated to load file..
+2019-11-18 14:35:01 INFO  Action:35 - AI file and other dependend file opening..
+2019-11-18 14:35:05 INFO  Action:72 - TyphoonShadow called
+2019-11-18 14:35:16 INFO  Action:167 - Pdf and xml generated..
+2019-11-18 14:35:46 INFO  Action:238 - Completed process for job id  'e16caed1-5363-4094-a6dc-d1b4227d94c2' 
+2019-11-18 14:35:48 INFO  Action:243 - Xml comparision completed..
+2019-11-21 10:26:29 INFO  MQRcv:77 - TestRR:TestRRDivision
+2019-11-21 10:26:29 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C

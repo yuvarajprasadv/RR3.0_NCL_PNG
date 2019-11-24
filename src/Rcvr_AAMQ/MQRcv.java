@@ -1,6 +1,8 @@
 package Rcvr_AAMQ;
 
 
+import java.util.Timer;
+
 import org.apache.log4j.Logger;
 
 import com.rabbitmq.client.*;
@@ -67,7 +69,8 @@ public class MQRcv extends MessageQueue {
 	}
 
  
-   if (argv.length < 1) {
+    if (argv.length < 1) 
+    {
       System.err.println("Binding key parameter missing");
       System.exit(1);
     }
@@ -83,6 +86,10 @@ public class MQRcv extends MessageQueue {
 
  //   Action.Mount(); //// not reading row by row
     
+    INetwork iNet = new INetwork();
+    Timer timer = new Timer();
+    timer.schedule(new HBTimer(iNet.GetClientIPAddr(), bindingKey, "Wave Road Runner"),  5000, 300000);
+
     MessageQueue.RecvMessage(channel, queueName);
 
   }

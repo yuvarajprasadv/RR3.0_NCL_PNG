@@ -209,6 +209,26 @@ public class HttpsConnection
 	   return httpPostReq.executeReq( jsonData, httpPost);
    }
    
+   public String excuteClientMachineStatusHttpJsonPost(String targetURL, String machine_ip, String location_key, String category) 
+   {
+	  
+	   JSONObject user=new JSONObject();
+	   try
+	   {
+		   user.put("ip", machine_ip);
+		   user.put("key", location_key);
+		   user.put("category", category);
+	   }
+	   catch (Exception ex)
+	   {
+		   return "exception on report sending to tornado\n";
+	   }
+	   String jsonData=user.toString();
+	   HttpPostReq httpPostReq=new HttpPostReq();
+	   HttpPost httpPost=httpPostReq.createConnectivity(targetURL , "myusername", "mypassword");
+	   return httpPostReq.executeReq( jsonData, httpPost);
+   }
+   
    public String excuteErrorStatusHttpJsonPostWithRemark(String targetURL, String autoartwork_mq_id, String autoartwork_overall_status, String autoartwork_remarks) 
    {
 	  
