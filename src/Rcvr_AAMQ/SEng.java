@@ -44,6 +44,7 @@ public class SEng{
 		}
 		catch(Exception ex)
 		{
+			log.error("Error on running script enginge: " + ex.getMessage());
 			return ex.getMessage();
 		}
 		
@@ -132,6 +133,22 @@ public class SEng{
 			+ "end tell";
 		 return ExecuteAppleScript(scriptString);
 	 }
+	 
+	 public static void SetSwathColorFromTo(String swatchFrom, String swatchTo) throws Exception  {
+
+		 String scriptString = "tell application "+ '"' +"Applications:Adobe Illustrator "+ MessageQueue.VERSION +":Adobe Illustrator.app"+'"' +"\n with timeout of "+ timeOutSec +" seconds \n"
+			+ "tell application \"Adobe Illustrator\"'s document 1 \n"
+			+ "try \n"
+			+ "set spot "+ '"' + swatchFrom + '"' + "'s color to spot " +'"' + swatchTo + '"' +"'s color" + "\n"
+			+ "delay \n"
+			+ "end try \n"
+			+ "end tell \n"
+			+ "end timeout \n"
+			+ "end tell";
+		// System.out.println(scriptString);
+		 ExecuteAppleScript(scriptString);
+	 	}
+	 
 	 
 	 public static void MergeSwatch(String arryStr[]) throws Exception  {
 
@@ -398,10 +415,10 @@ public class SEng{
 	    System.out.println(unmodifiableList.get(0));  
 	    */
 		 
-		 List<String> SwatchListFromXML = new ArrayList<String>();
-		 XmlUtiility xmlUtils = new XmlUtiility();
-		 SwatchListFromXML = xmlUtils.ParsePrivateElementSwatchColor("/Users/yuvaraj/Desktop/GS1_40160649301_10.xml","SL_ColorName", "PANTONE");
-		 System.out.println(SwatchListFromXML);
+	//	 List<String> SwatchListFromXML = new ArrayList<String>();
+	//	 XmlUtiility xmlUtils = new XmlUtiility();
+	//	 SwatchListFromXML = xmlUtils.ParsePrivateElementSwatchColor("/Users/yuvaraj/Desktop/GS1_40160649301_10.xml","SL_ColorName", "PANTONE");
+	//	 System.out.println(SwatchListFromXML);
 		 
 		 
 		 String[] arryStr= new String[2];
@@ -409,7 +426,8 @@ public class SEng{
 		 arryStr[1] = "";
 		 MessageQueue.VERSION  = "CC 2018";
 		 
-		 System.out.println(SetLayerVisibleOff());
+		 SetSwathColorFromTo("White 2", "White");
+	//	 System.out.println(SetLayerVisibleOff());
 		 /*
 		 String swatchString = SwatchTest(arryStr);
 		 

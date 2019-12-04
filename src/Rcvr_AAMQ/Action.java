@@ -11,6 +11,9 @@ import java.util.List;
 import java.util.Set;
 import org.apache.log4j.Logger;
 import org.json.simple.JSONObject;
+
+import com.rabbitmq.client.AMQP.Connection;
+
 import Rcvr_AAMQ.Utils;
 
 public class Action {
@@ -67,6 +70,8 @@ public class Action {
 		////Swatch from xml // for  PNG
 		SwatchMergeFromXML(jspr.geFilePathFromJson(jsonObj, "XMLFile"), "SL_ColorName","PANTONE");
 	//	SwatchMergeFromXML(jspr.geFilePathFromJson(jsonObj, "XMLFile"), "SL_ColorName","P&G");
+		
+		
 		////Swatch from xml // for  PNG
 		
 		log.info("TyphoonShadow called");
@@ -183,11 +188,13 @@ public class Action {
 						Thread.sleep(4000);
 						
 						
+						//PNG set swatch  White color  to White 2
+					//	SEng.SetSwathColorFromTo("White 2", "White");
+						//PNG set swatch  White color  to White 2
 						
 						
 						
-						
-						SEng.SetLayerVisibleOff(); //// only for NCL  P  - N  -  G
+					//	SEng.SetLayerVisibleOff(); //// only for NCL  P  - N  -  G
 						
 						
 						
@@ -240,7 +247,7 @@ public class Action {
 
 		
 		Action.UpdateToServer(jsonObj, "xmlcompare");
-		log.info("Xml comparision completed..");
+		log.info("Xml comparison completed..");
 		
 
 		Action.UpdateReport(jsonObj, fls.ReadFileReport("Report.txt"));
@@ -278,7 +285,7 @@ public class Action {
 		Thread.sleep(5000);
 
 		SEng.OpenDocument(jspr.geFilePathFromJson(jsonObj, "Master"));
-		log.info("AI file and other dependend file opening..");
+		log.info("AI file and other dependent file opening..");
 
 		String dcFont = SEng.GetDocumentFonts();
 		if (dcFont.length() != 0) {
@@ -533,6 +540,7 @@ public class Action {
 		INetwork iNet = new INetwork();
 
 		MessageQueue.MSGID = (String) jsonObj.get("Id");
+		
 		//Action.AddVolumes(); // mount volume after creating message id.
 
 		// ***PnG***// This is to copy from different part to 050_Production.
@@ -556,12 +564,13 @@ public class Action {
 				log.error(Ex.getMessage());
 				MessageQueue.ERROR += "\nInvalid Json request";
 				fls.AppendFileString("\nInvalid Json request:" + " \n");
-			//	ThrowException.CustomExit(Ex, "Invalid JSON request from Tornado");
 				ThrowException.CustomExitWithErrorMsgID(Ex, "Invalid JSON request from Tornado", "14");
 			}
 			try {
+				
+				String workOrderNo  = jsonPars.getJsonValueForKey(jsonObj, "WO");
 				sendRespStatusMsg("received" + "::" + iNet.GetClientIPAddr());
-				log.info("Message received acknowledgement for job id  '" + MessageQueue.MSGID + "' ");
+				log.info("Message received acknowledgement for job id  '" + MessageQueue.MSGID + "' " + " WO: " + workOrderNo);
 	
 				if (!((String) jsonObj.get("type")).equals("multi"))
 					actionSeq(jsonObj);
@@ -596,15 +605,40 @@ public class Action {
 	}
 
 	public static void UpdateToServer(JSONObject jsonObj, String actionStr) throws IOException {
-		try {
+		try 
+		{
 			HttpsConnection httpsCon = new HttpsConnection();
 			HttpURLConnection connection;
+			
 			URL urlStr = new URL(
 					MessageQueue.TORNADO_HOST + "/rest/pub/aaw/" + actionStr + "?mqid=" + (String) jsonObj.get("Id"));
 			connection = (httpsCon.getURLConnection(urlStr, true));
-			System.out.println("XML Compare : " + connection.getResponseCode());
-		} catch (Exception ex) {
-			log.error((String) ex.getMessage());
+			if(connection != null)
+			{
+				connection.setConnectTimeout(60000 * 10);
+				connection.setReadTimeout(60000 * 10);
+			}
+			if(connection == null)
+			{
+				System.out.println("XML compare : API connection failed");
+			}
+			else
+				System.out.println("XML compare : " + connection.getResponseCode());
+			if(connection != null)
+			connection.disconnect();
+			
+		}
+		catch (java.net.SocketTimeoutException ex)
+		{
+			log.error("Http response time out: " + (String)ex.getMessage());
+		}
+		catch (IOException ex)
+		{
+			log.error("Http IO exception: " + ex.getMessage());
+		}
+		catch (Exception ex) 
+		{
+			log.error("Error Http connection: " + (String) ex.getMessage());
 		}
 	}
 

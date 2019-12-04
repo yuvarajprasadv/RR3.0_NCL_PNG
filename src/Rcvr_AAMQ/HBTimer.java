@@ -26,7 +26,7 @@ public class HBTimer extends TimerTask
 		try 
 		{
 			Action.UpdateClientMachineRunningStatus(this.ipAddress, this.locationKey, this.category);
-		//	System.out.println("HB");
+			log.info("Heartbeat sent for IP : " + this.ipAddress + " location key : " + this.locationKey );
 		}
 		catch (IOException ex) 
 		{

@@ -13,8 +13,8 @@ public class MessageQueue extends Action {
 	  protected final static String PASSWORD = "aaw";
 	  protected final static String VHOST = "AAW";
 	  
-	  protected final static String TORNADO_HOST = "http://172.28.42.168:8080/tornado_rr"; // JAVA LIVE IP for PITAA[PNG] Only.
-//	  protected final static String TORNADO_HOST = "http://172.28.42.151:8082/tornado"; // JAVA DEV IP for PITAA [PNG] Only.
+//	  protected final static String TORNADO_HOST = "http://172.28.42.168:8080/tornado_rr"; // JAVA LIVE IP for PITAA[PNG] Only.
+	  protected final static String TORNADO_HOST = "http://172.28.42.151:8082/tornado"; // JAVA DEV IP for PITAA [PNG] Only.
 		  
 //	  protected final static String TORNADO_HOST = "http://172.28.42.157:8080/tornado"; // JAVA LIVE IP
 //	  protected final static String TORNADO_HOST = "https://172.28.42.157:8443/tornado"; // JAVA LIVE IP with Secure

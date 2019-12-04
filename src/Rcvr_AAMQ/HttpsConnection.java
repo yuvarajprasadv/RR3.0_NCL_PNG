@@ -100,7 +100,7 @@ public class HttpsConnection
 		catch (Exception e) 
 		{
 		    e.printStackTrace();
-			log.error(e.getMessage());
+			log.error("Error at execute post: " + e.getMessage());
 		    return null;
 		}
 		finally
@@ -142,11 +142,13 @@ public class HttpsConnection
 	    }
 	    catch (Exception e) 
 	    { 
-	    	log.error(e.getMessage());
+	    	log.error("Error at Connection trust: " + e.getMessage());
 	    } 
 	}
 
    public HttpURLConnection getURLConnection(URL url, boolean trustEveryone) throws IOException {
+	   try
+	   {
 		System.setProperty ("jsse.enableSNIExtension", "false");
 	    HttpURLConnection conn = null;
 	    if (url.getProtocol().toLowerCase().equals("https")) {
@@ -168,6 +170,13 @@ public class HttpsConnection
 	        conn = (HttpURLConnection) url.openConnection();
 	    }
 	    return conn;
+	   }
+	   catch(Exception ex)
+	   {
+		   log.error("Error at HttpsUrConnection: " + ex.getMessage());
+		   return null;
+	   }
+	   
 	}
 
    
@@ -221,6 +230,7 @@ public class HttpsConnection
 	   }
 	   catch (Exception ex)
 	   {
+		   log.error("Exception on report sending to tornado: " + ex.getMessage());
 		   return "exception on report sending to tornado\n";
 	   }
 	   String jsonData=user.toString();
@@ -241,6 +251,7 @@ public class HttpsConnection
 	   }
 	   catch (Exception ex)
 	   {
+		   log.error("Exception on report sending: " + ex.getMessage());
 		   return "exception on report sending to tornado\n";
 	   }
 	   String jsonData=user.toString();
