@@ -11,9 +11,12 @@ import java.nio.file.StandardOpenOption;
 import java.util.Arrays;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
 
 public class FileSystem 
 {
+	static Logger log = LogMQ.monitor("Rcvr_AAMQ.FileSystem");
 	Utils utl = new Utils();
 
 	public long GetFileSize(String filename) 
@@ -21,6 +24,7 @@ public class FileSystem
 	  File file = new File(filename);
 	  if (!file.exists() || !file.isFile()) 
 	  {
+		 log.error("File does not exist");
 	     System.out.println("File doesn\'t exist");
 		 return -1;
 	  }
@@ -37,6 +41,7 @@ public class FileSystem
 	   } 
 	   catch (IOException e) 
 	   {
+		   log.error("Exception on creating file");
 			e.printStackTrace();
 	   }
 	   return false;
@@ -70,6 +75,7 @@ public class FileSystem
 		}
 		catch(Exception ex)
 		{
+			log.error("Error on file reading :" + ex.getMessage() );
 			System.out.println(ex.getMessage());
 		}
 		return null;
@@ -88,6 +94,7 @@ public class FileSystem
 	   }
 	   catch(Exception ex)
 	   {
+		   log.error("Error on file reading:"+ ex.getMessage());
 		   System.out.println("err"+ ex.getMessage());
 	   }  
 	   return null;

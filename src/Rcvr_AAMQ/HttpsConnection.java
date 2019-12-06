@@ -81,6 +81,7 @@ public class HttpsConnection
 		   }
 		   catch(Exception ex)
 		   {
+			   log.error("Report failed to send " + ex.getMessage());
 			   System.out.println("Report failed to send");
 		   }
 		   
@@ -191,6 +192,7 @@ public class HttpsConnection
 	   }
 	   catch (Exception ex)
 	   {
+		   log.error("Exception on sendign report to tornado");
 		   return "exception on report sending to tornado\n";
 	   }
 	   String jsonData=user.toString();
@@ -210,6 +212,7 @@ public class HttpsConnection
 	   }
 	   catch (Exception ex)
 	   {
+		   log.error("Exception on report sending to tornado");
 		   return "exception on report sending to tornado\n";
 	   }
 	   String jsonData=user.toString();
@@ -282,6 +285,7 @@ public class HttpsConnection
 class HttpPostReq
 {
 
+	static Logger log = LogMQ.monitor("Rcvr_AAMQ.HttpPostReq");
     HttpPost createConnectivity(String restUrl, String username, String password)
     {
         HttpPost post = new HttpPost(restUrl);
@@ -300,14 +304,18 @@ class HttpPostReq
         try{
             return executeHttpRequest(jsonData, httpPost);
         }
-        catch (UnsupportedEncodingException e){
-        	return ("error while encoding api url : "+e);
+        catch (UnsupportedEncodingException e)
+        {
+        	log.error("Error encoding api url: " + e.getMessage());
+        	return ("error while encoding api url : " + e.getMessage());
         }
         catch (IOException e){
-        	return ("ioException occured while sending http request : "+e);
+        	log.error("IO exception while sending http request: " + e.getMessage());
+        	return ("ioException occured while sending http request : " + e.getMessage());
         }
         catch(Exception e){
-        	return ("exception occured while sending http request : "+e);
+        	log.error("Exception while sending http request: " + e.getMessage());
+        	return ("exception occured while sending http request : " + e.getMessage());
         }
         finally{
             httpPost.releaseConnection();

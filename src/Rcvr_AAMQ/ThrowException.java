@@ -1,6 +1,9 @@
 package Rcvr_AAMQ;
 
+import org.apache.log4j.Logger;
+
 public class ThrowException {
+	static Logger log = LogMQ.monitor("Rcvr_AAMQ.Exception");
 	
 	public static void CatchException(Exception exp) throws Exception
 	{
@@ -15,7 +18,9 @@ public class ThrowException {
 		Action.sendRespStatusMsg("exit on error");
 		SEng.OnError();
 		//RR Error exit status
+		Thread.sleep(5000);
 		Action.UpdateErrorStatusWithRemark("14", "Roadrunner exits on error ");//RR error exit (14) status to Tornado API
+		log.info("Sent error status id 14:" + "Roadrunner exits on error");
 		MessageQueue.GATE = true;
 		}
 	}
@@ -33,7 +38,9 @@ public class ThrowException {
 		Action.sendRespStatusMsg("exit on error");
 		SEng.OnError();
 		//RR Error exit status
+		Thread.sleep(5000);
 		Action.UpdateErrorStatusWithRemark(id, "Roadrunner exits on error " + errorMsg);//RR error exit (14) status to Tornado API
+		log.info("Sent error status id " + id + ": Roadrunner exits on error " + errorMsg.toString());
 		MessageQueue.GATE = true;
 		}
 	}
@@ -53,7 +60,9 @@ public class ThrowException {
 		Action.sendRespStatusMsg("exit on error");
 		SEng.OnError();
 		//RR Error exit status
+		Thread.sleep(5000);
 		Action.UpdateErrorStatusWithRemark("14", "Roadrunner exits on error: " +  errorMsg.toString());//RR error exit (14) status to Tornado API
+		log.info("Sent error status id 14:" + "Roadrunner exits on error " + errorMsg.toString());
 		MessageQueue.GATE = true;
 		}
 	}
@@ -73,7 +82,9 @@ public class ThrowException {
 		Action.sendRespStatusMsg("exit on error");
 		SEng.OnError();
 		//RR Error exit status
+		Thread.sleep(5000);
 		Action.UpdateErrorStatusWithRemark(id, errorMsg.toString());
+		log.info("Sent error status id "+ id +":" + errorMsg.toString());
 		MessageQueue.GATE = true;
 		}
 	}

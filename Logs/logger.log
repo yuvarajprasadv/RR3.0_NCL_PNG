@@ -1013,3 +1013,8 @@
 2019-11-18 14:35:48 INFO  Action:243 - Xml comparision completed..
 2019-11-21 10:26:29 INFO  MQRcv:77 - TestRR:TestRRDivision
 2019-11-21 10:26:29 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
+2019-12-05 19:56:19 INFO  MQRcv:80 - TestRR:TestRRDivision
+2019-12-05 19:56:20 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
+2019-12-05 20:05:19 INFO  MQRcv:80 - TestRR:TestRRDivision
+2019-12-05 20:05:19 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
+2019-12-05 20:05:25 INFO  HBTimer:29 - Heartbeat sent for IP : 10.37.129.2 location key : TestRR

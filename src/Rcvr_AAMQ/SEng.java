@@ -44,7 +44,7 @@ public class SEng{
 		}
 		catch(Exception ex)
 		{
-			log.error("Error on running script enginge: " + ex.getMessage());
+		//	log.error("Error on running script enginge: " + ex.getMessage());
 			return ex.getMessage();
 		}
 		
@@ -53,12 +53,21 @@ public class SEng{
 	
 	 public static  void CallAdobeIllustrator() throws Exception 
 	 {
+		 try
+		 {
 		 	String scriptString = "tell application "+ '"' + "Applications:Adobe Illustrator "+ MessageQueue.VERSION +":Adobe Illustrator.app" +'"' + " \n with timeout of "+ timeOutSec +" seconds \n"
 		 			+ "activate \n"
 		 			+ "end timeout \n"
 		 			+ "end tell \n "
 		 			+ "return application";
 		 	ExecuteAppleScript(scriptString);
+		 }
+		 catch(Exception ex)
+		 {
+			 log.error("Issue on launching illustrator " + ex.getMessage());
+			 log.info("Error Status updated as 14 - Roadrunner exits on error");
+			 ThrowException.CatchExceptionWithErrorMsgId(new Exception("Illustrator"), "Roadrunner exits on error", "14");
+		 }
 	 }
 	 public static String GetApplicationFonts() throws Exception
 	 {

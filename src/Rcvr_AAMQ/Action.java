@@ -27,6 +27,7 @@ public class Action {
 
 		//RR in Progress status
 		Action.UpdateErrorStatus("4"); //RR In Progress (4) status to Tornado API
+		log.info("RR started processing");
 		
 		SEng.CallAdobeIllustrator();
 		log.info("Illustrator activated to load file..");
@@ -189,11 +190,7 @@ public class Action {
 						
 						
 						//PNG set swatch  White color  to White 2
-					//	SEng.SetSwathColorFromTo("White 2", "White");
-						//PNG set swatch  White color  to White 2
-						
-						
-						
+					//	SEng.SetSwathColorFromTo("White 2", "White");  //// only for NCL P  -  N  -  G
 					//	SEng.SetLayerVisibleOff(); //// only for NCL  P  - N  -  G
 						
 						
@@ -631,6 +628,8 @@ public class Action {
 		catch (java.net.SocketTimeoutException ex)
 		{
 			log.error("Http response time out: " + (String)ex.getMessage());
+			Action.UpdateErrorStatusWithRemark("26", "Road Runner not received any response: " +  (String) ex.getMessage());
+			//log.info("Sent error status id : 26 - Road runner not received any response");
 		}
 		catch (IOException ex)
 		{
@@ -648,7 +647,7 @@ public class Action {
 			httpsCon.excuteHttpJsonPost(MessageQueue.TORNADO_HOST + "/rest/pub/aaw/finalreport",
 					(String) jsonObj.get("Id"), reportStr);
 		} catch (Exception ex) {
-			log.error((String) ex.getMessage());
+			log.error("Error when updating report " + (String) ex.getMessage());
 		}
 	}
 	
@@ -658,7 +657,7 @@ public class Action {
 		    httpsCon.excuteErrorStatusHttpJsonPost(MessageQueue.TORNADO_HOST + "/rest/pub/rr/updatestatus",
 					MessageQueue.MSGID, reportStr);
 		} catch (Exception ex) {
-			log.error((String) ex.getMessage());
+			log.error("Error when sending error status : " + (String) ex.getMessage());
 		}
 	}
 	public static void UpdateClientMachineRunningStatus(String ipAddress, String locationKey, String category) throws IOException {
@@ -668,18 +667,23 @@ public class Action {
 			HttpsConnection httpsCon = new HttpsConnection();
 		    httpsCon.excuteClientMachineStatusHttpJsonPost(MessageQueue.TORNADO_HOST + "/rest/pub/rr/rrstatusOfHeartBeat",
 					ipAddress, locationKey, category);
-		} catch (Exception ex) {
-			log.error((String) ex.getMessage());
+		} catch (Exception ex) 
+		{
+			
+			log.error("Error while sending HB running status :" + (String) ex.getMessage());
 		}
 	}
 	
 	public static void UpdateErrorStatusWithRemark(String reportStr, String remarks) throws IOException {
 		try {
+			log.info("Before sending error status :" + reportStr + " - remark :" + remarks);
 			HttpsConnection httpsCon = new HttpsConnection();
 		    httpsCon.excuteErrorStatusHttpJsonPostWithRemark(MessageQueue.TORNADO_HOST + "/rest/pub/rr/updatestatus",
 					MessageQueue.MSGID, reportStr, remarks);
-		} catch (Exception ex) {
-			log.error((String) ex.getMessage());
+		   log.info("Error status sent :" + reportStr + " - remark :" + remarks);
+		} catch (Exception ex) 
+		{
+			log.error("Error when updating error status with remark :" + (String) ex.getMessage());
 		}
 	}
 
