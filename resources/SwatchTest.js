@@ -4,6 +4,8 @@ var docRef = app.activeDocument;
 main();
 function main()
 { 
+try
+{
 var swatchList;
  for (var i = 0; i < app.activeDocument.swatches.length; i++)
  {
@@ -15,5 +17,10 @@ var swatchList;
  	
  }
  return swatchList;
+ }
+ catch(ex)
+ {
+ 	return "Error on swatch merge " + ex.description;
+ }
 }
   

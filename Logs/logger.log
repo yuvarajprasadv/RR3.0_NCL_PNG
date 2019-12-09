@@ -1018,3 +1018,5 @@
 2019-12-05 20:05:19 INFO  MQRcv:80 - TestRR:TestRRDivision
 2019-12-05 20:05:19 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
 2019-12-05 20:05:25 INFO  HBTimer:29 - Heartbeat sent for IP : 10.37.129.2 location key : TestRR
+2019-12-09 10:06:59 INFO  MQRcv:80 - TestRR:TestRRDivision
+2019-12-09 10:06:59 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C

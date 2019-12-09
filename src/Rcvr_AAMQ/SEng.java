@@ -173,6 +173,8 @@ public class SEng{
 	 public static String SwatchTest(String arryStr[]) throws Exception  
 	 {
 
+		 try
+		 {
 		 Utils utils = new Utils();
 		 String pathString = utils.GetPathFromResource("SwatchTest.js");
 		 String scriptString = "tell application "+ '"' +"Applications:Adobe Illustrator "+ MessageQueue.VERSION +":Adobe Illustrator.app"+'"' +"\n with timeout of "+ timeOutSec +" seconds \n"
@@ -180,6 +182,13 @@ public class SEng{
 			+ "end timeout \n"
 			+ "end tell";
 		 return ExecuteAppleScript(scriptString);
+		 }
+		 catch (Exception ex)
+		 {
+			 log.error("Failed to apply Swatch color merge");
+			 return null;
+		 }
+		
 	 }
 	 
 	 public static String SetLayerVisibleOff() throws Exception  

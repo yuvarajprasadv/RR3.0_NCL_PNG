@@ -190,8 +190,8 @@ public class Action {
 						
 						
 						//PNG set swatch  White color  to White 2
-					//	SEng.SetSwathColorFromTo("White 2", "White");  //// only for NCL P  -  N  -  G
-					//	SEng.SetLayerVisibleOff(); //// only for NCL  P  - N  -  G
+						SEng.SetSwathColorFromTo("White 2", "White");  //// only for NCL P  -  N  -  G
+						SEng.SetLayerVisibleOff(); //// only for NCL  P  - N  -  G
 						
 						
 						
@@ -406,6 +406,8 @@ public class Action {
 	
 	public static void SwatchMergeFromXML(String xmlPathString, String privateElmtTypeCode, String swatchColorName) throws Exception
 	{
+		try
+		{
 		 List<String> SwatchListFromXML = new ArrayList<String>();
 		 XmlUtiility xmlUtils = new XmlUtiility();
 		 SwatchListFromXML = xmlUtils.ParsePrivateElementSwatchColor(xmlPathString, privateElmtTypeCode, swatchColorName);
@@ -441,6 +443,11 @@ public class Action {
 			 if(!arryStr[0].equals(arryStr[1]))
 				 SEng.ExecuteIllustratorActions(arryStr);
 		 }
+		}
+		catch(Exception ex)
+		{
+			log.error("Error on swatch color merge");
+		}
 		 
 	}
 	
