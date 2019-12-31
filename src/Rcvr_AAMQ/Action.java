@@ -190,8 +190,8 @@ public class Action {
 						
 						
 						//PNG set swatch  White color  to White 2
-						SEng.SetSwathColorFromTo("White 2", "White");  //// only for NCL P  -  N  -  G
-						SEng.SetLayerVisibleOff(); //// only for NCL  P  - N  -  G
+					//	SEng.SetSwathColorFromTo("White 2", "White");  //// only for NCL P  -  N  -  G
+					//	SEng.SetLayerVisibleOff(); //// only for NCL  P  - N  -  G
 						
 						
 						
@@ -533,10 +533,15 @@ public class Action {
 	}
 
 	public static void acknowledge(String jsonString) throws Exception {
+		
 		JSONObject jsonObj = JsonParser.ParseJson(jsonString);
 		
 		String version = (String) jsonObj.get("version");
 		MessageQueue.VERSION = version;
+		Thread.sleep(1000);
+		INIReader iniRdr = new INIReader();
+		iniRdr.writeValueforKey(MessageQueue.TORNADO_HOST);
+		
 		FileSystem fls = new FileSystem();
 		fls.CreateFile("Report.txt");
 		fls.CreateFile("error.txt");
@@ -589,9 +594,10 @@ public class Action {
 
 	public static void sendRespStatusMsg(String status) throws Exception {
 		try {
-
-			HttpConnection.excutePost("http://" + MessageQueue.HOST_IP + ":8080/AAW/message/resp",
+			log.info("Before calling send report status message post method");
+			String postResponse = HttpConnection.excutePost("http://" + MessageQueue.HOST_IP + ":8080/AAW/message/resp",
 					MessageQueue.MSGID + "::" + status);
+			log.info("Status of sending report status msg response " + postResponse);
 		} catch (Exception ex) {
 			log.error(ex);
 		}
@@ -600,8 +606,11 @@ public class Action {
 
 	public static void sendStatusMsg(String status) throws Exception {
 		try {
-			HttpConnection.excutePost("http://" + MessageQueue.HOST_IP + ":8080/AAW/message/error",
+			log.info("Before calling send status message post method");
+			String postResponse = HttpConnection.excutePost("http://" + MessageQueue.HOST_IP + ":8080/AAW/message/error",
 					MessageQueue.MSGID + "::" + status);
+
+			log.info("Status of sending status msg response " + postResponse);
 		} catch (Exception ex) {
 			log.error(ex);
 		}
@@ -613,7 +622,7 @@ public class Action {
 		{
 			HttpsConnection httpsCon = new HttpsConnection();
 			HttpURLConnection connection;
-			
+			log.info("Before calling update to server post method");
 			URL urlStr = new URL(
 					MessageQueue.TORNADO_HOST + "/rest/pub/aaw/" + actionStr + "?mqid=" + (String) jsonObj.get("Id"));
 			connection = (httpsCon.getURLConnection(urlStr, true));
@@ -651,8 +660,10 @@ public class Action {
 	public static void UpdateReport(JSONObject jsonObj, String reportStr) throws IOException {
 		try {
 			HttpsConnection httpsCon = new HttpsConnection();
-			httpsCon.excuteHttpJsonPost(MessageQueue.TORNADO_HOST + "/rest/pub/aaw/finalreport",
+			log.info("Before calling update report post method");
+			String postResponse  = httpsCon.excuteHttpJsonPost(MessageQueue.TORNADO_HOST + "/rest/pub/aaw/finalreport",
 					(String) jsonObj.get("Id"), reportStr);
+			log.info("Status of updating  report response " + postResponse);
 		} catch (Exception ex) {
 			log.error("Error when updating report " + (String) ex.getMessage());
 		}
@@ -661,8 +672,10 @@ public class Action {
 	public static void UpdateErrorStatus(String reportStr) throws IOException {
 		try {
 			HttpsConnection httpsCon = new HttpsConnection();
-		    httpsCon.excuteErrorStatusHttpJsonPost(MessageQueue.TORNADO_HOST + "/rest/pub/rr/updatestatus",
+			log.info("Before calling update erro status post method");
+		    String postResponse = httpsCon.excuteErrorStatusHttpJsonPost(MessageQueue.TORNADO_HOST + "/rest/pub/rr/updatestatus",
 					MessageQueue.MSGID, reportStr);
+		    log.info("Status of sending error status response " + postResponse);
 		} catch (Exception ex) {
 			log.error("Error when sending error status : " + (String) ex.getMessage());
 		}
@@ -672,8 +685,10 @@ public class Action {
 		{
 		//	https://172.28.42.168:8443/tornado_rr/rest/pub/rr/rrstatusOfHeartBeat
 			HttpsConnection httpsCon = new HttpsConnection();
-		    httpsCon.excuteClientMachineStatusHttpJsonPost(MessageQueue.TORNADO_HOST + "/rest/pub/rr/rrstatusOfHeartBeat",
+			log.info("Before calling heartbeat post method");
+		    String postResponse = httpsCon.excuteClientMachineStatusHttpJsonPost(MessageQueue.TORNADO_HOST + "/rest/pub/rr/rrstatusOfHeartBeat",
 					ipAddress, locationKey, category);
+		    log.info("Status of sending heartbeat response " + postResponse);
 		} catch (Exception ex) 
 		{
 			
@@ -685,9 +700,9 @@ public class Action {
 		try {
 			log.info("Before sending error status :" + reportStr + " - remark :" + remarks);
 			HttpsConnection httpsCon = new HttpsConnection();
-		    httpsCon.excuteErrorStatusHttpJsonPostWithRemark(MessageQueue.TORNADO_HOST + "/rest/pub/rr/updatestatus",
+		    String postResponse = httpsCon.excuteErrorStatusHttpJsonPostWithRemark(MessageQueue.TORNADO_HOST + "/rest/pub/rr/updatestatus",
 					MessageQueue.MSGID, reportStr, remarks);
-		   log.info("Error status sent :" + reportStr + " - remark :" + remarks);
+		   log.info("Error status sent :" + reportStr + " - remark : " + remarks + " response : " + postResponse);
 		} catch (Exception ex) 
 		{
 			log.error("Error when updating error status with remark :" + (String) ex.getMessage());

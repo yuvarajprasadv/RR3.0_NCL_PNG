@@ -16,6 +16,11 @@ import jcifs.smb.SmbException;
 import jcifs.smb.SmbFile;
 import jcifs.smb.SmbFileOutputStream;
 
+
+
+import java.util.Arrays;
+import java.util.List;
+
 	 
 public class SMB{
 
@@ -46,12 +51,7 @@ public class SMB{
 	    
 
 	 
-	    public static void main(String args[]) throws Exception {
-	        String fileContent = "This is a test files";
-	        new SMB().SetProp();
-	        new SMB().copyFiles(fileContent, "1.txt");
-	    	
-	    }
+
 	 
 	    public boolean copyFiles(String fileContent, String fileName) {
 	        boolean successful = false;
@@ -167,5 +167,49 @@ public class SMB{
 
 			}
 		}
+	    
+
+
+
+
+	        public void listFiles() {
+	        	
+	            try {
+	                String USER     = "IMAC366";
+	    	        		String PASSWORD = "Imac366123";
+	    	        
+	    	        		Config.setProperty("jcifs.smb.client.minVersion", "SMB202");
+	    	        		Config.setProperty("jcifs.smb.client.maxVersion", "SMB202");
+
+	    	        		 
+	    	        		    
+	                NtlmPasswordAuthentication authentication = new NtlmPasswordAuthentication(
+	                        "asia", USER, PASSWORD);
+	                SmbFile home = new SmbFile("smb://10.52.1.200/Lmac35/", authentication);
+
+	                if(home.isDirectory()) {
+	                    List<SmbFile> files = Arrays.asList(home.listFiles());
+	                    for(SmbFile file: files) {
+	                        if(file.isDirectory()) {
+	                            System.out.println("Directory: " + file.getName());
+	                        }
+	                        if(file.isFile()) {
+	                            System.out.println("File: " + file.getName());
+	                        }
+	                    }
+	                }
+	            } catch (Exception e) {
+	                e.printStackTrace();
+	            }
+	        
+	    }
+	    
+	    
+	    public static void main(String args[])
+	    {
+	    	SMB sm = new  SMB();
+	    	sm.listFiles();
+	    	
+	    }
 }
 	    
