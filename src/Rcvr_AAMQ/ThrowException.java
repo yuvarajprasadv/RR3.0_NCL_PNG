@@ -3,7 +3,7 @@ package Rcvr_AAMQ;
 import org.apache.log4j.Logger;
 
 public class ThrowException {
-	static Logger log = LogMQ.monitor("Rcvr_AAMQ.Exception");
+	static Logger log = LogMQ.monitor("Rcvr_AAMQ.ThrowException");
 	
 	public static void CatchException(Exception exp) throws Exception
 	{

@@ -1,1071 +1,205 @@
-2019-09-17 15:35:12 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 15:35:12 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 15:35:17 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 15:35:17 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 15:35:21 INFO  Action:530 - Message received acknowledgement for job id  'ce158dc4-4c2f-42ea-93fb-be4de140827c' 
-2019-09-17 15:35:22 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 15:35:30 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 15:36:10 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 15:36:10 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 15:36:15 INFO  Action:530 - Message received acknowledgement for job id  'f71f2dd8-d748-4280-a50b-63d8137277e2' 
-2019-09-17 15:36:16 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 15:36:23 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 15:49:21 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 15:49:21 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 15:49:25 INFO  Action:545 - Message received acknowledgement for job id  'c005a9de-12a4-451c-bf93-872e02720745' 
-2019-09-17 15:49:26 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 15:49:33 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 15:51:28 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 15:51:28 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 15:51:29 INFO  Action:546 - Message received acknowledgement for job id  '8a9699a6-3864-4e2d-b20c-91edef4bc53f' 
-2019-09-17 15:51:30 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 15:51:38 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 16:00:09 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 16:00:09 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 16:00:15 INFO  Action:551 - Message received acknowledgement for job id  '9f1826ea-96e0-4423-9161-7d5d74f6ce00' 
-2019-09-17 16:00:16 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 16:00:24 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 16:02:48 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 16:02:48 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 16:02:59 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 16:02:59 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 16:03:02 INFO  Action:552 - Message received acknowledgement for job id  '5a9545bd-cf75-4a84-a4bb-29b02d776c2a' 
-2019-09-17 16:03:03 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 16:03:11 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 16:07:08 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 16:07:08 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 16:07:12 INFO  Action:552 - Message received acknowledgement for job id  '1281ae00-760f-4a02-a039-36aaa528b137' 
-2019-09-17 16:07:14 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 16:07:21 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 16:09:34 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 16:09:35 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 16:09:43 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 16:09:44 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 16:10:00 INFO  Action:538 - Message received acknowledgement for job id  '49a02833-bf80-4ff8-aceb-1bc3b1e27efa' 
-2019-09-17 16:10:01 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 16:10:09 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 16:11:14 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 16:11:14 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 16:11:18 INFO  Action:538 - Message received acknowledgement for job id  '2d9c69bd-8334-41d6-b914-5c9f8412d9f1' 
-2019-09-17 16:11:19 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 16:11:27 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 16:12:31 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 16:12:32 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 16:12:38 INFO  Action:538 - Message received acknowledgement for job id  'c120cd48-b78d-4ac7-b2b3-24b370d64bdb' 
-2019-09-17 16:12:39 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 16:12:46 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 16:15:02 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 16:15:03 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 16:15:08 INFO  Action:538 - Message received acknowledgement for job id  '97c577ef-30a2-47a4-9ce4-550323813054' 
-2019-09-17 16:15:09 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 16:15:16 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 16:15:37 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 16:15:37 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 16:15:46 INFO  Action:538 - Message received acknowledgement for job id  'c24647d8-b81d-4007-b238-8fbb826a420d' 
-2019-09-17 16:15:47 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 16:15:54 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 16:15:55 INFO  Action:77 - TyphoonShadow called
-2019-09-17 16:15:58 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 16:15:58 ERROR JsonParser:180 - Invalid Key value search 'RR3DXML'  null
-2019-09-17 16:16:07 INFO  Action:206 - Completed process for job id  'c24647d8-b81d-4007-b238-8fbb826a420d' 
-2019-09-17 16:16:09 INFO  Action:210 - Xml comparision completed..
-2019-09-17 16:18:36 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 16:18:36 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 16:18:39 INFO  Action:538 - Message received acknowledgement for job id  '674e5cf0-5a5c-4a40-baa3-c0dc5ec3e01e' 
-2019-09-17 16:18:40 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 16:18:48 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 16:18:49 INFO  Action:77 - TyphoonShadow called
-2019-09-17 16:18:52 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 16:18:52 ERROR JsonParser:180 - Invalid Key value search 'RR3DXML'  null
-2019-09-17 16:19:01 INFO  Action:206 - Completed process for job id  '674e5cf0-5a5c-4a40-baa3-c0dc5ec3e01e' 
-2019-09-17 16:19:03 INFO  Action:210 - Xml comparision completed..
-2019-09-17 16:24:56 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 16:24:57 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 16:25:09 INFO  Action:538 - Message received acknowledgement for job id  '490d54e2-007b-4d2e-b8ef-9f7faa9f8fa2' 
-2019-09-17 16:25:10 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 16:25:17 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 16:25:20 INFO  Action:77 - TyphoonShadow called
-2019-09-17 16:25:22 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 16:25:22 ERROR JsonParser:180 - Invalid Key value search 'RR3DXML'  null
-2019-09-17 16:25:32 INFO  Action:206 - Completed process for job id  '490d54e2-007b-4d2e-b8ef-9f7faa9f8fa2' 
-2019-09-17 16:25:33 INFO  Action:210 - Xml comparision completed..
-2019-09-17 16:26:13 INFO  Action:554 - Message received acknowledgement for job id  'a84fe848-a34f-47b0-9f5f-b221a57219dc' 
-2019-09-17 16:26:14 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 16:26:21 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 16:26:24 INFO  Action:77 - TyphoonShadow called
-2019-09-17 16:26:26 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 16:26:39 INFO  Action:222 - Completed process for job id  'a84fe848-a34f-47b0-9f5f-b221a57219dc' 
-2019-09-17 16:26:40 INFO  Action:226 - Xml comparision completed..
-2019-09-17 16:32:13 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 16:32:13 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 16:32:36 INFO  Action:538 - Message received acknowledgement for job id  'f2db7092-0ce8-433b-8a7b-670056a03cec' 
-2019-09-17 16:32:36 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 16:32:43 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 16:32:46 INFO  Action:77 - TyphoonShadow called
-2019-09-17 16:32:48 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 16:32:58 INFO  Action:206 - Completed process for job id  'f2db7092-0ce8-433b-8a7b-670056a03cec' 
-2019-09-17 16:32:59 INFO  Action:210 - Xml comparision completed..
-2019-09-17 16:34:43 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 16:34:43 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 16:34:57 INFO  Action:554 - Message received acknowledgement for job id  '8c51b9c7-1dc7-4478-beba-292aea49e37b' 
-2019-09-17 16:34:58 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 16:35:05 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 16:35:08 INFO  Action:77 - TyphoonShadow called
-2019-09-17 16:35:10 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 16:35:23 INFO  Action:222 - Completed process for job id  '8c51b9c7-1dc7-4478-beba-292aea49e37b' 
-2019-09-17 16:35:24 INFO  Action:226 - Xml comparision completed..
-2019-09-17 16:35:43 INFO  Action:554 - Message received acknowledgement for job id  '666b971f-eb91-4914-a357-fb07a8dc73c8' 
-2019-09-17 16:35:44 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 16:35:51 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 16:35:54 INFO  Action:77 - TyphoonShadow called
-2019-09-17 16:35:56 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 16:36:09 INFO  Action:222 - Completed process for job id  '666b971f-eb91-4914-a357-fb07a8dc73c8' 
-2019-09-17 16:36:10 INFO  Action:226 - Xml comparision completed..
-2019-09-17 16:37:26 INFO  Action:554 - Message received acknowledgement for job id  '66cbab2e-6bfa-47f2-9bb1-b0545e2a9bf0' 
-2019-09-17 16:37:27 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 16:37:34 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 16:37:36 INFO  Action:77 - TyphoonShadow called
-2019-09-17 16:37:39 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 16:37:51 INFO  Action:222 - Completed process for job id  '66cbab2e-6bfa-47f2-9bb1-b0545e2a9bf0' 
-2019-09-17 16:37:53 INFO  Action:226 - Xml comparision completed..
-2019-09-17 18:32:59 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 18:32:59 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 18:33:03 INFO  Action:554 - Message received acknowledgement for job id  '0755314e-d902-4fd4-86d8-8d79ef5f4f92' 
-2019-09-17 18:33:04 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 18:33:12 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 18:33:15 INFO  Action:77 - TyphoonShadow called
-2019-09-17 18:33:17 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 18:33:30 INFO  Action:222 - Completed process for job id  '0755314e-d902-4fd4-86d8-8d79ef5f4f92' 
-2019-09-17 18:33:31 INFO  Action:226 - Xml comparision completed..
-2019-09-17 18:35:19 INFO  Action:554 - Message received acknowledgement for job id  '96ed9a07-cedb-41b7-a71f-45d3da2d6004' 
-2019-09-17 18:35:19 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 18:35:26 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 18:35:29 INFO  Action:77 - TyphoonShadow called
-2019-09-17 18:35:32 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 18:35:45 INFO  Action:222 - Completed process for job id  '96ed9a07-cedb-41b7-a71f-45d3da2d6004' 
-2019-09-17 18:35:46 INFO  Action:226 - Xml comparision completed..
-2019-09-17 18:39:01 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 18:39:02 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 18:39:18 INFO  Action:559 - Message received acknowledgement for job id  'a3d83c37-db8c-46a3-8f35-9fab9df99c55' 
-2019-09-17 18:39:19 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 18:39:26 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 18:39:29 INFO  Action:77 - TyphoonShadow called
-2019-09-17 18:39:31 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 18:39:44 INFO  Action:227 - Completed process for job id  'a3d83c37-db8c-46a3-8f35-9fab9df99c55' 
-2019-09-17 18:39:45 INFO  Action:231 - Xml comparision completed..
-2019-09-17 18:42:12 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 18:42:12 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 18:42:17 INFO  Action:554 - Message received acknowledgement for job id  'db452010-891a-4646-aa72-471c463ce9bc' 
-2019-09-17 18:42:17 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 18:42:25 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 18:42:27 INFO  Action:77 - TyphoonShadow called
-2019-09-17 18:42:30 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 18:42:43 INFO  Action:222 - Completed process for job id  'db452010-891a-4646-aa72-471c463ce9bc' 
-2019-09-17 18:42:44 INFO  Action:226 - Xml comparision completed..
-2019-09-17 18:43:51 INFO  Action:554 - Message received acknowledgement for job id  '1c00a130-1c33-4ff7-a773-5c57eceae1ec' 
-2019-09-17 18:44:02 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 18:44:11 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 18:44:12 INFO  Action:77 - TyphoonShadow called
-2019-09-17 18:44:14 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 18:44:25 INFO  Action:222 - Completed process for job id  '1c00a130-1c33-4ff7-a773-5c57eceae1ec' 
-2019-09-17 18:44:26 INFO  Action:226 - Xml comparision completed..
-2019-09-17 18:44:48 INFO  Action:560 - Message received acknowledgement for job id  '85f8330a-99aa-49fb-b7fd-03c51f92a915' 
-2019-09-17 18:44:49 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 18:44:56 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 18:45:02 INFO  Action:77 - TyphoonShadow called
-2019-09-17 18:45:04 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 18:45:14 INFO  Action:228 - Completed process for job id  '85f8330a-99aa-49fb-b7fd-03c51f92a915' 
-2019-09-17 18:45:15 INFO  Action:232 - Xml comparision completed..
-2019-09-17 18:54:39 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 18:54:40 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 18:59:31 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 18:59:32 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 18:59:38 INFO  Action:559 - Message received acknowledgement for job id  '7be31968-2834-4647-b067-1c121e4a33f4' 
-2019-09-17 18:59:40 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 18:59:48 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 19:00:35 INFO  Action:77 - TyphoonShadow called
-2019-09-17 19:00:38 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 19:00:57 INFO  Action:227 - Completed process for job id  '7be31968-2834-4647-b067-1c121e4a33f4' 
-2019-09-17 19:00:58 INFO  Action:231 - Xml comparision completed..
-2019-09-17 19:02:17 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 19:02:17 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 19:02:22 INFO  Action:560 - Message received acknowledgement for job id  '1b6744c3-16dd-4330-a495-975b15658d22' 
-2019-09-17 19:02:23 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 19:02:30 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 19:02:46 INFO  Action:77 - TyphoonShadow called
-2019-09-17 19:02:49 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 19:03:10 INFO  Action:228 - Completed process for job id  '1b6744c3-16dd-4330-a495-975b15658d22' 
-2019-09-17 19:03:11 INFO  Action:232 - Xml comparision completed..
-2019-09-17 19:04:41 INFO  Action:554 - Message received acknowledgement for job id  'beb3cbcb-ad6e-4e29-a44b-fe942d5f1de9' 
-2019-09-17 19:04:41 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 19:04:56 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 19:05:08 INFO  Action:77 - TyphoonShadow called
-2019-09-17 19:05:11 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 19:05:28 INFO  Action:222 - Completed process for job id  'beb3cbcb-ad6e-4e29-a44b-fe942d5f1de9' 
-2019-09-17 19:05:29 INFO  Action:226 - Xml comparision completed..
-2019-09-17 19:06:02 INFO  Action:554 - Message received acknowledgement for job id  '5e1129a9-38a5-474b-b084-003551c7f254' 
-2019-09-17 19:06:03 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 19:06:16 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 19:06:24 INFO  Action:77 - TyphoonShadow called
-2019-09-17 19:06:28 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 19:08:51 INFO  Action:222 - Completed process for job id  '5e1129a9-38a5-474b-b084-003551c7f254' 
-2019-09-17 19:08:53 INFO  Action:226 - Xml comparision completed..
-2019-09-17 19:10:22 INFO  Action:560 - Message received acknowledgement for job id  '1eee2a7f-acdf-4046-8fa0-597fe3f0801e' 
-2019-09-17 19:10:23 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 19:10:30 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 19:10:33 INFO  Action:77 - TyphoonShadow called
-2019-09-17 19:10:35 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 19:10:48 INFO  Action:228 - Completed process for job id  '1eee2a7f-acdf-4046-8fa0-597fe3f0801e' 
-2019-09-17 19:10:49 INFO  Action:232 - Xml comparision completed..
-2019-09-17 19:11:20 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 19:11:20 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 19:11:25 INFO  Action:562 - Message received acknowledgement for job id  '080eb77a-119c-4cff-8a0a-2ca942366eee' 
-2019-09-17 19:11:26 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 19:11:33 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 19:11:38 INFO  Action:77 - TyphoonShadow called
-2019-09-17 19:11:40 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 19:11:54 INFO  Action:230 - Completed process for job id  '080eb77a-119c-4cff-8a0a-2ca942366eee' 
-2019-09-17 19:11:55 INFO  Action:234 - Xml comparision completed..
-2019-09-17 19:14:13 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 19:14:13 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 19:14:19 INFO  Action:562 - Message received acknowledgement for job id  'b6495de0-d304-46b2-b583-30015d4550c3' 
-2019-09-17 19:14:20 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 19:14:27 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 19:14:30 INFO  Action:77 - TyphoonShadow called
-2019-09-17 19:14:32 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 19:14:46 INFO  Action:230 - Completed process for job id  'b6495de0-d304-46b2-b583-30015d4550c3' 
-2019-09-17 19:14:48 INFO  Action:234 - Xml comparision completed..
-2019-09-17 19:15:44 INFO  Action:559 - Message received acknowledgement for job id  'a6bdc1b4-7ae7-495b-8d7f-e63d159fa97a' 
-2019-09-17 19:15:44 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 19:15:51 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 19:16:28 INFO  Action:77 - TyphoonShadow called
-2019-09-17 19:16:30 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 19:16:44 INFO  Action:227 - Completed process for job id  'a6bdc1b4-7ae7-495b-8d7f-e63d159fa97a' 
-2019-09-17 19:16:45 INFO  Action:231 - Xml comparision completed..
-2019-09-17 19:18:06 INFO  Action:564 - Message received acknowledgement for job id  'c1fe51d6-52af-4bac-ab3f-a0f80c3885c5' 
-2019-09-17 19:18:07 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 19:18:22 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 19:18:22 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 19:19:15 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 19:19:15 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 19:19:38 INFO  Action:560 - Message received acknowledgement for job id  '67106545-4070-4fde-a347-03f2211ba266' 
-2019-09-17 19:19:39 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 19:19:53 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 19:20:12 INFO  Action:77 - TyphoonShadow called
-2019-09-17 19:20:15 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 19:23:39 INFO  Action:228 - Completed process for job id  '67106545-4070-4fde-a347-03f2211ba266' 
-2019-09-17 19:23:40 INFO  Action:232 - Xml comparision completed..
-2019-09-17 19:23:54 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 19:23:54 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 19:24:11 INFO  Action:564 - Message received acknowledgement for job id  'c81259ed-adb7-4147-9b4f-468ec55bf0b4' 
-2019-09-17 19:24:11 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 19:24:26 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 19:24:51 INFO  Action:77 - TyphoonShadow called
-2019-09-17 19:24:54 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 19:26:31 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 19:26:31 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 19:26:38 INFO  Action:564 - Message received acknowledgement for job id  'c8c8d6a8-495d-4a10-993b-1157fd57fc80' 
-2019-09-17 19:26:39 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 19:26:54 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 19:27:12 INFO  Action:77 - TyphoonShadow called
-2019-09-17 19:27:15 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 19:28:18 INFO  Action:232 - Completed process for job id  'c8c8d6a8-495d-4a10-993b-1157fd57fc80' 
-2019-09-17 19:28:20 INFO  Action:236 - Xml comparision completed..
-2019-09-17 19:30:20 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 19:30:20 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 19:30:46 INFO  Action:564 - Message received acknowledgement for job id  'd2f4fa94-5a0a-444c-88d7-8ef12adfa95e' 
-2019-09-17 19:30:47 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 19:30:54 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 19:31:02 INFO  Action:77 - TyphoonShadow called
-2019-09-17 19:31:05 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 19:31:32 INFO  Action:232 - Completed process for job id  'd2f4fa94-5a0a-444c-88d7-8ef12adfa95e' 
-2019-09-17 19:31:33 INFO  Action:236 - Xml comparision completed..
-2019-09-17 19:32:42 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 19:32:42 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 19:32:53 INFO  Action:564 - Message received acknowledgement for job id  '36224f64-57ba-4a9b-abcd-1177523b0cfa' 
-2019-09-17 19:32:54 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 19:33:05 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 19:33:18 INFO  Action:77 - TyphoonShadow called
-2019-09-17 19:33:20 INFO  Action:171 - Pdf and xml generated..
-2019-09-17 19:33:49 INFO  Action:232 - Completed process for job id  '36224f64-57ba-4a9b-abcd-1177523b0cfa' 
-2019-09-17 19:33:50 INFO  Action:236 - Xml comparision completed..
-2019-09-17 19:36:14 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 19:36:14 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 19:38:20 INFO  Action:557 - Message received acknowledgement for job id  '185f16dc-d780-4f1b-a172-3155fc7d03e8' 
-2019-09-17 19:38:21 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 19:38:30 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 19:38:41 INFO  Action:69 - TyphoonShadow called
-2019-09-17 19:38:44 INFO  Action:163 - Pdf and xml generated..
-2019-09-17 19:39:29 INFO  Action:225 - Completed process for job id  '185f16dc-d780-4f1b-a172-3155fc7d03e8' 
-2019-09-17 19:39:30 INFO  Action:229 - Xml comparision completed..
-2019-09-17 19:40:32 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-17 19:40:33 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-17 19:41:41 INFO  Action:554 - Message received acknowledgement for job id  '31b91511-5e05-4be8-b6ac-359b0a11287c' 
-2019-09-17 19:41:42 INFO  Action:28 - Illustrator activated to load file..
-2019-09-17 19:41:50 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-17 19:41:53 INFO  Action:69 - TyphoonShadow called
-2019-09-17 19:41:56 INFO  Action:163 - Pdf and xml generated..
-2019-09-17 19:42:16 INFO  Action:222 - Completed process for job id  '31b91511-5e05-4be8-b6ac-359b0a11287c' 
-2019-09-17 19:42:17 INFO  Action:226 - Xml comparision completed..
-2019-09-18 12:05:49 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-18 12:05:49 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-18 12:05:57 INFO  Action:554 - Message received acknowledgement for job id  '5be55d64-13f0-4cb1-a916-fd948fd76d34' 
-2019-09-18 12:05:59 INFO  Action:28 - Illustrator activated to load file..
-2019-09-18 12:06:07 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-18 12:06:08 INFO  Action:69 - TyphoonShadow called
-2019-09-18 12:06:11 INFO  Action:163 - Pdf and xml generated..
-2019-09-18 12:06:31 INFO  Action:222 - Completed process for job id  '5be55d64-13f0-4cb1-a916-fd948fd76d34' 
-2019-09-18 12:06:32 INFO  Action:226 - Xml comparision completed..
-2019-09-18 12:17:35 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-18 12:17:35 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-18 12:18:28 INFO  Action:554 - Message received acknowledgement for job id  'ae002ce4-c1ff-4cfa-8999-28d83e8c3b99' 
-2019-09-18 12:18:29 INFO  Action:28 - Illustrator activated to load file..
-2019-09-18 12:18:37 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-18 12:18:40 INFO  Action:69 - TyphoonShadow called
-2019-09-18 12:18:43 INFO  Action:163 - Pdf and xml generated..
-2019-09-18 12:19:03 INFO  Action:222 - Completed process for job id  'ae002ce4-c1ff-4cfa-8999-28d83e8c3b99' 
-2019-09-18 12:19:04 INFO  Action:226 - Xml comparision completed..
-2019-09-18 12:20:01 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-18 12:20:01 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-18 12:20:29 INFO  Action:554 - Message received acknowledgement for job id  'a3f62252-41a2-4627-923a-1671e1441231' 
-2019-09-18 12:20:30 INFO  Action:28 - Illustrator activated to load file..
-2019-09-18 12:20:37 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-18 12:20:40 INFO  Action:69 - TyphoonShadow called
-2019-09-18 12:20:42 INFO  Action:163 - Pdf and xml generated..
-2019-09-18 12:21:01 INFO  Action:222 - Completed process for job id  'a3f62252-41a2-4627-923a-1671e1441231' 
-2019-09-18 12:21:03 INFO  Action:226 - Xml comparision completed..
-2019-09-18 12:22:00 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-18 12:22:00 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-18 12:22:31 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-18 12:22:31 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-18 12:23:39 INFO  Action:554 - Message received acknowledgement for job id  '69935801-f135-41df-a5a1-bfdb2bf3b2fb' 
-2019-09-18 12:23:40 INFO  Action:28 - Illustrator activated to load file..
-2019-09-18 12:23:47 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-18 12:23:50 INFO  Action:69 - TyphoonShadow called
-2019-09-18 12:23:51 INFO  Action:163 - Pdf and xml generated..
-2019-09-18 12:24:11 INFO  Action:222 - Completed process for job id  '69935801-f135-41df-a5a1-bfdb2bf3b2fb' 
-2019-09-18 12:24:12 INFO  Action:226 - Xml comparision completed..
-2019-09-18 12:25:04 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-18 12:25:04 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-18 12:26:10 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-18 12:26:11 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-18 12:26:24 INFO  Action:554 - Message received acknowledgement for job id  'a9acfa71-3231-4731-a883-7ec36ec3be9b' 
-2019-09-18 12:26:25 INFO  Action:28 - Illustrator activated to load file..
-2019-09-18 12:26:32 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-18 12:26:35 INFO  Action:69 - TyphoonShadow called
-2019-09-18 12:26:36 INFO  Action:163 - Pdf and xml generated..
-2019-09-18 12:26:56 INFO  Action:222 - Completed process for job id  'a9acfa71-3231-4731-a883-7ec36ec3be9b' 
-2019-09-18 12:26:57 INFO  Action:226 - Xml comparision completed..
-2019-09-19 11:43:28 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-19 11:43:29 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-19 11:45:30 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-19 11:45:30 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-24 12:42:44 ERROR XmlUtiility:64 - /Users/yuvaraj/Downloads/GS1_40154035801_22.xml (No such file or directory)
-2019-09-24 12:42:44 ERROR XmlUtiility:550 - No private elements /Users/yuvaraj/Downloads/GS1_40154035801_22.xml (No such file or directory)
-2019-09-24 12:42:59 ERROR XmlUtiility:64 - /Users/yuvaraj/Downloads/GS1_40154035801_22.xml (No such file or directory)
-2019-09-24 12:42:59 ERROR XmlUtiility:550 - No private elements /Users/yuvaraj/Downloads/GS1_40154035801_22.xml (No such file or directory)
-2019-09-25 11:28:31 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-25 11:28:31 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-25 11:29:29 INFO  Action:551 - Message received acknowledgement for job id  '1793d7c8-eea2-4edb-9100-3824932e5bc8' 
-2019-09-25 11:29:30 INFO  Action:28 - Illustrator activated to load file..
-2019-09-25 11:29:38 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-25 11:29:41 INFO  Action:71 - TyphoonShadow called
-2019-09-25 11:29:45 INFO  Action:165 - Pdf and xml generated..
-2019-09-25 11:30:04 INFO  Action:219 - Completed process for job id  '1793d7c8-eea2-4edb-9100-3824932e5bc8' 
-2019-09-25 11:30:06 INFO  Action:223 - Xml comparision completed..
-2019-09-25 11:30:37 INFO  Action:551 - Message received acknowledgement for job id  'b4331862-e939-4a27-ba15-a3329406a005' 
-2019-09-25 11:30:38 INFO  Action:28 - Illustrator activated to load file..
-2019-09-25 11:30:46 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-25 11:31:12 INFO  Action:71 - TyphoonShadow called
-2019-09-25 11:31:13 INFO  Action:165 - Pdf and xml generated..
-2019-09-25 11:31:33 INFO  Action:219 - Completed process for job id  'b4331862-e939-4a27-ba15-a3329406a005' 
-2019-09-25 11:31:35 INFO  Action:223 - Xml comparision completed..
-2019-09-25 11:31:56 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-25 11:31:57 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-25 11:32:07 INFO  Action:551 - Message received acknowledgement for job id  'a3b8c0c6-e41b-42f5-bce0-4285075015b8' 
-2019-09-25 11:32:08 INFO  Action:28 - Illustrator activated to load file..
-2019-09-25 11:32:15 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-25 11:32:22 INFO  Action:71 - TyphoonShadow called
-2019-09-25 11:32:23 INFO  Action:165 - Pdf and xml generated..
-2019-09-25 11:34:15 INFO  Action:219 - Completed process for job id  'a3b8c0c6-e41b-42f5-bce0-4285075015b8' 
-2019-09-25 11:34:16 INFO  Action:223 - Xml comparision completed..
-2019-09-25 11:39:36 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-25 11:39:36 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-25 11:39:40 INFO  Action:551 - Message received acknowledgement for job id  'ef25d74f-5fe0-48dc-9bb1-059bb5ab8274' 
-2019-09-25 11:39:41 INFO  Action:28 - Illustrator activated to load file..
-2019-09-25 11:39:56 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-25 11:40:27 INFO  Action:71 - TyphoonShadow called
-2019-09-25 11:40:31 INFO  Action:165 - Pdf and xml generated..
-2019-09-25 11:41:58 INFO  Action:219 - Completed process for job id  'ef25d74f-5fe0-48dc-9bb1-059bb5ab8274' 
-2019-09-25 11:42:00 INFO  Action:223 - Xml comparision completed..
-2019-09-25 11:49:27 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-25 11:49:27 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-25 11:49:32 INFO  Action:551 - Message received acknowledgement for job id  '18edd3cb-c689-48f0-bb0f-f55f83754282' 
-2019-09-25 11:49:33 INFO  Action:28 - Illustrator activated to load file..
-2019-09-25 11:49:47 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-25 11:50:14 INFO  Action:71 - TyphoonShadow called
-2019-09-25 11:50:18 INFO  Action:165 - Pdf and xml generated..
-2019-09-25 11:51:20 INFO  Action:219 - Completed process for job id  '18edd3cb-c689-48f0-bb0f-f55f83754282' 
-2019-09-25 11:51:22 INFO  Action:223 - Xml comparision completed..
-2019-09-25 11:55:12 INFO  Action:551 - Message received acknowledgement for job id  '8b8c5f82-2374-49aa-82e5-07742a2aea50' 
-2019-09-25 11:55:13 INFO  Action:28 - Illustrator activated to load file..
-2019-09-25 11:55:26 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-25 11:56:05 INFO  Action:71 - TyphoonShadow called
-2019-09-25 12:15:49 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-25 12:15:49 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-25 12:15:50 INFO  Action:551 - Message received acknowledgement for job id  '1cae8c00-82ab-4590-a464-4c3cacd3f7c4' 
-2019-09-25 12:15:51 INFO  Action:28 - Illustrator activated to load file..
-2019-09-25 12:16:06 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-25 12:17:03 INFO  Action:71 - TyphoonShadow called
-2019-09-25 12:17:07 INFO  Action:165 - Pdf and xml generated..
-2019-09-25 12:19:29 INFO  Action:219 - Completed process for job id  '1cae8c00-82ab-4590-a464-4c3cacd3f7c4' 
-2019-09-25 12:19:31 INFO  Action:223 - Xml comparision completed..
-2019-09-25 12:22:50 INFO  Action:551 - Message received acknowledgement for job id  '141f9f08-08ce-4774-997d-b4b1c91b1171' 
-2019-09-25 12:22:50 INFO  Action:28 - Illustrator activated to load file..
-2019-09-25 12:23:05 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-25 12:28:37 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-25 12:28:38 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-25 12:28:42 INFO  Action:551 - Message received acknowledgement for job id  'e27b1a4e-aefc-496d-b7a5-28e13c6f4096' 
-2019-09-25 12:28:59 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-25 12:29:00 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-25 12:29:54 INFO  Action:551 - Message received acknowledgement for job id  '2d1423f3-1880-4fdd-a037-e501ee203d07' 
-2019-09-25 12:29:55 INFO  Action:28 - Illustrator activated to load file..
-2019-09-25 12:30:10 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-25 12:32:32 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-25 12:32:32 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-25 12:32:35 INFO  Action:551 - Message received acknowledgement for job id  'de2d84c0-cfdc-4d5f-a88e-cfe1effff90f' 
-2019-09-25 12:32:36 INFO  Action:28 - Illustrator activated to load file..
-2019-09-25 12:32:51 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-25 12:33:03 INFO  Action:71 - TyphoonShadow called
-2019-09-25 12:33:07 INFO  Action:165 - Pdf and xml generated..
-2019-09-25 12:33:36 INFO  Action:219 - Completed process for job id  'de2d84c0-cfdc-4d5f-a88e-cfe1effff90f' 
-2019-09-25 12:33:38 INFO  Action:223 - Xml comparision completed..
-2019-09-25 12:40:12 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-25 12:40:13 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-25 12:42:03 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-25 12:42:03 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-25 12:43:16 INFO  Action:551 - Message received acknowledgement for job id  '760cf2ef-75b6-4360-bbb9-929592e3dbf6' 
-2019-09-25 12:43:17 INFO  Action:28 - Illustrator activated to load file..
-2019-09-25 12:43:32 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-25 12:43:50 INFO  Action:71 - TyphoonShadow called
-2019-09-25 12:43:54 INFO  Action:165 - Pdf and xml generated..
-2019-09-25 12:45:58 INFO  Action:219 - Completed process for job id  '760cf2ef-75b6-4360-bbb9-929592e3dbf6' 
-2019-09-25 12:46:00 INFO  Action:223 - Xml comparision completed..
-2019-09-25 12:51:21 INFO  Action:551 - Message received acknowledgement for job id  '34e011a8-5892-46de-b630-ec6661a30a4d' 
-2019-09-25 12:51:21 INFO  Action:28 - Illustrator activated to load file..
-2019-09-25 12:51:29 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-25 12:51:40 INFO  Action:71 - TyphoonShadow called
-2019-09-25 12:51:42 INFO  Action:165 - Pdf and xml generated..
-2019-09-25 12:52:05 INFO  Action:219 - Completed process for job id  '34e011a8-5892-46de-b630-ec6661a30a4d' 
-2019-09-25 12:52:07 INFO  Action:223 - Xml comparision completed..
-2019-09-25 12:53:17 INFO  Action:551 - Message received acknowledgement for job id  '4f456f6a-b71f-4cbb-90d0-2336417f42b8' 
-2019-09-25 12:53:17 INFO  Action:28 - Illustrator activated to load file..
-2019-09-25 12:53:25 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-25 12:53:38 INFO  Action:71 - TyphoonShadow called
-2019-09-25 12:53:40 INFO  Action:165 - Pdf and xml generated..
-2019-09-25 12:53:59 INFO  Action:219 - Completed process for job id  '4f456f6a-b71f-4cbb-90d0-2336417f42b8' 
-2019-09-25 12:54:01 INFO  Action:223 - Xml comparision completed..
-2019-09-25 17:28:21 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-25 17:28:22 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-25 17:29:46 INFO  Action:556 - Message received acknowledgement for job id  '6ddeaf57-4151-48f7-908d-b1d2a8e96e4e' 
-2019-09-25 17:30:00 INFO  Action:28 - Illustrator activated to load file..
-2019-09-25 17:30:10 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-25 17:30:14 INFO  Action:71 - TyphoonShadow called
-2019-09-25 17:30:16 INFO  Action:165 - Pdf and xml generated..
-2019-09-25 17:30:16 ERROR JsonParser:181 - Invalid Key value search 'RR3DXML'  null
-2019-09-25 17:30:26 INFO  Action:219 - Completed process for job id  '6ddeaf57-4151-48f7-908d-b1d2a8e96e4e' 
-2019-09-25 17:30:27 ERROR JsonParser:181 - Invalid Key value search 'RR3DXML'  null
-2019-09-25 17:30:27 INFO  Action:227 - Xml comparision completed..
-2019-09-25 17:33:39 INFO  Action:556 - Message received acknowledgement for job id  '3d26d104-70ce-42c9-9064-dba2ea1e8517' 
-2019-09-25 17:33:40 INFO  Action:28 - Illustrator activated to load file..
-2019-09-25 17:33:48 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-25 17:33:52 INFO  Action:71 - TyphoonShadow called
-2019-09-25 17:33:54 INFO  Action:165 - Pdf and xml generated..
-2019-09-25 17:33:54 ERROR JsonParser:181 - Invalid Key value search 'RR3DXML'  null
-2019-09-25 17:34:03 INFO  Action:219 - Completed process for job id  '3d26d104-70ce-42c9-9064-dba2ea1e8517' 
-2019-09-25 17:34:04 ERROR JsonParser:181 - Invalid Key value search 'RR3DXML'  null
-2019-09-25 17:34:05 INFO  Action:227 - Xml comparision completed..
-2019-09-25 17:34:29 INFO  Action:556 - Message received acknowledgement for job id  '55723e9a-4497-400a-9aa1-31dbfb88e811' 
-2019-09-25 17:34:29 INFO  Action:28 - Illustrator activated to load file..
-2019-09-25 17:34:37 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-25 17:34:41 INFO  Action:71 - TyphoonShadow called
-2019-09-25 17:34:42 INFO  Action:165 - Pdf and xml generated..
-2019-09-25 17:35:01 INFO  Action:219 - Completed process for job id  '55723e9a-4497-400a-9aa1-31dbfb88e811' 
-2019-09-26 10:09:59 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-26 10:09:59 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-26 10:10:00 INFO  Action:553 - Message received acknowledgement for job id  'a5c13ce0-69e5-4455-ac90-16e7589cbaf5' 
-2019-09-26 10:10:01 INFO  Action:28 - Illustrator activated to load file..
-2019-09-26 10:10:16 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-26 10:10:32 INFO  Action:71 - TyphoonShadow called
-2019-09-26 10:10:37 INFO  Action:165 - Pdf and xml generated..
-2019-09-26 10:11:13 INFO  Action:219 - Completed process for job id  'a5c13ce0-69e5-4455-ac90-16e7589cbaf5' 
-2019-09-26 10:11:15 INFO  Action:224 - Xml comparision completed..
-2019-09-26 10:33:46 ERROR JsonParser:196 - Invalid Key value search 'aaw, MasterTemplate'  null
-2019-09-26 10:33:46 ERROR Utils:541 - File path doesn't exists: null//Tube_Shade Declination_Mask_1Lang_Master.ai
-2019-09-26 10:34:21 INFO  Action:553 - Message received acknowledgement for job id  '0b0437e4-533c-40f7-a331-80943aaab0f6' 
-2019-09-26 10:34:21 INFO  Action:28 - Illustrator activated to load file..
-2019-09-26 10:34:36 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-26 10:34:45 INFO  Action:71 - TyphoonShadow called
-2019-09-26 10:34:50 INFO  Action:165 - Pdf and xml generated..
-2019-09-26 10:35:13 INFO  Action:219 - Completed process for job id  '0b0437e4-533c-40f7-a331-80943aaab0f6' 
-2019-09-26 10:35:14 INFO  Action:224 - Xml comparision completed..
-2019-09-26 10:38:41 INFO  Action:553 - Message received acknowledgement for job id  'a7c646e6-c75b-4e61-88b3-680bb82325e7' 
-2019-09-26 10:38:42 INFO  Action:28 - Illustrator activated to load file..
-2019-09-26 10:38:56 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-26 10:39:09 INFO  Action:71 - TyphoonShadow called
-2019-09-26 10:39:14 INFO  Action:165 - Pdf and xml generated..
-2019-09-26 10:39:36 INFO  Action:219 - Completed process for job id  'a7c646e6-c75b-4e61-88b3-680bb82325e7' 
-2019-09-26 10:39:37 INFO  Action:224 - Xml comparision completed..
-2019-09-26 10:43:54 INFO  Action:553 - Message received acknowledgement for job id  '3d7f5170-9d3f-4cf3-9c3e-7f4f107ea06d' 
-2019-09-26 10:43:54 INFO  Action:28 - Illustrator activated to load file..
-2019-09-26 10:44:09 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-26 10:44:17 INFO  Action:71 - TyphoonShadow called
-2019-09-26 10:44:21 INFO  Action:165 - Pdf and xml generated..
-2019-09-26 10:44:43 INFO  Action:219 - Completed process for job id  '3d7f5170-9d3f-4cf3-9c3e-7f4f107ea06d' 
-2019-09-26 10:44:45 INFO  Action:224 - Xml comparision completed..
-2019-09-26 12:01:49 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-26 12:01:49 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-26 12:01:56 INFO  Action:553 - Message received acknowledgement for job id  'd94aabc1-9cff-4463-bcb8-158d3df8105c' 
-2019-09-26 12:01:58 INFO  Action:28 - Illustrator activated to load file..
-2019-09-26 12:02:13 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-26 12:02:24 INFO  Action:71 - TyphoonShadow called
-2019-09-26 12:02:29 INFO  Action:165 - Pdf and xml generated..
-2019-09-26 12:03:25 INFO  Action:219 - Completed process for job id  'd94aabc1-9cff-4463-bcb8-158d3df8105c' 
-2019-09-26 12:03:26 INFO  Action:224 - Xml comparision completed..
-2019-09-26 12:05:10 INFO  Action:553 - Message received acknowledgement for job id  'd532f211-8cee-4d32-a1c0-fd690a1b27dc' 
-2019-09-26 12:05:10 INFO  Action:28 - Illustrator activated to load file..
-2019-09-26 12:05:24 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-26 12:05:34 INFO  Action:71 - TyphoonShadow called
-2019-09-26 12:05:38 INFO  Action:165 - Pdf and xml generated..
-2019-09-26 12:06:37 INFO  Action:219 - Completed process for job id  'd532f211-8cee-4d32-a1c0-fd690a1b27dc' 
-2019-09-26 12:06:39 INFO  Action:224 - Xml comparision completed..
-2019-09-26 12:22:58 INFO  Action:553 - Message received acknowledgement for job id  '71434580-fcac-46db-91e2-bc1fb2466ea8' 
-2019-09-26 12:22:59 INFO  Action:28 - Illustrator activated to load file..
-2019-09-26 12:23:15 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-26 12:23:20 INFO  Action:71 - TyphoonShadow called
-2019-09-26 12:23:25 INFO  Action:165 - Pdf and xml generated..
-2019-09-26 12:23:45 INFO  Action:219 - Completed process for job id  '71434580-fcac-46db-91e2-bc1fb2466ea8' 
-2019-09-26 12:23:46 INFO  Action:224 - Xml comparision completed..
-2019-09-26 12:26:04 INFO  Action:553 - Message received acknowledgement for job id  'e09422b0-5aac-430a-a777-4a37dceed1de' 
-2019-09-26 12:26:04 INFO  Action:28 - Illustrator activated to load file..
-2019-09-26 12:26:22 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-26 12:27:30 INFO  Action:71 - TyphoonShadow called
-2019-09-26 12:27:35 INFO  Action:165 - Pdf and xml generated..
-2019-09-26 12:28:06 INFO  Action:219 - Completed process for job id  'e09422b0-5aac-430a-a777-4a37dceed1de' 
-2019-09-26 12:28:08 INFO  Action:224 - Xml comparision completed..
-2019-09-26 12:29:53 INFO  Action:553 - Message received acknowledgement for job id  'caa8801c-f1f0-49df-aefd-5c7df00d8462' 
-2019-09-26 12:29:54 INFO  Action:28 - Illustrator activated to load file..
-2019-09-26 12:30:09 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-26 12:30:23 INFO  Action:71 - TyphoonShadow called
-2019-09-26 12:30:27 INFO  Action:165 - Pdf and xml generated..
-2019-09-26 12:30:56 INFO  Action:219 - Completed process for job id  'caa8801c-f1f0-49df-aefd-5c7df00d8462' 
-2019-09-26 12:30:58 INFO  Action:224 - Xml comparision completed..
-2019-09-26 16:48:09 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-26 16:48:10 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-26 16:50:50 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-26 16:50:51 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-26 16:51:14 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-09-26 16:51:15 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-09-26 16:51:47 INFO  Action:553 - Message received acknowledgement for job id  '00b9a1c0-9198-4848-b00c-1eb1b73db269' 
-2019-09-26 16:51:48 INFO  Action:28 - Illustrator activated to load file..
-2019-09-26 16:51:56 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-26 16:51:59 INFO  Action:71 - TyphoonShadow called
-2019-09-26 16:52:01 INFO  Action:165 - Pdf and xml generated..
-2019-09-26 16:52:20 INFO  Action:219 - Completed process for job id  '00b9a1c0-9198-4848-b00c-1eb1b73db269' 
-2019-09-26 16:52:22 INFO  Action:224 - Xml comparision completed..
-2019-09-26 17:25:29 INFO  Action:553 - Message received acknowledgement for job id  'fdb2cbb3-d1b0-473f-bb9f-f93fb74318a8' 
-2019-09-26 17:25:29 INFO  Action:28 - Illustrator activated to load file..
-2019-09-26 17:25:37 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-26 17:25:41 INFO  Action:71 - TyphoonShadow called
-2019-09-26 17:25:44 INFO  Action:165 - Pdf and xml generated..
-2019-09-26 17:26:04 INFO  Action:219 - Completed process for job id  'fdb2cbb3-d1b0-473f-bb9f-f93fb74318a8' 
-2019-09-26 17:26:06 INFO  Action:224 - Xml comparision completed..
-2019-09-26 17:28:52 INFO  Action:553 - Message received acknowledgement for job id  'abaf4865-b8c3-494c-b8e2-2e69b61774c4' 
-2019-09-26 17:28:52 INFO  Action:28 - Illustrator activated to load file..
-2019-09-26 17:29:08 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-26 17:29:18 INFO  Action:71 - TyphoonShadow called
-2019-09-26 17:29:25 INFO  Action:165 - Pdf and xml generated..
-2019-09-26 17:30:30 INFO  Action:219 - Completed process for job id  'abaf4865-b8c3-494c-b8e2-2e69b61774c4' 
-2019-09-26 17:30:32 INFO  Action:224 - Xml comparision completed..
-2019-09-26 17:32:19 INFO  Action:553 - Message received acknowledgement for job id  '46473f0a-8e82-4805-9379-38547b8f5b00' 
-2019-09-26 17:32:19 INFO  Action:28 - Illustrator activated to load file..
-2019-09-26 17:32:33 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-26 17:32:37 INFO  Action:71 - TyphoonShadow called
-2019-09-26 17:32:44 INFO  Action:165 - Pdf and xml generated..
-2019-09-26 17:33:04 INFO  Action:219 - Completed process for job id  '46473f0a-8e82-4805-9379-38547b8f5b00' 
-2019-09-26 17:33:06 INFO  Action:224 - Xml comparision completed..
-2019-09-26 17:46:23 INFO  Action:553 - Message received acknowledgement for job id  '182e03b9-877f-4a1a-bb54-646535f6a107' 
-2019-09-26 17:46:23 INFO  Action:28 - Illustrator activated to load file..
-2019-09-26 17:46:37 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-26 17:46:42 INFO  Action:71 - TyphoonShadow called
-2019-09-26 17:46:49 INFO  Action:165 - Pdf and xml generated..
-2019-09-26 17:47:33 INFO  Action:219 - Completed process for job id  '182e03b9-877f-4a1a-bb54-646535f6a107' 
-2019-09-26 17:47:35 INFO  Action:224 - Xml comparision completed..
-2019-09-26 17:50:28 INFO  Action:553 - Message received acknowledgement for job id  '8a6d07d9-c1d7-496e-9a3a-776b30e05c72' 
-2019-09-26 17:50:29 INFO  Action:28 - Illustrator activated to load file..
-2019-09-26 17:50:42 INFO  Action:34 - AI file and other dependend file opening..
-2019-09-26 17:50:46 INFO  Action:71 - TyphoonShadow called
-2019-09-26 17:50:52 INFO  Action:165 - Pdf and xml generated..
-2019-09-26 17:51:18 INFO  Action:219 - Completed process for job id  '8a6d07d9-c1d7-496e-9a3a-776b30e05c72' 
-2019-09-26 17:51:20 INFO  Action:224 - Xml comparision completed..
-2019-10-01 14:43:39 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-01 14:43:39 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-01 14:43:58 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-01 14:43:58 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-01 14:45:44 INFO  Action:557 - Message received acknowledgement for job id  'eb6a7869-1395-4cda-a49e-411e24d421a9' 
-2019-10-01 14:45:45 INFO  Action:28 - Illustrator activated to load file..
-2019-10-01 14:48:56 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-01 14:48:57 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-01 14:49:05 INFO  Action:557 - Message received acknowledgement for job id  'b4dc55e5-36fc-4a81-8af6-94c5964908b6' 
-2019-10-01 14:49:06 INFO  Action:28 - Illustrator activated to load file..
-2019-10-01 14:50:29 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-01 14:50:33 INFO  Action:71 - TyphoonShadow called
-2019-10-01 14:52:12 INFO  Action:165 - Pdf and xml generated..
-2019-10-01 14:53:15 INFO  Action:223 - Completed process for job id  'b4dc55e5-36fc-4a81-8af6-94c5964908b6' 
-2019-10-01 14:53:16 INFO  Action:228 - Xml comparision completed..
-2019-10-01 14:54:07 INFO  Action:557 - Message received acknowledgement for job id  '3b9af3b8-e04c-47b9-a39c-e245bee41a18' 
-2019-10-01 14:54:08 INFO  Action:28 - Illustrator activated to load file..
-2019-10-01 14:54:16 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-01 14:54:19 INFO  Action:71 - TyphoonShadow called
-2019-10-01 14:54:22 INFO  Action:165 - Pdf and xml generated..
-2019-10-01 14:54:50 INFO  Action:223 - Completed process for job id  '3b9af3b8-e04c-47b9-a39c-e245bee41a18' 
-2019-10-01 14:54:51 INFO  Action:228 - Xml comparision completed..
-2019-10-03 11:44:46 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-03 11:44:46 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-03 11:46:45 INFO  Action:554 - Message received acknowledgement for job id  'ccf176a1-3af7-43d3-a7fb-258d726cf286' 
-2019-10-03 11:46:46 INFO  Action:28 - Illustrator activated to load file..
-2019-10-03 11:49:11 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-03 11:49:14 INFO  Action:71 - TyphoonShadow called
-2019-10-03 11:56:47 INFO  Action:165 - Pdf and xml generated..
-2019-10-03 12:15:59 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-03 12:15:59 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-03 12:16:40 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-03 12:16:41 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-03 12:16:48 INFO  Action:554 - Message received acknowledgement for job id  'bdcb4371-e173-4a2f-8a83-ffab7d563871' 
-2019-10-03 12:16:49 INFO  Action:28 - Illustrator activated to load file..
-2019-10-03 12:53:52 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-03 12:53:52 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-03 12:54:02 INFO  Action:554 - Message received acknowledgement for job id  'bb83d0c8-f13e-4233-9222-399d5c2820ac' 
-2019-10-03 12:54:04 INFO  Action:28 - Illustrator activated to load file..
-2019-10-03 12:54:14 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-03 12:54:18 INFO  Action:71 - TyphoonShadow called
-2019-10-03 12:54:27 INFO  Action:165 - Pdf and xml generated..
-2019-10-03 12:55:01 INFO  Action:220 - Completed process for job id  'bb83d0c8-f13e-4233-9222-399d5c2820ac' 
-2019-10-03 12:55:22 ERROR Action:599 - Connection refused (Connection refused)
-2019-10-03 12:55:22 INFO  Action:225 - Xml comparision completed..
-2019-10-03 13:01:30 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-03 13:01:30 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-03 13:01:39 INFO  Action:554 - Message received acknowledgement for job id  '5604af67-3371-4f1c-8c5f-515a48d40085' 
-2019-10-03 13:01:41 INFO  Action:28 - Illustrator activated to load file..
-2019-10-03 13:01:51 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-03 13:01:56 INFO  Action:71 - TyphoonShadow called
-2019-10-03 13:02:04 INFO  Action:165 - Pdf and xml generated..
-2019-10-03 13:02:38 INFO  Action:220 - Completed process for job id  '5604af67-3371-4f1c-8c5f-515a48d40085' 
-2019-10-03 13:02:40 INFO  Action:225 - Xml comparision completed..
-2019-10-04 16:31:30 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-04 16:31:31 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-04 16:31:41 INFO  Action:556 - Message received acknowledgement for job id  '719a2644-4c6b-4900-83e8-86b14d1ebe72' 
-2019-10-04 16:31:42 INFO  Action:28 - Illustrator activated to load file..
-2019-10-04 16:31:52 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-04 16:31:54 INFO  Action:71 - TyphoonShadow called
-2019-10-04 16:31:54 INFO  Action:167 - Pdf and xml generated..
-2019-10-04 16:32:28 INFO  Action:222 - Completed process for job id  '719a2644-4c6b-4900-83e8-86b14d1ebe72' 
-2019-10-04 16:32:30 INFO  Action:227 - Xml comparision completed..
-2019-10-04 16:57:20 INFO  Action:556 - Message received acknowledgement for job id  'faccde17-314d-46a9-a283-3e3a243b9199' 
-2019-10-04 16:57:22 INFO  Action:28 - Illustrator activated to load file..
-2019-10-04 16:57:37 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-04 16:57:42 INFO  Action:71 - TyphoonShadow called
-2019-10-04 16:57:42 INFO  Action:167 - Pdf and xml generated..
-2019-10-04 16:58:19 INFO  Action:222 - Completed process for job id  'faccde17-314d-46a9-a283-3e3a243b9199' 
-2019-10-04 16:58:20 INFO  Action:227 - Xml comparision completed..
-2019-10-04 17:01:59 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-04 17:01:59 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-04 17:02:40 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-04 17:02:41 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-04 17:02:45 INFO  Action:556 - Message received acknowledgement for job id  '1dc286b2-fff8-459e-9257-0f0398f1f25e' 
-2019-10-04 17:02:55 INFO  Action:28 - Illustrator activated to load file..
-2019-10-04 17:02:57 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-04 17:02:59 INFO  Action:71 - TyphoonShadow called
-2019-10-04 17:04:57 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-04 17:04:57 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-04 17:05:04 INFO  Action:556 - Message received acknowledgement for job id  '7ce60cae-4d83-4ba6-8dca-3aa367aa762d' 
-2019-10-04 17:05:05 INFO  Action:28 - Illustrator activated to load file..
-2019-10-04 17:05:15 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-04 17:05:17 INFO  Action:71 - TyphoonShadow called
-2019-10-04 17:05:17 INFO  Action:167 - Pdf and xml generated..
-2019-10-04 17:05:51 INFO  Action:222 - Completed process for job id  '7ce60cae-4d83-4ba6-8dca-3aa367aa762d' 
-2019-10-04 17:05:52 INFO  Action:227 - Xml comparision completed..
-2019-10-04 17:06:26 INFO  Action:561 - Message received acknowledgement for job id  '8e960154-9161-4f11-a6e1-3875e33d66c1' 
-2019-10-04 17:06:27 INFO  Action:28 - Illustrator activated to load file..
-2019-10-04 17:06:35 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-04 17:06:37 INFO  Action:71 - TyphoonShadow called
-2019-10-04 17:06:56 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-04 17:06:57 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-04 17:07:08 INFO  Action:556 - Message received acknowledgement for job id  'f6ed4240-bf63-4e78-84a8-89b76b495fdb' 
-2019-10-04 17:07:09 INFO  Action:28 - Illustrator activated to load file..
-2019-10-04 17:07:17 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-04 17:07:20 INFO  Action:71 - TyphoonShadow called
-2019-10-04 17:07:20 INFO  Action:167 - Pdf and xml generated..
-2019-10-04 17:07:52 INFO  Action:222 - Completed process for job id  'f6ed4240-bf63-4e78-84a8-89b76b495fdb' 
-2019-10-04 17:07:54 INFO  Action:227 - Xml comparision completed..
-2019-10-04 17:14:58 INFO  Action:561 - Message received acknowledgement for job id  '73f34303-470e-45d5-9929-99102fac2f08' 
-2019-10-04 17:14:59 INFO  Action:28 - Illustrator activated to load file..
-2019-10-04 17:15:08 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-04 17:15:11 INFO  Action:71 - TyphoonShadow called
-2019-10-04 17:16:08 INFO  Action:167 - Pdf and xml generated..
-2019-10-04 17:16:54 INFO  Action:222 - Completed process for job id  '73f34303-470e-45d5-9929-99102fac2f08' 
-2019-10-04 17:16:56 INFO  Action:227 - Xml comparision completed..
-2019-10-04 17:19:08 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-04 17:19:09 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-04 17:19:43 INFO  Action:556 - Message received acknowledgement for job id  '4da3f0ac-e936-48bc-9cba-3c2456b33022' 
-2019-10-04 17:19:43 INFO  Action:28 - Illustrator activated to load file..
-2019-10-04 17:19:51 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-04 17:19:54 INFO  Action:71 - TyphoonShadow called
-2019-10-04 17:19:54 INFO  Action:167 - Pdf and xml generated..
-2019-10-04 17:20:26 INFO  Action:222 - Completed process for job id  '4da3f0ac-e936-48bc-9cba-3c2456b33022' 
-2019-10-04 17:20:28 INFO  Action:227 - Xml comparision completed..
-2019-10-04 17:21:48 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-04 17:21:48 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-04 17:22:08 INFO  Action:561 - Message received acknowledgement for job id  'b076d52e-f9e8-441c-aad9-ce3fc96e28bd' 
-2019-10-04 17:22:08 INFO  Action:28 - Illustrator activated to load file..
-2019-10-04 17:22:17 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-04 17:22:19 INFO  Action:71 - TyphoonShadow called
-2019-10-04 17:22:33 INFO  Action:167 - Pdf and xml generated..
-2019-10-04 17:23:05 INFO  Action:222 - Completed process for job id  'b076d52e-f9e8-441c-aad9-ce3fc96e28bd' 
-2019-10-04 17:23:07 INFO  Action:227 - Xml comparision completed..
-2019-10-04 17:23:40 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-04 17:23:41 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-04 17:23:45 INFO  Action:561 - Message received acknowledgement for job id  '2773be40-8458-4185-ac3c-f0473b521cc4' 
-2019-10-04 17:23:46 INFO  Action:28 - Illustrator activated to load file..
-2019-10-04 17:23:55 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-04 17:23:57 INFO  Action:71 - TyphoonShadow called
-2019-10-04 17:24:11 INFO  Action:167 - Pdf and xml generated..
-2019-10-04 17:24:47 INFO  Action:222 - Completed process for job id  '2773be40-8458-4185-ac3c-f0473b521cc4' 
-2019-10-04 17:24:49 INFO  Action:227 - Xml comparision completed..
-2019-10-04 17:37:05 INFO  Action:561 - Message received acknowledgement for job id  '9af49be4-c365-431e-b654-2d2c8f43db67' 
-2019-10-04 17:37:06 INFO  Action:28 - Illustrator activated to load file..
-2019-10-04 17:37:17 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-04 17:37:21 INFO  Action:71 - TyphoonShadow called
-2019-10-04 17:37:50 INFO  Action:167 - Pdf and xml generated..
-2019-10-04 17:38:26 INFO  Action:222 - Completed process for job id  '9af49be4-c365-431e-b654-2d2c8f43db67' 
-2019-10-04 17:38:27 INFO  Action:227 - Xml comparision completed..
-2019-10-08 09:55:46 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-08 09:55:46 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-08 09:59:36 INFO  Action:561 - Message received acknowledgement for job id  'f5bdfd94-bb98-42b9-9443-5fc68a1194f1' 
-2019-10-08 09:59:37 INFO  Action:28 - Illustrator activated to load file..
-2019-10-08 09:59:50 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-08 09:59:55 INFO  Action:71 - TyphoonShadow called
-2019-10-08 09:59:55 INFO  Action:167 - Pdf and xml generated..
-2019-10-08 10:00:35 INFO  Action:222 - Completed process for job id  'f5bdfd94-bb98-42b9-9443-5fc68a1194f1' 
-2019-10-08 10:00:37 INFO  Action:227 - Xml comparision completed..
-2019-10-08 10:03:34 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-08 10:03:34 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-08 10:03:38 INFO  Action:561 - Message received acknowledgement for job id  '93409b6a-efc4-4cef-bdbb-f2968c40349e' 
-2019-10-08 10:03:40 INFO  Action:28 - Illustrator activated to load file..
-2019-10-08 10:03:48 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-08 10:03:52 INFO  Action:71 - TyphoonShadow called
-2019-10-08 10:05:37 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-08 10:05:37 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-08 10:05:40 INFO  Action:561 - Message received acknowledgement for job id  '66ade9f4-b365-4720-a259-072a35a3cd3a' 
-2019-10-08 10:05:41 INFO  Action:28 - Illustrator activated to load file..
-2019-10-08 10:05:58 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-08 10:06:03 INFO  Action:71 - TyphoonShadow called
-2019-10-08 10:06:29 INFO  Action:167 - Pdf and xml generated..
-2019-10-08 10:07:07 INFO  Action:222 - Completed process for job id  '66ade9f4-b365-4720-a259-072a35a3cd3a' 
-2019-10-08 10:07:09 INFO  Action:227 - Xml comparision completed..
-2019-10-08 10:53:43 ERROR JsonParser:141 - File path doesn't exists: /Users/yuvaraj/Downloads/PnG/102196907/401400544/100_XML/A01/GS1_40136885601_2.xml
-2019-10-08 10:55:12 INFO  Action:561 - Message received acknowledgement for job id  '4decce38-7dc6-48da-9252-d5e79bf9d1d8' 
-2019-10-08 10:55:13 INFO  Action:28 - Illustrator activated to load file..
-2019-10-08 10:55:24 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-08 10:55:29 INFO  Action:71 - TyphoonShadow called
-2019-10-08 10:55:49 INFO  Action:167 - Pdf and xml generated..
-2019-10-08 10:56:38 INFO  Action:222 - Completed process for job id  '4decce38-7dc6-48da-9252-d5e79bf9d1d8' 
-2019-10-08 10:56:40 INFO  Action:227 - Xml comparision completed..
-2019-10-08 10:59:05 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-08 10:59:05 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-08 10:59:43 INFO  Action:561 - Message received acknowledgement for job id  'ac894363-5ff1-46a1-8543-96d93dfd257c' 
-2019-10-08 10:59:44 INFO  Action:28 - Illustrator activated to load file..
-2019-10-08 10:59:53 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-08 10:59:58 INFO  Action:71 - TyphoonShadow called
-2019-10-08 11:00:18 INFO  Action:167 - Pdf and xml generated..
-2019-10-08 11:04:02 INFO  Action:222 - Completed process for job id  'ac894363-5ff1-46a1-8543-96d93dfd257c' 
-2019-10-08 11:04:04 INFO  Action:227 - Xml comparision completed..
-2019-10-08 11:05:23 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-08 11:05:23 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-08 11:05:31 INFO  Action:561 - Message received acknowledgement for job id  '3310c77b-f638-4c11-bbe0-d28e63536d4b' 
-2019-10-08 11:05:50 INFO  Action:28 - Illustrator activated to load file..
-2019-10-08 11:05:52 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-08 11:05:54 INFO  Action:71 - TyphoonShadow called
-2019-10-08 11:05:54 INFO  Action:167 - Pdf and xml generated..
-2019-10-08 11:06:02 INFO  Action:222 - Completed process for job id  '3310c77b-f638-4c11-bbe0-d28e63536d4b' 
-2019-10-08 11:06:04 INFO  Action:227 - Xml comparision completed..
-2019-10-08 11:07:31 INFO  Action:561 - Message received acknowledgement for job id  '0b47b6a6-2125-4204-9185-035d1af4a552' 
-2019-10-08 11:07:32 INFO  Action:28 - Illustrator activated to load file..
-2019-10-08 11:07:34 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-08 11:07:36 INFO  Action:71 - TyphoonShadow called
-2019-10-08 11:07:36 INFO  Action:167 - Pdf and xml generated..
-2019-10-08 11:07:44 INFO  Action:222 - Completed process for job id  '0b47b6a6-2125-4204-9185-035d1af4a552' 
-2019-10-08 11:07:46 INFO  Action:227 - Xml comparision completed..
-2019-10-08 11:07:59 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-08 11:07:59 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-08 11:08:13 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-08 11:08:13 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-08 11:08:20 INFO  Action:561 - Message received acknowledgement for job id  '00926669-ff55-4052-bd62-fb8f4fae8bff' 
-2019-10-08 11:08:21 INFO  Action:28 - Illustrator activated to load file..
-2019-10-08 11:08:40 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-08 11:08:45 INFO  Action:71 - TyphoonShadow called
-2019-10-08 11:09:09 INFO  Action:167 - Pdf and xml generated..
-2019-10-08 11:09:29 INFO  Action:222 - Completed process for job id  '00926669-ff55-4052-bd62-fb8f4fae8bff' 
-2019-10-08 11:09:30 INFO  Action:227 - Xml comparision completed..
-2019-10-08 11:16:05 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-08 11:16:05 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-08 11:16:16 INFO  Action:561 - Message received acknowledgement for job id  'bd6df3a5-6855-448f-a282-65e0fa914613' 
-2019-10-08 11:16:17 INFO  Action:28 - Illustrator activated to load file..
-2019-10-08 11:16:28 INFO  Action:34 - AI file and other dependend file opening..
-2019-10-08 11:16:32 INFO  Action:71 - TyphoonShadow called
-2019-10-08 11:16:46 INFO  Action:167 - Pdf and xml generated..
-2019-10-08 11:17:00 INFO  Action:222 - Completed process for job id  'bd6df3a5-6855-448f-a282-65e0fa914613' 
-2019-10-08 11:17:01 INFO  Action:227 - Xml comparision completed..
-2019-10-15 10:49:04 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-15 10:49:05 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-15 10:53:31 INFO  Action:565 - Message received acknowledgement for job id  '1618dfba-97af-45c8-9017-f191fdbb8a6d' 
-2019-10-15 10:53:32 INFO  Action:29 - Illustrator activated to load file..
-2019-10-15 10:53:41 INFO  Action:35 - AI file and other dependend file opening..
-2019-10-15 10:53:46 INFO  Action:72 - TyphoonShadow called
-2019-10-15 10:53:46 ERROR Action:572 - Msg Ack err: java.lang.NullPointerException
-2019-10-15 10:55:49 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-15 10:55:49 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-15 10:55:56 INFO  Action:565 - Message received acknowledgement for job id  '49ea45c6-0d93-435b-875e-d25bb284ef12' 
-2019-10-15 10:55:57 INFO  Action:29 - Illustrator activated to load file..
-2019-10-15 10:56:06 INFO  Action:35 - AI file and other dependend file opening..
-2019-10-15 10:56:10 INFO  Action:72 - TyphoonShadow called
-2019-10-15 10:56:20 INFO  Action:168 - Pdf and xml generated..
-2019-10-15 10:56:49 INFO  Action:226 - Completed process for job id  '49ea45c6-0d93-435b-875e-d25bb284ef12' 
-2019-10-15 10:56:51 INFO  Action:231 - Xml comparision completed..
-2019-10-15 10:58:06 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-15 10:58:06 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-15 10:58:09 INFO  Action:565 - Message received acknowledgement for job id  '4f45c3bc-dc45-4224-8609-ff0e3dc92c77' 
-2019-10-15 10:58:10 INFO  Action:29 - Illustrator activated to load file..
-2019-10-15 10:58:19 INFO  Action:35 - AI file and other dependend file opening..
-2019-10-15 10:58:24 INFO  Action:72 - TyphoonShadow called
-2019-10-15 10:58:33 INFO  Action:168 - Pdf and xml generated..
-2019-10-15 10:59:05 INFO  Action:226 - Completed process for job id  '4f45c3bc-dc45-4224-8609-ff0e3dc92c77' 
-2019-10-15 10:59:06 INFO  Action:231 - Xml comparision completed..
-2019-10-15 11:01:25 INFO  Action:565 - Message received acknowledgement for job id  'aa0c3007-3cd1-4f2a-8117-35d756761766' 
-2019-10-15 11:01:25 INFO  Action:29 - Illustrator activated to load file..
-2019-10-15 11:01:34 INFO  Action:35 - AI file and other dependend file opening..
-2019-10-15 11:01:38 INFO  Action:72 - TyphoonShadow called
-2019-10-15 11:01:47 INFO  Action:168 - Pdf and xml generated..
-2019-10-15 11:02:17 INFO  Action:226 - Completed process for job id  'aa0c3007-3cd1-4f2a-8117-35d756761766' 
-2019-10-15 11:02:19 INFO  Action:231 - Xml comparision completed..
-2019-10-15 11:11:48 INFO  Action:565 - Message received acknowledgement for job id  '2fa4f570-06c6-4cab-beae-37be97f49132' 
-2019-10-15 11:11:48 INFO  Action:29 - Illustrator activated to load file..
-2019-10-15 11:12:04 INFO  Action:35 - AI file and other dependend file opening..
-2019-10-15 11:12:09 INFO  Action:72 - TyphoonShadow called
-2019-10-15 11:12:09 INFO  Action:168 - Pdf and xml generated..
-2019-10-15 11:12:39 INFO  Action:226 - Completed process for job id  '2fa4f570-06c6-4cab-beae-37be97f49132' 
-2019-10-15 11:12:41 INFO  Action:231 - Xml comparision completed..
-2019-10-15 11:17:06 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-15 11:17:07 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-15 11:18:07 INFO  Action:565 - Message received acknowledgement for job id  'c284beb1-010b-40ae-82aa-e3383cbd983f' 
-2019-10-15 11:18:08 INFO  Action:29 - Illustrator activated to load file..
-2019-10-15 11:18:22 INFO  Action:35 - AI file and other dependend file opening..
-2019-10-15 11:18:27 INFO  Action:72 - TyphoonShadow called
-2019-10-15 11:18:27 INFO  Action:168 - Pdf and xml generated..
-2019-10-15 11:18:57 INFO  Action:226 - Completed process for job id  'c284beb1-010b-40ae-82aa-e3383cbd983f' 
-2019-10-15 11:18:59 INFO  Action:231 - Xml comparision completed..
-2019-10-15 11:23:24 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-15 11:23:24 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-15 11:23:25 INFO  Action:565 - Message received acknowledgement for job id  '27c730ee-60c0-4556-b2aa-50cd822b6acd' 
-2019-10-15 11:23:26 INFO  Action:29 - Illustrator activated to load file..
-2019-10-15 11:23:40 INFO  Action:35 - AI file and other dependend file opening..
-2019-10-15 11:23:45 INFO  Action:72 - TyphoonShadow called
-2019-10-15 11:24:09 INFO  Action:168 - Pdf and xml generated..
-2019-10-15 11:26:28 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-10-15 11:26:28 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-10-15 11:26:29 INFO  Action:565 - Message received acknowledgement for job id  '8cfc327a-b45b-4c1d-844c-539df26b0ab6' 
-2019-10-15 11:26:30 INFO  Action:29 - Illustrator activated to load file..
-2019-10-15 11:26:51 INFO  Action:35 - AI file and other dependend file opening..
-2019-10-15 11:26:56 INFO  Action:72 - TyphoonShadow called
-2019-10-15 11:27:17 INFO  Action:168 - Pdf and xml generated..
-2019-10-15 11:27:48 INFO  Action:226 - Completed process for job id  '8cfc327a-b45b-4c1d-844c-539df26b0ab6' 
-2019-10-15 11:27:49 INFO  Action:231 - Xml comparision completed..
-2019-11-07 11:49:25 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-11-07 11:49:25 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-11-07 11:53:06 INFO  Action:553 - Message received acknowledgement for job id  'e8223f28-d385-4ef1-9d1e-8cf2be0655a6' 
-2019-11-07 11:53:07 INFO  Action:29 - Illustrator activated to load file..
-2019-11-07 11:53:23 INFO  Action:35 - AI file and other dependend file opening..
-2019-11-07 11:53:27 INFO  Action:72 - TyphoonShadow called
-2019-11-07 11:53:41 INFO  Action:167 - Pdf and xml generated..
-2019-11-07 11:54:11 INFO  Action:227 - Completed process for job id  'e8223f28-d385-4ef1-9d1e-8cf2be0655a6' 
-2019-11-07 11:54:13 INFO  Action:232 - Xml comparision completed..
-2019-11-12 10:04:33 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-11-12 10:04:33 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-11-12 10:05:55 INFO  Action:564 - Message received acknowledgement for job id  '75dcafe4-08e1-481d-87b0-5749e1ccd3a9' 
-2019-11-12 10:06:27 INFO  Action:29 - Illustrator activated to load file..
-2019-11-12 10:06:38 INFO  Action:35 - AI file and other dependend file opening..
-2019-11-12 10:06:40 INFO  Action:72 - TyphoonShadow called
-2019-11-12 10:06:40 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
-2019-11-12 10:16:05 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-11-12 10:16:05 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-11-12 10:16:11 INFO  Action:564 - Message received acknowledgement for job id  '81ad59b2-8ba7-4b95-b4ba-ddf90bb383a4' 
-2019-11-12 10:16:13 INFO  Action:29 - Illustrator activated to load file..
-2019-11-12 10:16:21 INFO  Action:35 - AI file and other dependend file opening..
-2019-11-12 10:16:23 INFO  Action:72 - TyphoonShadow called
-2019-11-12 10:16:23 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
-2019-11-12 10:25:12 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-11-12 10:25:12 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-11-12 10:25:24 INFO  Action:564 - Message received acknowledgement for job id  '7a198bc6-ed63-41fc-b4e6-1abc467fc0d3' 
-2019-11-12 10:25:26 INFO  Action:29 - Illustrator activated to load file..
-2019-11-12 10:25:34 INFO  Action:35 - AI file and other dependend file opening..
-2019-11-12 10:25:37 INFO  Action:72 - TyphoonShadow called
-2019-11-12 10:25:37 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
-2019-11-12 10:32:47 INFO  Action:564 - Message received acknowledgement for job id  'feadcfd1-cf58-4ccf-8619-4ab2ea76a098' 
-2019-11-12 10:32:48 INFO  Action:29 - Illustrator activated to load file..
-2019-11-12 10:32:57 INFO  Action:35 - AI file and other dependend file opening..
-2019-11-12 10:32:59 INFO  Action:72 - TyphoonShadow called
-2019-11-12 10:32:59 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
-2019-11-12 10:36:41 INFO  Action:564 - Message received acknowledgement for job id  'f4879eb4-8ec1-47fc-800d-4fc7a1c2c3af' 
-2019-11-12 10:36:41 INFO  Action:29 - Illustrator activated to load file..
-2019-11-12 10:36:50 INFO  Action:35 - AI file and other dependend file opening..
-2019-11-12 10:36:52 INFO  Action:72 - TyphoonShadow called
-2019-11-12 10:36:52 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
-2019-11-12 10:44:36 INFO  Action:564 - Message received acknowledgement for job id  '5e11e530-1eb2-4682-8534-c9868bbc12a6' 
-2019-11-12 10:44:36 INFO  Action:29 - Illustrator activated to load file..
-2019-11-12 10:44:45 INFO  Action:35 - AI file and other dependend file opening..
-2019-11-12 10:44:47 INFO  Action:72 - TyphoonShadow called
-2019-11-12 10:44:47 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
-2019-11-12 10:51:04 INFO  Action:564 - Message received acknowledgement for job id  'dda7052a-cf94-4de7-a1e1-b436d5974199' 
-2019-11-12 10:51:04 INFO  Action:29 - Illustrator activated to load file..
-2019-11-12 10:51:13 INFO  Action:35 - AI file and other dependend file opening..
-2019-11-12 10:51:15 INFO  Action:72 - TyphoonShadow called
-2019-11-12 10:51:15 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
-2019-11-12 10:53:26 INFO  Action:564 - Message received acknowledgement for job id  'b62f2e73-4906-48db-a272-1c92b6a67f93' 
-2019-11-12 10:53:26 INFO  Action:29 - Illustrator activated to load file..
-2019-11-12 10:53:35 INFO  Action:35 - AI file and other dependend file opening..
-2019-11-12 10:53:37 INFO  Action:72 - TyphoonShadow called
-2019-11-12 10:53:37 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
-2019-11-12 10:59:21 INFO  Action:564 - Message received acknowledgement for job id  'cc5956f6-987f-46b5-8ba6-f6450ffce378' 
-2019-11-12 10:59:22 INFO  Action:29 - Illustrator activated to load file..
-2019-11-12 10:59:30 INFO  Action:35 - AI file and other dependend file opening..
-2019-11-12 10:59:32 INFO  Action:72 - TyphoonShadow called
-2019-11-12 10:59:32 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
-2019-11-12 11:00:30 INFO  Action:564 - Message received acknowledgement for job id  '785ef311-33e7-4094-a2c9-ebe3e3f30fba' 
-2019-11-12 11:00:30 INFO  Action:29 - Illustrator activated to load file..
-2019-11-12 11:00:39 INFO  Action:35 - AI file and other dependend file opening..
-2019-11-12 11:00:41 INFO  Action:72 - TyphoonShadow called
-2019-11-12 11:00:41 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
-2019-11-12 11:10:08 INFO  Action:564 - Message received acknowledgement for job id  '5eee6209-6e0f-46fc-94a0-80a915087f1a' 
-2019-11-12 11:10:08 INFO  Action:29 - Illustrator activated to load file..
-2019-11-12 11:10:17 INFO  Action:35 - AI file and other dependend file opening..
-2019-11-12 11:10:19 INFO  Action:72 - TyphoonShadow called
-2019-11-12 11:10:19 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
-2019-11-12 11:28:56 INFO  Action:564 - Message received acknowledgement for job id  '347f8ec1-9082-4b2e-9ba4-48889df77913' 
-2019-11-12 11:28:56 INFO  Action:29 - Illustrator activated to load file..
-2019-11-12 11:29:05 INFO  Action:35 - AI file and other dependend file opening..
-2019-11-12 11:29:07 INFO  Action:72 - TyphoonShadow called
-2019-11-12 11:29:07 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
-2019-11-18 11:59:42 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-11-18 11:59:42 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-11-18 12:00:21 INFO  Action:564 - Message received acknowledgement for job id  '9c43c92d-2b34-4e74-aea9-9d29cbc31832' 
-2019-11-18 12:00:23 INFO  Action:29 - Illustrator activated to load file..
-2019-11-18 12:00:32 INFO  Action:35 - AI file and other dependend file opening..
-2019-11-18 12:00:37 INFO  Action:72 - TyphoonShadow called
-2019-11-18 12:00:37 ERROR Action:571 - Msg Ack err: java.lang.NullPointerException
-2019-11-18 12:03:55 INFO  Action:564 - Message received acknowledgement for job id  '22e19f12-e98b-4a5a-af3e-9febf09804df' 
-2019-11-18 12:03:57 INFO  Action:29 - Illustrator activated to load file..
-2019-11-18 12:04:06 INFO  Action:35 - AI file and other dependend file opening..
-2019-11-18 12:04:11 INFO  Action:72 - TyphoonShadow called
-2019-11-18 12:04:22 INFO  Action:167 - Pdf and xml generated..
-2019-11-18 12:04:53 INFO  Action:238 - Completed process for job id  '22e19f12-e98b-4a5a-af3e-9febf09804df' 
-2019-11-18 12:04:55 INFO  Action:243 - Xml comparision completed..
-2019-11-18 12:19:32 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-11-18 12:19:32 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-11-18 12:19:44 INFO  Action:564 - Message received acknowledgement for job id  'd37e9512-fdb5-45f8-b49c-6774c2cdda43' 
-2019-11-18 12:19:45 INFO  Action:29 - Illustrator activated to load file..
-2019-11-18 12:19:55 INFO  Action:35 - AI file and other dependend file opening..
-2019-11-18 12:19:59 INFO  Action:72 - TyphoonShadow called
-2019-11-18 12:20:09 INFO  Action:167 - Pdf and xml generated..
-2019-11-18 12:20:40 INFO  Action:238 - Completed process for job id  'd37e9512-fdb5-45f8-b49c-6774c2cdda43' 
-2019-11-18 12:20:42 INFO  Action:243 - Xml comparision completed..
-2019-11-18 12:21:09 INFO  Action:564 - Message received acknowledgement for job id  '7806be80-c036-4627-8be6-77ed95ac4d0a' 
-2019-11-18 12:21:10 INFO  Action:29 - Illustrator activated to load file..
-2019-11-18 12:21:19 INFO  Action:35 - AI file and other dependend file opening..
-2019-11-18 12:21:23 INFO  Action:72 - TyphoonShadow called
-2019-11-18 12:21:33 INFO  Action:167 - Pdf and xml generated..
-2019-11-18 12:22:04 INFO  Action:238 - Completed process for job id  '7806be80-c036-4627-8be6-77ed95ac4d0a' 
-2019-11-18 12:22:05 INFO  Action:243 - Xml comparision completed..
-2019-11-18 14:29:53 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-11-18 14:29:53 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-11-18 14:32:11 INFO  Action:564 - Message received acknowledgement for job id  '99f7d6b9-b538-4d76-80f0-3d946e6e396f' 
-2019-11-18 14:32:12 INFO  Action:29 - Illustrator activated to load file..
-2019-11-18 14:32:22 INFO  Action:35 - AI file and other dependend file opening..
-2019-11-18 14:32:26 INFO  Action:72 - TyphoonShadow called
-2019-11-18 14:32:36 INFO  Action:167 - Pdf and xml generated..
-2019-11-18 14:33:07 INFO  Action:238 - Completed process for job id  '99f7d6b9-b538-4d76-80f0-3d946e6e396f' 
-2019-11-18 14:33:09 INFO  Action:243 - Xml comparision completed..
-2019-11-18 14:34:51 INFO  Action:564 - Message received acknowledgement for job id  'e16caed1-5363-4094-a6dc-d1b4227d94c2' 
-2019-11-18 14:34:52 INFO  Action:29 - Illustrator activated to load file..
-2019-11-18 14:35:01 INFO  Action:35 - AI file and other dependend file opening..
-2019-11-18 14:35:05 INFO  Action:72 - TyphoonShadow called
-2019-11-18 14:35:16 INFO  Action:167 - Pdf and xml generated..
-2019-11-18 14:35:46 INFO  Action:238 - Completed process for job id  'e16caed1-5363-4094-a6dc-d1b4227d94c2' 
-2019-11-18 14:35:48 INFO  Action:243 - Xml comparision completed..
-2019-11-21 10:26:29 INFO  MQRcv:77 - TestRR:TestRRDivision
-2019-11-21 10:26:29 INFO  MQRcv:82 -  [*] Waiting for messages. To exit press CTRL+C
-2019-12-05 19:56:19 INFO  MQRcv:80 - TestRR:TestRRDivision
-2019-12-05 19:56:20 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
-2019-12-05 20:05:19 INFO  MQRcv:80 - TestRR:TestRRDivision
-2019-12-05 20:05:19 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
-2019-12-05 20:05:25 INFO  HBTimer:29 - Heartbeat sent for IP : 10.37.129.2 location key : TestRR
-2019-12-09 10:06:59 INFO  MQRcv:80 - TestRR:TestRRDivision
-2019-12-09 10:06:59 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
-2019-12-18 18:45:20 INFO  MQRcv:80 - TestRR:TestRRDivision
-2019-12-18 18:45:20 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
-2019-12-18 18:45:25 INFO  Action:687 - Before calling heartbeat post method
-2019-12-18 18:45:26 INFO  Action:690 - Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
-2019-12-18 18:45:26 INFO  HBTimer:29 - Heartbeat sent for IP : 192.168.2.1 location key : TestRR
-2019-12-18 18:45:46 ERROR INIReader:102 - Error Writing INI file :/Applications/Adobe Illustrator /Plug-ins.localized/Sgk/Configuration/RoadRunner.ini (No such file or directory)
-2019-12-18 18:45:46 INFO  Action:700 - Before sending error status :23 - remark :File Path or File does not exists : /Users/imac366/Desktop/RR/Java Client/PNG/TEST/PnG/102196907/401400544//91377726_002_Master-A.ai
-2019-12-18 18:45:47 INFO  Action:704 - Error status sent :23 - remark : File Path or File does not exists : /Users/imac366/Desktop/RR/Java Client/PNG/TEST/PnG/102196907/401400544//91377726_002_Master-A.ai response : {"cause":null,"stackTrace":[{"methodName":"updateRRStatus","fileName":"RRApiServiceImpl.java","lineNumber":1782,"className":"com.schawk.tornado.service.RRApiServiceImpl","nativeMethod":false},{"methodName":"postRRUpdateStatus","fileName":"RRApiController.java","lineNumber":425,"className":"com.schawk.tornado.controller.RRApiController","nativeMethod":false},{"methodName":"invoke0","fileName":"NativeMethodAccessorImpl.java","lineNumber":-2,"className":"sun.reflect.NativeMethodAccessorImpl","nativeMethod":true},{"methodName":"invoke","fileName":"NativeMethodAccessorImpl.java","lineNumber":62,"className":"sun.reflect.NativeMethodAccessorImpl","nativeMethod":false},{"methodName":"invoke","fileName":"DelegatingMethodAccessorImpl.java","lineNumber":43,"className":"sun.reflect.DelegatingMethodAccessorImpl","nativeMethod":false},{"methodName":"invoke","fileName":"Method.java","lineNumber":498,"className":"java.lang.reflect.Method","nativeMethod":false},{"methodName":"doInvoke","fileName":"InvocableHandlerMethod.java","lineNumber":221,"className":"org.springframework.web.method.support.InvocableHandlerMethod","nativeMethod":false},{"methodName":"invokeForRequest","fileName":"InvocableHandlerMethod.java","lineNumber":137,"className":"org.springframework.web.method.support.InvocableHandlerMethod","nativeMethod":false},{"methodName":"invokeAndHandle","fileName":"ServletInvocableHandlerMethod.java","lineNumber":110,"className":"org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod","nativeMethod":false},{"methodName":"invokeHandleMethod","fileName":"RequestMappingHandlerAdapter.java","lineNumber":776,"className":"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter","nativeMethod":false},{"methodName":"handleInternal","fileName":"RequestMappingHandlerAdapter.java","lineNumber":705,"className":"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter","nativeMethod":false},{"methodName":"handle","fileName":"AbstractHandlerMethodAdapter.java","lineNumber":85,"className":"org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter","nativeMethod":false},{"methodName":"doDispatch","fileName":"DispatcherServlet.java","lineNumber":959,"className":"org.springframework.web.servlet.DispatcherServlet","nativeMethod":false},{"methodName":"doService","fileName":"DispatcherServlet.java","lineNumber":893,"className":"org.springframework.web.servlet.DispatcherServlet","nativeMethod":false},{"methodName":"processRequest","fileName":"FrameworkServlet.java","lineNumber":966,"className":"org.springframework.web.servlet.FrameworkServlet","nativeMethod":false},{"methodName":"doPost","fileName":"FrameworkServlet.java","lineNumber":868,"className":"org.springframework.web.servlet.FrameworkServlet","nativeMethod":false},{"methodName":"service","fileName":"HttpServlet.java","lineNumber":661,"className":"javax.servlet.http.HttpServlet","nativeMethod":false},{"methodName":"service","fileName":"FrameworkServlet.java","lineNumber":842,"className":"org.springframework.web.servlet.FrameworkServlet","nativeMethod":false},{"methodName":"service","fileName":"HttpServlet.java","lineNumber":742,"className":"javax.servlet.http.HttpServlet","nativeMethod":false},{"methodName":"internalDoFilter","fileName":"ApplicationFilterChain.java","lineNumber":231,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilter","fileName":"ApplicationFilterChain.java","lineNumber":166,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilter","fileName":"WsFilter.java","lineNumber":52,"className":"org.apache.tomcat.websocket.server.WsFilter","nativeMethod":false},{"methodName":"internalDoFilter","fileName":"ApplicationFilterChain.java","lineNumber":193,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilter","fileName":"ApplicationFilterChain.java","lineNumber":166,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilterInternal","fileName":"CharacterEncodingFilter.java","lineNumber":85,"className":"org.springframework.web.filter.CharacterEncodingFilter","nativeMethod":false},{"methodName":"doFilter","fileName":"OncePerRequestFilter.java","lineNumber":107,"className":"org.springframework.web.filter.OncePerRequestFilter","nativeMethod":false},{"methodName":"internalDoFilter","fileName":"ApplicationFilterChain.java","lineNumber":193,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilter","fileName":"ApplicationFilterChain.java","lineNumber":166,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"invoke","fileName":"StandardWrapperValve.java","lineNumber":198,"className":"org.apache.catalina.core.StandardWrapperValve","nativeMethod":false},{"methodName":"invoke","fileName":"StandardContextValve.java","lineNumber":96,"className":"org.apache.catalina.core.StandardContextValve","nativeMethod":false},{"methodName":"invoke","fileName":"AuthenticatorBase.java","lineNumber":478,"className":"org.apache.catalina.authenticator.AuthenticatorBase","nativeMethod":false},{"methodName":"invoke","fileName":"StandardHostValve.java","lineNumber":140,"className":"org.apache.catalina.core.StandardHostValve","nativeMethod":false},{"methodName":"invoke","fileName":"Tomcat85AgentValve.java","lineNumber":35,"className":"psiprobe.Tomcat85AgentValve","nativeMethod":false},{"methodName":"invoke","fileName":"ErrorReportValve.java","lineNumber":80,"className":"org.apache.catalina.valves.ErrorReportValve","nativeMethod":false},{"methodName":"invoke","fileName":"StandardEngineValve.java","lineNumber":87,"className":"org.apache.catalina.core.StandardEngineValve","nativeMethod":false},{"methodName":"service","fileName":"CoyoteAdapter.java","lineNumber":342,"className":"org.apache.catalina.connector.CoyoteAdapter","nativeMethod":false},{"methodName":"service","fileName":"Http11Processor.java","lineNumber":799,"className":"org.apache.coyote.http11.Http11Processor","nativeMethod":false},{"methodName":"process","fileName":"AbstractProcessorLight.java","lineNumber":66,"className":"org.apache.coyote.AbstractProcessorLight","nativeMethod":false},{"methodName":"process","fileName":"AbstractProtocol.java","lineNumber":861,"className":"org.apache.coyote.AbstractProtocol$ConnectionHandler","nativeMethod":false},{"methodName":"doRun","fileName":"NioEndpoint.java","lineNumber":1455,"className":"org.apache.tomcat.util.net.NioEndpoint$SocketProcessor","nativeMethod":false},{"methodName":"run","fileName":"SocketProcessorBase.java","lineNumber":49,"className":"org.apache.tomcat.util.net.SocketProcessorBase","nativeMethod":false},{"methodName":"runWorker","fileName":"ThreadPoolExecutor.java","lineNumber":1142,"className":"java.util.concurrent.ThreadPoolExecutor","nativeMethod":false},{"methodName":"run","fileName":"ThreadPoolExecutor.java","lineNumber":617,"className":"java.util.concurrent.ThreadPoolExecutor$Worker","nativeMethod":false},{"methodName":"run","fileName":"TaskThread.java","lineNumber":61,"className":"org.apache.tomcat.util.threads.TaskThread$WrappingRunnable","nativeMethod":false},{"methodName":"run","fileName":"Thread.java","lineNumber":748,"className":"java.lang.Thread","nativeMethod":false}],"localizedMessage":null,"message":null,"suppressed":[]}
-2019-12-18 18:45:47 ERROR Utils:547 - File path doesn't exists: /Users/imac366/Desktop/RR/Java Client/PNG/TEST/PnG/102196907/401400544//91377726_002_Master-A.ai
-2019-12-18 18:45:47 INFO  Action:608 - Before calling send status message post method
-2019-12-18 18:45:47 INFO  Action:612 - Status of sending status msg response 
-2019-12-18 18:45:47 INFO  Action:596 - Before calling send report status message post method
-2019-12-18 18:45:47 INFO  Action:599 - Status of sending report status msg response Success
-2019-12-18 18:46:46 INFO  MQRcv:80 - TestRR:TestRRDivision
-2019-12-18 18:46:46 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
-2019-12-18 18:46:51 INFO  Action:687 - Before calling heartbeat post method
-2019-12-18 18:46:52 INFO  Action:690 - Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
-2019-12-18 18:46:52 INFO  HBTimer:29 - Heartbeat sent for IP : 192.168.2.1 location key : TestRR
-2019-12-18 18:47:59 INFO  MQRcv:80 - TestRR:TestRRDivision
-2019-12-18 18:47:59 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
-2019-12-18 18:48:05 INFO  Action:687 - Before calling heartbeat post method
-2019-12-18 18:48:05 INFO  Action:690 - Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
-2019-12-18 18:48:05 INFO  HBTimer:29 - Heartbeat sent for IP : 192.168.2.1 location key : TestRR
-2019-12-18 18:53:16 INFO  MQRcv:80 - TestRR:TestRRDivision
-2019-12-18 18:53:16 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
-2019-12-18 18:53:21 INFO  Action:688 - Before calling heartbeat post method
-2019-12-18 18:53:24 INFO  Action:691 - Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
-2019-12-18 18:53:24 INFO  HBTimer:29 - Heartbeat sent for IP : 192.168.2.1 location key : TestRR
-2019-12-18 18:53:31 INFO  Action:701 - Before sending error status :23 - remark :File Path or File does not exists : /Users/imac366/Desktop/RR/Java Client/PNG/TEST/PnG/102196907/401400544//91377726_002_Master-A.ai
-2019-12-18 18:53:32 INFO  Action:705 - Error status sent :23 - remark : File Path or File does not exists : /Users/imac366/Desktop/RR/Java Client/PNG/TEST/PnG/102196907/401400544//91377726_002_Master-A.ai response : {"cause":null,"stackTrace":[{"methodName":"updateRRStatus","fileName":"RRApiServiceImpl.java","lineNumber":1782,"className":"com.schawk.tornado.service.RRApiServiceImpl","nativeMethod":false},{"methodName":"postRRUpdateStatus","fileName":"RRApiController.java","lineNumber":425,"className":"com.schawk.tornado.controller.RRApiController","nativeMethod":false},{"methodName":"invoke0","fileName":"NativeMethodAccessorImpl.java","lineNumber":-2,"className":"sun.reflect.NativeMethodAccessorImpl","nativeMethod":true},{"methodName":"invoke","fileName":"NativeMethodAccessorImpl.java","lineNumber":62,"className":"sun.reflect.NativeMethodAccessorImpl","nativeMethod":false},{"methodName":"invoke","fileName":"DelegatingMethodAccessorImpl.java","lineNumber":43,"className":"sun.reflect.DelegatingMethodAccessorImpl","nativeMethod":false},{"methodName":"invoke","fileName":"Method.java","lineNumber":498,"className":"java.lang.reflect.Method","nativeMethod":false},{"methodName":"doInvoke","fileName":"InvocableHandlerMethod.java","lineNumber":221,"className":"org.springframework.web.method.support.InvocableHandlerMethod","nativeMethod":false},{"methodName":"invokeForRequest","fileName":"InvocableHandlerMethod.java","lineNumber":137,"className":"org.springframework.web.method.support.InvocableHandlerMethod","nativeMethod":false},{"methodName":"invokeAndHandle","fileName":"ServletInvocableHandlerMethod.java","lineNumber":110,"className":"org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod","nativeMethod":false},{"methodName":"invokeHandleMethod","fileName":"RequestMappingHandlerAdapter.java","lineNumber":776,"className":"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter","nativeMethod":false},{"methodName":"handleInternal","fileName":"RequestMappingHandlerAdapter.java","lineNumber":705,"className":"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter","nativeMethod":false},{"methodName":"handle","fileName":"AbstractHandlerMethodAdapter.java","lineNumber":85,"className":"org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter","nativeMethod":false},{"methodName":"doDispatch","fileName":"DispatcherServlet.java","lineNumber":959,"className":"org.springframework.web.servlet.DispatcherServlet","nativeMethod":false},{"methodName":"doService","fileName":"DispatcherServlet.java","lineNumber":893,"className":"org.springframework.web.servlet.DispatcherServlet","nativeMethod":false},{"methodName":"processRequest","fileName":"FrameworkServlet.java","lineNumber":966,"className":"org.springframework.web.servlet.FrameworkServlet","nativeMethod":false},{"methodName":"doPost","fileName":"FrameworkServlet.java","lineNumber":868,"className":"org.springframework.web.servlet.FrameworkServlet","nativeMethod":false},{"methodName":"service","fileName":"HttpServlet.java","lineNumber":661,"className":"javax.servlet.http.HttpServlet","nativeMethod":false},{"methodName":"service","fileName":"FrameworkServlet.java","lineNumber":842,"className":"org.springframework.web.servlet.FrameworkServlet","nativeMethod":false},{"methodName":"service","fileName":"HttpServlet.java","lineNumber":742,"className":"javax.servlet.http.HttpServlet","nativeMethod":false},{"methodName":"internalDoFilter","fileName":"ApplicationFilterChain.java","lineNumber":231,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilter","fileName":"ApplicationFilterChain.java","lineNumber":166,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilter","fileName":"WsFilter.java","lineNumber":52,"className":"org.apache.tomcat.websocket.server.WsFilter","nativeMethod":false},{"methodName":"internalDoFilter","fileName":"ApplicationFilterChain.java","lineNumber":193,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilter","fileName":"ApplicationFilterChain.java","lineNumber":166,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilterInternal","fileName":"CharacterEncodingFilter.java","lineNumber":85,"className":"org.springframework.web.filter.CharacterEncodingFilter","nativeMethod":false},{"methodName":"doFilter","fileName":"OncePerRequestFilter.java","lineNumber":107,"className":"org.springframework.web.filter.OncePerRequestFilter","nativeMethod":false},{"methodName":"internalDoFilter","fileName":"ApplicationFilterChain.java","lineNumber":193,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilter","fileName":"ApplicationFilterChain.java","lineNumber":166,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"invoke","fileName":"StandardWrapperValve.java","lineNumber":198,"className":"org.apache.catalina.core.StandardWrapperValve","nativeMethod":false},{"methodName":"invoke","fileName":"StandardContextValve.java","lineNumber":96,"className":"org.apache.catalina.core.StandardContextValve","nativeMethod":false},{"methodName":"invoke","fileName":"AuthenticatorBase.java","lineNumber":478,"className":"org.apache.catalina.authenticator.AuthenticatorBase","nativeMethod":false},{"methodName":"invoke","fileName":"StandardHostValve.java","lineNumber":140,"className":"org.apache.catalina.core.StandardHostValve","nativeMethod":false},{"methodName":"invoke","fileName":"Tomcat85AgentValve.java","lineNumber":35,"className":"psiprobe.Tomcat85AgentValve","nativeMethod":false},{"methodName":"invoke","fileName":"ErrorReportValve.java","lineNumber":80,"className":"org.apache.catalina.valves.ErrorReportValve","nativeMethod":false},{"methodName":"invoke","fileName":"StandardEngineValve.java","lineNumber":87,"className":"org.apache.catalina.core.StandardEngineValve","nativeMethod":false},{"methodName":"service","fileName":"CoyoteAdapter.java","lineNumber":342,"className":"org.apache.catalina.connector.CoyoteAdapter","nativeMethod":false},{"methodName":"service","fileName":"Http11Processor.java","lineNumber":799,"className":"org.apache.coyote.http11.Http11Processor","nativeMethod":false},{"methodName":"process","fileName":"AbstractProcessorLight.java","lineNumber":66,"className":"org.apache.coyote.AbstractProcessorLight","nativeMethod":false},{"methodName":"process","fileName":"AbstractProtocol.java","lineNumber":861,"className":"org.apache.coyote.AbstractProtocol$ConnectionHandler","nativeMethod":false},{"methodName":"doRun","fileName":"NioEndpoint.java","lineNumber":1455,"className":"org.apache.tomcat.util.net.NioEndpoint$SocketProcessor","nativeMethod":false},{"methodName":"run","fileName":"SocketProcessorBase.java","lineNumber":49,"className":"org.apache.tomcat.util.net.SocketProcessorBase","nativeMethod":false},{"methodName":"runWorker","fileName":"ThreadPoolExecutor.java","lineNumber":1142,"className":"java.util.concurrent.ThreadPoolExecutor","nativeMethod":false},{"methodName":"run","fileName":"ThreadPoolExecutor.java","lineNumber":617,"className":"java.util.concurrent.ThreadPoolExecutor$Worker","nativeMethod":false},{"methodName":"run","fileName":"TaskThread.java","lineNumber":61,"className":"org.apache.tomcat.util.threads.TaskThread$WrappingRunnable","nativeMethod":false},{"methodName":"run","fileName":"Thread.java","lineNumber":748,"className":"java.lang.Thread","nativeMethod":false}],"localizedMessage":null,"message":null,"suppressed":[]}
-2019-12-18 18:53:32 ERROR Utils:547 - File path doesn't exists: /Users/imac366/Desktop/RR/Java Client/PNG/TEST/PnG/102196907/401400544//91377726_002_Master-A.ai
-2019-12-18 18:53:32 INFO  Action:609 - Before calling send status message post method
-2019-12-18 18:53:32 INFO  Action:613 - Status of sending status msg response 
-2019-12-18 18:53:32 INFO  Action:597 - Before calling send report status message post method
-2019-12-18 18:53:32 INFO  Action:600 - Status of sending report status msg response Success
-2019-12-18 18:53:38 INFO  Action:701 - Before sending error status :23 - remark :/Users/imac366/Desktop/RR/Java Client/PNG/TEST/PnG/102196907/401400544//91377726_002_Master-A.ai
-2019-12-18 18:53:38 INFO  Action:705 - Error status sent :23 - remark : /Users/imac366/Desktop/RR/Java Client/PNG/TEST/PnG/102196907/401400544//91377726_002_Master-A.ai response : {"cause":null,"stackTrace":[{"methodName":"updateRRStatus","fileName":"RRApiServiceImpl.java","lineNumber":1782,"className":"com.schawk.tornado.service.RRApiServiceImpl","nativeMethod":false},{"methodName":"postRRUpdateStatus","fileName":"RRApiController.java","lineNumber":425,"className":"com.schawk.tornado.controller.RRApiController","nativeMethod":false},{"methodName":"invoke0","fileName":"NativeMethodAccessorImpl.java","lineNumber":-2,"className":"sun.reflect.NativeMethodAccessorImpl","nativeMethod":true},{"methodName":"invoke","fileName":"NativeMethodAccessorImpl.java","lineNumber":62,"className":"sun.reflect.NativeMethodAccessorImpl","nativeMethod":false},{"methodName":"invoke","fileName":"DelegatingMethodAccessorImpl.java","lineNumber":43,"className":"sun.reflect.DelegatingMethodAccessorImpl","nativeMethod":false},{"methodName":"invoke","fileName":"Method.java","lineNumber":498,"className":"java.lang.reflect.Method","nativeMethod":false},{"methodName":"doInvoke","fileName":"InvocableHandlerMethod.java","lineNumber":221,"className":"org.springframework.web.method.support.InvocableHandlerMethod","nativeMethod":false},{"methodName":"invokeForRequest","fileName":"InvocableHandlerMethod.java","lineNumber":137,"className":"org.springframework.web.method.support.InvocableHandlerMethod","nativeMethod":false},{"methodName":"invokeAndHandle","fileName":"ServletInvocableHandlerMethod.java","lineNumber":110,"className":"org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod","nativeMethod":false},{"methodName":"invokeHandleMethod","fileName":"RequestMappingHandlerAdapter.java","lineNumber":776,"className":"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter","nativeMethod":false},{"methodName":"handleInternal","fileName":"RequestMappingHandlerAdapter.java","lineNumber":705,"className":"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter","nativeMethod":false},{"methodName":"handle","fileName":"AbstractHandlerMethodAdapter.java","lineNumber":85,"className":"org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter","nativeMethod":false},{"methodName":"doDispatch","fileName":"DispatcherServlet.java","lineNumber":959,"className":"org.springframework.web.servlet.DispatcherServlet","nativeMethod":false},{"methodName":"doService","fileName":"DispatcherServlet.java","lineNumber":893,"className":"org.springframework.web.servlet.DispatcherServlet","nativeMethod":false},{"methodName":"processRequest","fileName":"FrameworkServlet.java","lineNumber":966,"className":"org.springframework.web.servlet.FrameworkServlet","nativeMethod":false},{"methodName":"doPost","fileName":"FrameworkServlet.java","lineNumber":868,"className":"org.springframework.web.servlet.FrameworkServlet","nativeMethod":false},{"methodName":"service","fileName":"HttpServlet.java","lineNumber":661,"className":"javax.servlet.http.HttpServlet","nativeMethod":false},{"methodName":"service","fileName":"FrameworkServlet.java","lineNumber":842,"className":"org.springframework.web.servlet.FrameworkServlet","nativeMethod":false},{"methodName":"service","fileName":"HttpServlet.java","lineNumber":742,"className":"javax.servlet.http.HttpServlet","nativeMethod":false},{"methodName":"internalDoFilter","fileName":"ApplicationFilterChain.java","lineNumber":231,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilter","fileName":"ApplicationFilterChain.java","lineNumber":166,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilter","fileName":"WsFilter.java","lineNumber":52,"className":"org.apache.tomcat.websocket.server.WsFilter","nativeMethod":false},{"methodName":"internalDoFilter","fileName":"ApplicationFilterChain.java","lineNumber":193,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilter","fileName":"ApplicationFilterChain.java","lineNumber":166,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilterInternal","fileName":"CharacterEncodingFilter.java","lineNumber":85,"className":"org.springframework.web.filter.CharacterEncodingFilter","nativeMethod":false},{"methodName":"doFilter","fileName":"OncePerRequestFilter.java","lineNumber":107,"className":"org.springframework.web.filter.OncePerRequestFilter","nativeMethod":false},{"methodName":"internalDoFilter","fileName":"ApplicationFilterChain.java","lineNumber":193,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilter","fileName":"ApplicationFilterChain.java","lineNumber":166,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"invoke","fileName":"StandardWrapperValve.java","lineNumber":198,"className":"org.apache.catalina.core.StandardWrapperValve","nativeMethod":false},{"methodName":"invoke","fileName":"StandardContextValve.java","lineNumber":96,"className":"org.apache.catalina.core.StandardContextValve","nativeMethod":false},{"methodName":"invoke","fileName":"AuthenticatorBase.java","lineNumber":478,"className":"org.apache.catalina.authenticator.AuthenticatorBase","nativeMethod":false},{"methodName":"invoke","fileName":"StandardHostValve.java","lineNumber":140,"className":"org.apache.catalina.core.StandardHostValve","nativeMethod":false},{"methodName":"invoke","fileName":"Tomcat85AgentValve.java","lineNumber":35,"className":"psiprobe.Tomcat85AgentValve","nativeMethod":false},{"methodName":"invoke","fileName":"ErrorReportValve.java","lineNumber":80,"className":"org.apache.catalina.valves.ErrorReportValve","nativeMethod":false},{"methodName":"invoke","fileName":"StandardEngineValve.java","lineNumber":87,"className":"org.apache.catalina.core.StandardEngineValve","nativeMethod":false},{"methodName":"service","fileName":"CoyoteAdapter.java","lineNumber":342,"className":"org.apache.catalina.connector.CoyoteAdapter","nativeMethod":false},{"methodName":"service","fileName":"Http11Processor.java","lineNumber":799,"className":"org.apache.coyote.http11.Http11Processor","nativeMethod":false},{"methodName":"process","fileName":"AbstractProcessorLight.java","lineNumber":66,"className":"org.apache.coyote.AbstractProcessorLight","nativeMethod":false},{"methodName":"process","fileName":"AbstractProtocol.java","lineNumber":861,"className":"org.apache.coyote.AbstractProtocol$ConnectionHandler","nativeMethod":false},{"methodName":"doRun","fileName":"NioEndpoint.java","lineNumber":1455,"className":"org.apache.tomcat.util.net.NioEndpoint$SocketProcessor","nativeMethod":false},{"methodName":"run","fileName":"SocketProcessorBase.java","lineNumber":49,"className":"org.apache.tomcat.util.net.SocketProcessorBase","nativeMethod":false},{"methodName":"runWorker","fileName":"ThreadPoolExecutor.java","lineNumber":1142,"className":"java.util.concurrent.ThreadPoolExecutor","nativeMethod":false},{"methodName":"run","fileName":"ThreadPoolExecutor.java","lineNumber":617,"className":"java.util.concurrent.ThreadPoolExecutor$Worker","nativeMethod":false},{"methodName":"run","fileName":"TaskThread.java","lineNumber":61,"className":"org.apache.tomcat.util.threads.TaskThread$WrappingRunnable","nativeMethod":false},{"methodName":"run","fileName":"Thread.java","lineNumber":748,"className":"java.lang.Thread","nativeMethod":false}],"localizedMessage":null,"message":null,"suppressed":[]}
-2019-12-18 18:56:01 INFO  Action:701 - Before sending error status :23 - remark :File Path or File does not exists : /Users/imac366/Desktop/RR/Java Client/PNG/TEST/PnG/102196907/401400544//91377726_002_Master-A.ai
-2019-12-18 18:56:01 INFO  Action:705 - Error status sent :23 - remark : File Path or File does not exists : /Users/imac366/Desktop/RR/Java Client/PNG/TEST/PnG/102196907/401400544//91377726_002_Master-A.ai response : {"cause":null,"stackTrace":[{"methodName":"updateRRStatus","fileName":"RRApiServiceImpl.java","lineNumber":1782,"className":"com.schawk.tornado.service.RRApiServiceImpl","nativeMethod":false},{"methodName":"postRRUpdateStatus","fileName":"RRApiController.java","lineNumber":425,"className":"com.schawk.tornado.controller.RRApiController","nativeMethod":false},{"methodName":"invoke0","fileName":"NativeMethodAccessorImpl.java","lineNumber":-2,"className":"sun.reflect.NativeMethodAccessorImpl","nativeMethod":true},{"methodName":"invoke","fileName":"NativeMethodAccessorImpl.java","lineNumber":62,"className":"sun.reflect.NativeMethodAccessorImpl","nativeMethod":false},{"methodName":"invoke","fileName":"DelegatingMethodAccessorImpl.java","lineNumber":43,"className":"sun.reflect.DelegatingMethodAccessorImpl","nativeMethod":false},{"methodName":"invoke","fileName":"Method.java","lineNumber":498,"className":"java.lang.reflect.Method","nativeMethod":false},{"methodName":"doInvoke","fileName":"InvocableHandlerMethod.java","lineNumber":221,"className":"org.springframework.web.method.support.InvocableHandlerMethod","nativeMethod":false},{"methodName":"invokeForRequest","fileName":"InvocableHandlerMethod.java","lineNumber":137,"className":"org.springframework.web.method.support.InvocableHandlerMethod","nativeMethod":false},{"methodName":"invokeAndHandle","fileName":"ServletInvocableHandlerMethod.java","lineNumber":110,"className":"org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod","nativeMethod":false},{"methodName":"invokeHandleMethod","fileName":"RequestMappingHandlerAdapter.java","lineNumber":776,"className":"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter","nativeMethod":false},{"methodName":"handleInternal","fileName":"RequestMappingHandlerAdapter.java","lineNumber":705,"className":"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter","nativeMethod":false},{"methodName":"handle","fileName":"AbstractHandlerMethodAdapter.java","lineNumber":85,"className":"org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter","nativeMethod":false},{"methodName":"doDispatch","fileName":"DispatcherServlet.java","lineNumber":959,"className":"org.springframework.web.servlet.DispatcherServlet","nativeMethod":false},{"methodName":"doService","fileName":"DispatcherServlet.java","lineNumber":893,"className":"org.springframework.web.servlet.DispatcherServlet","nativeMethod":false},{"methodName":"processRequest","fileName":"FrameworkServlet.java","lineNumber":966,"className":"org.springframework.web.servlet.FrameworkServlet","nativeMethod":false},{"methodName":"doPost","fileName":"FrameworkServlet.java","lineNumber":868,"className":"org.springframework.web.servlet.FrameworkServlet","nativeMethod":false},{"methodName":"service","fileName":"HttpServlet.java","lineNumber":661,"className":"javax.servlet.http.HttpServlet","nativeMethod":false},{"methodName":"service","fileName":"FrameworkServlet.java","lineNumber":842,"className":"org.springframework.web.servlet.FrameworkServlet","nativeMethod":false},{"methodName":"service","fileName":"HttpServlet.java","lineNumber":742,"className":"javax.servlet.http.HttpServlet","nativeMethod":false},{"methodName":"internalDoFilter","fileName":"ApplicationFilterChain.java","lineNumber":231,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilter","fileName":"ApplicationFilterChain.java","lineNumber":166,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilter","fileName":"WsFilter.java","lineNumber":52,"className":"org.apache.tomcat.websocket.server.WsFilter","nativeMethod":false},{"methodName":"internalDoFilter","fileName":"ApplicationFilterChain.java","lineNumber":193,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilter","fileName":"ApplicationFilterChain.java","lineNumber":166,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilterInternal","fileName":"CharacterEncodingFilter.java","lineNumber":85,"className":"org.springframework.web.filter.CharacterEncodingFilter","nativeMethod":false},{"methodName":"doFilter","fileName":"OncePerRequestFilter.java","lineNumber":107,"className":"org.springframework.web.filter.OncePerRequestFilter","nativeMethod":false},{"methodName":"internalDoFilter","fileName":"ApplicationFilterChain.java","lineNumber":193,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilter","fileName":"ApplicationFilterChain.java","lineNumber":166,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"invoke","fileName":"StandardWrapperValve.java","lineNumber":198,"className":"org.apache.catalina.core.StandardWrapperValve","nativeMethod":false},{"methodName":"invoke","fileName":"StandardContextValve.java","lineNumber":96,"className":"org.apache.catalina.core.StandardContextValve","nativeMethod":false},{"methodName":"invoke","fileName":"AuthenticatorBase.java","lineNumber":478,"className":"org.apache.catalina.authenticator.AuthenticatorBase","nativeMethod":false},{"methodName":"invoke","fileName":"StandardHostValve.java","lineNumber":140,"className":"org.apache.catalina.core.StandardHostValve","nativeMethod":false},{"methodName":"invoke","fileName":"Tomcat85AgentValve.java","lineNumber":35,"className":"psiprobe.Tomcat85AgentValve","nativeMethod":false},{"methodName":"invoke","fileName":"ErrorReportValve.java","lineNumber":80,"className":"org.apache.catalina.valves.ErrorReportValve","nativeMethod":false},{"methodName":"invoke","fileName":"StandardEngineValve.java","lineNumber":87,"className":"org.apache.catalina.core.StandardEngineValve","nativeMethod":false},{"methodName":"service","fileName":"CoyoteAdapter.java","lineNumber":342,"className":"org.apache.catalina.connector.CoyoteAdapter","nativeMethod":false},{"methodName":"service","fileName":"Http11Processor.java","lineNumber":799,"className":"org.apache.coyote.http11.Http11Processor","nativeMethod":false},{"methodName":"process","fileName":"AbstractProcessorLight.java","lineNumber":66,"className":"org.apache.coyote.AbstractProcessorLight","nativeMethod":false},{"methodName":"process","fileName":"AbstractProtocol.java","lineNumber":861,"className":"org.apache.coyote.AbstractProtocol$ConnectionHandler","nativeMethod":false},{"methodName":"doRun","fileName":"NioEndpoint.java","lineNumber":1455,"className":"org.apache.tomcat.util.net.NioEndpoint$SocketProcessor","nativeMethod":false},{"methodName":"run","fileName":"SocketProcessorBase.java","lineNumber":49,"className":"org.apache.tomcat.util.net.SocketProcessorBase","nativeMethod":false},{"methodName":"runWorker","fileName":"ThreadPoolExecutor.java","lineNumber":1142,"className":"java.util.concurrent.ThreadPoolExecutor","nativeMethod":false},{"methodName":"run","fileName":"ThreadPoolExecutor.java","lineNumber":617,"className":"java.util.concurrent.ThreadPoolExecutor$Worker","nativeMethod":false},{"methodName":"run","fileName":"TaskThread.java","lineNumber":61,"className":"org.apache.tomcat.util.threads.TaskThread$WrappingRunnable","nativeMethod":false},{"methodName":"run","fileName":"Thread.java","lineNumber":748,"className":"java.lang.Thread","nativeMethod":false}],"localizedMessage":null,"message":null,"suppressed":[]}
-2019-12-18 18:56:01 ERROR Utils:547 - File path doesn't exists: /Users/imac366/Desktop/RR/Java Client/PNG/TEST/PnG/102196907/401400544//91377726_002_Master-A.ai
-2019-12-18 18:56:48 INFO  Action:609 - Before calling send status message post method
-2019-12-18 18:56:49 INFO  Action:613 - Status of sending status msg response 
-2019-12-18 18:56:49 INFO  Action:597 - Before calling send report status message post method
-2019-12-18 18:56:49 INFO  Action:600 - Status of sending report status msg response Success
-2019-12-18 18:57:15 INFO  Action:701 - Before sending error status :23 - remark :/Users/imac366/Desktop/RR/Java Client/PNG/TEST/PnG/102196907/401400544//91377726_002_Master-A.ai
-2019-12-18 18:57:16 INFO  Action:705 - Error status sent :23 - remark : /Users/imac366/Desktop/RR/Java Client/PNG/TEST/PnG/102196907/401400544//91377726_002_Master-A.ai response : {"cause":null,"stackTrace":[{"methodName":"updateRRStatus","fileName":"RRApiServiceImpl.java","lineNumber":1782,"className":"com.schawk.tornado.service.RRApiServiceImpl","nativeMethod":false},{"methodName":"postRRUpdateStatus","fileName":"RRApiController.java","lineNumber":425,"className":"com.schawk.tornado.controller.RRApiController","nativeMethod":false},{"methodName":"invoke0","fileName":"NativeMethodAccessorImpl.java","lineNumber":-2,"className":"sun.reflect.NativeMethodAccessorImpl","nativeMethod":true},{"methodName":"invoke","fileName":"NativeMethodAccessorImpl.java","lineNumber":62,"className":"sun.reflect.NativeMethodAccessorImpl","nativeMethod":false},{"methodName":"invoke","fileName":"DelegatingMethodAccessorImpl.java","lineNumber":43,"className":"sun.reflect.DelegatingMethodAccessorImpl","nativeMethod":false},{"methodName":"invoke","fileName":"Method.java","lineNumber":498,"className":"java.lang.reflect.Method","nativeMethod":false},{"methodName":"doInvoke","fileName":"InvocableHandlerMethod.java","lineNumber":221,"className":"org.springframework.web.method.support.InvocableHandlerMethod","nativeMethod":false},{"methodName":"invokeForRequest","fileName":"InvocableHandlerMethod.java","lineNumber":137,"className":"org.springframework.web.method.support.InvocableHandlerMethod","nativeMethod":false},{"methodName":"invokeAndHandle","fileName":"ServletInvocableHandlerMethod.java","lineNumber":110,"className":"org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod","nativeMethod":false},{"methodName":"invokeHandleMethod","fileName":"RequestMappingHandlerAdapter.java","lineNumber":776,"className":"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter","nativeMethod":false},{"methodName":"handleInternal","fileName":"RequestMappingHandlerAdapter.java","lineNumber":705,"className":"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter","nativeMethod":false},{"methodName":"handle","fileName":"AbstractHandlerMethodAdapter.java","lineNumber":85,"className":"org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter","nativeMethod":false},{"methodName":"doDispatch","fileName":"DispatcherServlet.java","lineNumber":959,"className":"org.springframework.web.servlet.DispatcherServlet","nativeMethod":false},{"methodName":"doService","fileName":"DispatcherServlet.java","lineNumber":893,"className":"org.springframework.web.servlet.DispatcherServlet","nativeMethod":false},{"methodName":"processRequest","fileName":"FrameworkServlet.java","lineNumber":966,"className":"org.springframework.web.servlet.FrameworkServlet","nativeMethod":false},{"methodName":"doPost","fileName":"FrameworkServlet.java","lineNumber":868,"className":"org.springframework.web.servlet.FrameworkServlet","nativeMethod":false},{"methodName":"service","fileName":"HttpServlet.java","lineNumber":661,"className":"javax.servlet.http.HttpServlet","nativeMethod":false},{"methodName":"service","fileName":"FrameworkServlet.java","lineNumber":842,"className":"org.springframework.web.servlet.FrameworkServlet","nativeMethod":false},{"methodName":"service","fileName":"HttpServlet.java","lineNumber":742,"className":"javax.servlet.http.HttpServlet","nativeMethod":false},{"methodName":"internalDoFilter","fileName":"ApplicationFilterChain.java","lineNumber":231,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilter","fileName":"ApplicationFilterChain.java","lineNumber":166,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilter","fileName":"WsFilter.java","lineNumber":52,"className":"org.apache.tomcat.websocket.server.WsFilter","nativeMethod":false},{"methodName":"internalDoFilter","fileName":"ApplicationFilterChain.java","lineNumber":193,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilter","fileName":"ApplicationFilterChain.java","lineNumber":166,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilterInternal","fileName":"CharacterEncodingFilter.java","lineNumber":85,"className":"org.springframework.web.filter.CharacterEncodingFilter","nativeMethod":false},{"methodName":"doFilter","fileName":"OncePerRequestFilter.java","lineNumber":107,"className":"org.springframework.web.filter.OncePerRequestFilter","nativeMethod":false},{"methodName":"internalDoFilter","fileName":"ApplicationFilterChain.java","lineNumber":193,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"doFilter","fileName":"ApplicationFilterChain.java","lineNumber":166,"className":"org.apache.catalina.core.ApplicationFilterChain","nativeMethod":false},{"methodName":"invoke","fileName":"StandardWrapperValve.java","lineNumber":198,"className":"org.apache.catalina.core.StandardWrapperValve","nativeMethod":false},{"methodName":"invoke","fileName":"StandardContextValve.java","lineNumber":96,"className":"org.apache.catalina.core.StandardContextValve","nativeMethod":false},{"methodName":"invoke","fileName":"AuthenticatorBase.java","lineNumber":478,"className":"org.apache.catalina.authenticator.AuthenticatorBase","nativeMethod":false},{"methodName":"invoke","fileName":"StandardHostValve.java","lineNumber":140,"className":"org.apache.catalina.core.StandardHostValve","nativeMethod":false},{"methodName":"invoke","fileName":"Tomcat85AgentValve.java","lineNumber":35,"className":"psiprobe.Tomcat85AgentValve","nativeMethod":false},{"methodName":"invoke","fileName":"ErrorReportValve.java","lineNumber":80,"className":"org.apache.catalina.valves.ErrorReportValve","nativeMethod":false},{"methodName":"invoke","fileName":"StandardEngineValve.java","lineNumber":87,"className":"org.apache.catalina.core.StandardEngineValve","nativeMethod":false},{"methodName":"service","fileName":"CoyoteAdapter.java","lineNumber":342,"className":"org.apache.catalina.connector.CoyoteAdapter","nativeMethod":false},{"methodName":"service","fileName":"Http11Processor.java","lineNumber":799,"className":"org.apache.coyote.http11.Http11Processor","nativeMethod":false},{"methodName":"process","fileName":"AbstractProcessorLight.java","lineNumber":66,"className":"org.apache.coyote.AbstractProcessorLight","nativeMethod":false},{"methodName":"process","fileName":"AbstractProtocol.java","lineNumber":861,"className":"org.apache.coyote.AbstractProtocol$ConnectionHandler","nativeMethod":false},{"methodName":"doRun","fileName":"NioEndpoint.java","lineNumber":1455,"className":"org.apache.tomcat.util.net.NioEndpoint$SocketProcessor","nativeMethod":false},{"methodName":"run","fileName":"SocketProcessorBase.java","lineNumber":49,"className":"org.apache.tomcat.util.net.SocketProcessorBase","nativeMethod":false},{"methodName":"runWorker","fileName":"ThreadPoolExecutor.java","lineNumber":1142,"className":"java.util.concurrent.ThreadPoolExecutor","nativeMethod":false},{"methodName":"run","fileName":"ThreadPoolExecutor.java","lineNumber":617,"className":"java.util.concurrent.ThreadPoolExecutor$Worker","nativeMethod":false},{"methodName":"run","fileName":"TaskThread.java","lineNumber":61,"className":"org.apache.tomcat.util.threads.TaskThread$WrappingRunnable","nativeMethod":false},{"methodName":"run","fileName":"Thread.java","lineNumber":748,"className":"java.lang.Thread","nativeMethod":false}],"localizedMessage":null,"message":null,"suppressed":[]}
-2019-12-18 18:58:21 INFO  Action:688 - Before calling heartbeat post method
-2019-12-18 18:58:22 INFO  Action:691 - Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
-2019-12-18 18:58:22 INFO  HBTimer:29 - Heartbeat sent for IP : 192.168.2.1 location key : TestRR
+2020-01-02 15:06:43 INFO  Action:777 - Before calling heartbeat post method
+2020-01-02 15:06:43 ERROR HttpPostReq:313 - IO exception while sending http request: null
+2020-01-02 15:06:43 INFO  Action:780 - Status of sending heartbeat response ioException occured while sending http request : null
+2020-01-02 15:06:43 INFO  HBTimer:29 - Heartbeat sent for IP : 10.52.8.66 location key : TestRR
+2020-01-02 15:07:38 INFO  MQRcv:80 - TestRR:TestRRDivision
+2020-01-02 15:07:38 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
+2020-01-02 15:07:43 INFO  Action:777 - Before calling heartbeat post method
+2020-01-02 15:07:43 ERROR HttpPostReq:313 - IO exception while sending http request: null
+2020-01-02 15:07:43 INFO  Action:780 - Status of sending heartbeat response ioException occured while sending http request : null
+2020-01-02 15:07:43 INFO  HBTimer:29 - Heart beat sent for IP : 10.52.8.66 location key : TestRR
+2020-01-02 15:09:22 INFO  Action:777 - Before calling heartbeat post method
+2020-01-02 15:09:22 ERROR HttpPostReq:313 - IO exception while sending http request: null
+2020-01-02 15:09:22 INFO  Action:780 - Status of sending heartbeat response ioException occured while sending http request : null
+2020-01-02 15:09:22 INFO  HBTimer:29 - Heartbeat sent for IP : 10.37.129.2 location key : TestRR
+2020-01-02 15:09:55 INFO  Action:603 - Before calling send report status message post method
+2020-01-02 15:09:55 INFO  Action:606 - Status of sending report status msg response Success
+2020-01-02 15:09:55 INFO  Action:588 - Message received acknowledgement for job id  'e2633ba9-e47d-46b5-b1b1-222ceb5ca56d'  WO: 401400544
+2020-01-02 15:09:55 INFO  Action:764 - Before calling update erro status post method
+2020-01-02 15:09:56 INFO  Action:767 - Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-01-02 15:09:56 INFO  Action:30 - RR started processing
+2020-01-02 15:09:56 INFO  Action:33 - Illustrator activated to load file..
+2020-01-02 15:10:03 INFO  Action:39 - AI file and other dependend file opening..
+2020-01-02 15:10:07 INFO  Action:78 - TyphoonShadow called
+2020-01-02 15:10:07 INFO  Action:173 - Pdf and xml generated..
+2020-01-02 15:10:07 ERROR JsonParser:185 - Invalid Key value search 'RR3DXML'  null
+2020-01-02 15:10:16 INFO  Action:603 - Before calling send report status message post method
+2020-01-02 15:10:16 INFO  Action:606 - Status of sending report status msg response Success
+2020-01-02 15:10:16 INFO  Action:242 - Completed process for job id  'e2633ba9-e47d-46b5-b1b1-222ceb5ca56d' 
+2020-01-02 15:10:17 INFO  Action:631 - Before calling update to server post method
+2020-01-02 15:10:18 ERROR Action:684 - XML compare API response : 500
+2020-01-02 15:10:18 INFO  Action:247 - Xml comparison completed..
+2020-01-02 15:10:18 INFO  Action:752 - Before calling update report post method
+2020-01-02 15:10:18 INFO  Action:755 - Status of updating  report response {"status":"error","code":"1","detailsObj":{"aawpusher":"id.not.found"}}
+2020-01-02 15:10:18 INFO  Action:615 - Before calling send status message post method
+2020-01-02 15:10:18 INFO  Action:619 - Status of sending status msg response 
+2020-01-02 15:10:48 INFO  Action:603 - Before calling send report status message post method
+2020-01-02 15:10:48 INFO  Action:606 - Status of sending report status msg response Success
+2020-01-02 15:10:48 INFO  Action:588 - Message received acknowledgement for job id  '4c1e8828-bcc8-46ad-91cd-8c602fbf618d'  WO: 401400544
+2020-01-02 15:10:48 INFO  Action:764 - Before calling update erro status post method
+2020-01-02 15:10:48 ERROR HttpPostReq:313 - IO exception while sending http request: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2020-01-02 15:10:48 INFO  Action:767 - Status of sending error status response ioException occured while sending http request : sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2020-01-02 15:10:48 INFO  Action:30 - RR started processing
+2020-01-02 15:10:49 INFO  Action:33 - Illustrator activated to load file..
+2020-01-02 15:10:56 INFO  Action:39 - AI file and other dependend file opening..
+2020-01-02 15:10:59 INFO  Action:78 - TyphoonShadow called
+2020-01-02 15:10:59 INFO  Action:173 - Pdf and xml generated..
+2020-01-02 15:10:59 ERROR JsonParser:185 - Invalid Key value search 'RR3DXML'  null
+2020-01-02 15:11:09 INFO  Action:603 - Before calling send report status message post method
+2020-01-02 15:11:09 INFO  Action:606 - Status of sending report status msg response Success
+2020-01-02 15:11:09 INFO  Action:242 - Completed process for job id  '4c1e8828-bcc8-46ad-91cd-8c602fbf618d' 
+2020-01-02 15:11:10 INFO  Action:631 - Before calling update to server post method
+2020-01-02 15:11:11 INFO  Action:650 - Before calling update to server post method
+2020-01-02 15:11:12 ERROR Action:667 - XML compare API response : 500
+2020-01-02 15:11:12 INFO  Action:247 - Xml comparison completed..
+2020-01-02 15:11:12 INFO  Action:752 - Before calling update report post method
+2020-01-02 15:11:12 ERROR HttpPostReq:313 - IO exception while sending http request: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2020-01-02 15:11:12 INFO  Action:755 - Status of updating  report response ioException occured while sending http request : sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2020-01-02 15:11:12 INFO  Action:615 - Before calling send status message post method
+2020-01-02 15:11:12 INFO  Action:619 - Status of sending status msg response 
+2020-01-02 15:11:29 INFO  Action:603 - Before calling send report status message post method
+2020-01-02 15:11:29 INFO  Action:606 - Status of sending report status msg response Success
+2020-01-02 15:11:29 INFO  Action:588 - Message received acknowledgement for job id  'c530881c-0e78-406e-b7ef-89f6ba1b36a8'  WO: 401400544
+2020-01-02 15:11:29 INFO  Action:764 - Before calling update error status post method
+2020-01-02 15:11:30 INFO  Action:767 - Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-01-02 15:11:30 INFO  Action:30 - RR started processing
+2020-01-02 15:11:30 INFO  Action:33 - Illustrator activated to load file..
+2020-01-02 15:11:37 INFO  Action:39 - AI file and other dependend file opening..
+2020-01-02 15:11:41 INFO  Action:78 - TyphoonShadow called
+2020-01-02 15:11:41 INFO  Action:173 - Pdf and xml generated..
+2020-01-02 15:11:41 ERROR JsonParser:185 - Invalid Key value search 'RR3DXML'  null
+2020-01-02 15:11:43 INFO  Action:777 - Before calling heartbeat post method
+2020-01-02 15:11:43 INFO  Action:780 - Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-01-02 15:11:43 INFO  HBTimer:29 - Heartbeat sent for IP : 10.52.8.66 location key : TestRR
+2020-01-02 15:11:50 INFO  Action:603 - Before calling send report status message post method
+2020-01-02 15:11:50 INFO  Action:606 - Status of sending report status msg response Success
+2020-01-02 15:11:50 INFO  Action:242 - Completed process for job id  'c530881c-0e78-406e-b7ef-89f6ba1b36a8' 
+2020-01-02 15:11:51 INFO  Action:631 - Before calling update to server post method
+2020-01-02 15:11:51 ERROR Action:684 - XML compare API response : 500
+2020-01-02 15:11:51 INFO  Action:247 - Xml comparison completed..
+2020-01-02 15:11:51 INFO  Action:752 - Before calling update report post method
+2020-01-02 15:11:52 INFO  Action:755 - Status of updating  report response {"status":"error","code":"1","detailsObj":{"aawpusher":"id.not.found"}}
+2020-01-02 15:11:52 INFO  Action:615 - Before calling send status message post method
+2020-01-02 15:11:52 INFO  Action:619 - Status of sending status msg response 
+2020-01-02 15:12:43 INFO  Action:777 - Before calling heartbeat post method
+2020-01-02 15:12:43 INFO  Action:780 - Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-01-02 15:12:43 INFO  HBTimer:29 - Heart beat sent for IP : 10.52.8.66 location key : TestRR
+2020-01-02 15:13:13 INFO  MQRcv:80 - TestRR:TestRRDivision
+2020-01-02 15:13:13 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
+2020-01-02 15:13:18 INFO  Action:777 - Before calling heartbeat post method
+2020-01-02 15:13:18 ERROR HttpPostReq:313 - IO exception while sending http request: null
+2020-01-02 15:13:18 INFO  Action:780 - Status of sending heartbeat response ioException occured while sending http request : null
+2020-01-02 15:13:18 INFO  HBTimer:29 - Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-01-02 15:15:02 INFO  MQRcv:80 - TestRR:TestRRDivision
+2020-01-02 15:15:02 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
+2020-01-02 15:15:03 INFO  Action:603 - Before calling send report status message post method
+2020-01-02 15:15:03 INFO  Action:606 - Status of sending report status msg response Success
+2020-01-02 15:15:03 INFO  Action:588 - Message received acknowledgement for job id  '7f035026-1eab-41b0-948b-74156f624faa'  WO: 401400544
+2020-01-02 15:15:03 INFO  Action:764 - Before calling update error status post method
+2020-01-02 15:15:04 INFO  Action:767 - Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-01-02 15:15:04 INFO  Action:30 - RR started processing
+2020-01-02 15:15:04 INFO  Action:33 - Illustrator activated to load file..
+2020-01-02 15:15:07 INFO  Action:777 - Before calling heartbeat post method
+2020-01-02 15:15:07 INFO  Action:780 - Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-01-02 15:15:07 INFO  HBTimer:29 - Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-01-02 15:15:11 INFO  Action:39 - AI file and other dependend file opening..
+2020-01-02 15:15:15 INFO  Action:78 - TyphoonShadow called
+2020-01-02 15:15:15 INFO  Action:173 - Pdf and xml generated..
+2020-01-02 15:15:15 ERROR JsonParser:185 - Invalid Key value search 'RR3DXML'  null
+2020-01-02 15:15:24 INFO  Action:603 - Before calling send report status message post method
+2020-01-02 15:15:24 INFO  Action:606 - Status of sending report status msg response Success
+2020-01-02 15:15:24 INFO  Action:242 - Completed process for job id  '7f035026-1eab-41b0-948b-74156f624faa' 
+2020-01-02 15:15:25 INFO  Action:631 - Before calling update to server post method
+2020-01-02 15:15:26 ERROR Action:684 - XML compare API response : 500
+2020-01-02 15:15:26 INFO  Action:247 - Xml comparison completed..
+2020-01-02 15:15:26 INFO  Action:752 - Before calling update report post method
+2020-01-02 15:15:26 INFO  Action:755 - Status of updating  report response {"status":"error","code":"1","detailsObj":{"aawpusher":"id.not.found"}}
+2020-01-02 15:15:26 INFO  Action:615 - Before calling send status message post method
+2020-01-02 15:15:26 INFO  Action:619 - Status of sending status msg response 
+2020-01-02 15:15:28 INFO  Action:603 - Before calling send report status message post method
+2020-01-02 15:15:28 INFO  Action:606 - Status of sending report status msg response Success
+2020-01-02 15:15:28 INFO  Action:588 - Message received acknowledgement for job id  '9d0126aa-2b44-4031-a7b1-4b49a0deee4b'  WO: 401400544
+2020-01-02 15:15:28 INFO  Action:764 - Before calling update error status post method
+2020-01-02 15:15:28 INFO  Action:767 - Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-01-02 15:15:28 INFO  Action:30 - RR started processing
+2020-01-02 15:15:28 INFO  Action:33 - Illustrator activated to load file..
+2020-01-02 15:15:35 INFO  Action:39 - AI file and other dependend file opening..
+2020-01-02 15:15:39 INFO  Action:78 - TyphoonShadow called
+2020-01-02 15:15:39 INFO  Action:173 - Pdf and xml generated..
+2020-01-02 15:15:39 ERROR JsonParser:185 - Invalid Key value search 'RR3DXML'  null
+2020-01-02 15:15:48 INFO  Action:603 - Before calling send report status message post method
+2020-01-02 15:15:48 INFO  Action:606 - Status of sending report status msg response Success
+2020-01-02 15:15:48 INFO  Action:242 - Completed process for job id  '9d0126aa-2b44-4031-a7b1-4b49a0deee4b' 
+2020-01-02 15:15:49 INFO  Action:631 - Before calling update to server post method
+2020-01-02 15:15:49 ERROR Action:684 - XML compare API response : 500
+2020-01-02 15:15:49 INFO  Action:247 - Xml comparison completed..
+2020-01-02 15:15:49 INFO  Action:752 - Before calling update report post method
+2020-01-02 15:15:50 INFO  Action:755 - Status of updating  report response {"status":"error","code":"1","detailsObj":{"aawpusher":"id.not.found"}}
+2020-01-02 15:15:50 INFO  Action:615 - Before calling send status message post method
+2020-01-02 15:15:50 INFO  Action:619 - Status of sending status msg response 
+2020-01-02 15:16:26 INFO  Action:603 - Before calling send report status message post method
+2020-01-02 15:16:26 INFO  Action:606 - Status of sending report status msg response Success
+2020-01-02 15:16:26 INFO  Action:588 - Message received acknowledgement for job id  '1f33a935-561c-4fc6-a112-170fee86deea'  WO: 401400544
+2020-01-02 15:16:26 INFO  Action:764 - Before calling update error status post method
+2020-01-02 15:16:26 ERROR HttpPostReq:313 - IO exception while sending http request: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2020-01-02 15:16:26 INFO  Action:767 - Status of sending error status response ioException occured while sending http request : sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2020-01-02 15:16:26 INFO  Action:30 - RR started processing
+2020-01-02 15:16:26 INFO  Action:33 - Illustrator activated to load file..
+2020-01-02 15:16:33 INFO  Action:39 - AI file and other dependend file opening..
+2020-01-02 15:16:37 INFO  Action:78 - TyphoonShadow called
+2020-01-02 15:16:37 INFO  Action:173 - Pdf and xml generated..
+2020-01-02 15:16:37 ERROR JsonParser:185 - Invalid Key value search 'RR3DXML'  null
+2020-01-02 15:16:46 INFO  Action:603 - Before calling send report status message post method
+2020-01-02 15:16:46 INFO  Action:606 - Status of sending report status msg response Success
+2020-01-02 15:16:46 INFO  Action:242 - Completed process for job id  '1f33a935-561c-4fc6-a112-170fee86deea' 
+2020-01-02 15:16:47 INFO  Action:631 - Before calling update to server post method
+2020-01-02 15:16:48 INFO  Action:650 - Before calling update to server post method
+2020-01-02 15:16:49 ERROR Action:667 - XML compare API response : 500
+2020-01-02 15:16:49 INFO  Action:247 - Xml comparison completed..
+2020-01-02 15:16:49 INFO  Action:752 - Before calling update report post method
+2020-01-02 15:16:50 ERROR HttpPostReq:313 - IO exception while sending http request: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2020-01-02 15:16:50 INFO  Action:755 - Status of updating  report response ioException occured while sending http request : sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2020-01-02 15:16:50 INFO  Action:615 - Before calling send status message post method
+2020-01-02 15:16:50 INFO  Action:619 - Status of sending status msg response 
+2020-01-02 15:27:38 INFO  MQRcv:80 - TestRR:TestRRDivision
+2020-01-02 15:27:39 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
+2020-01-02 15:27:44 INFO  Action:777 - Before calling heartbeat post method
+2020-01-02 15:27:44 ERROR HttpPostReq:313 - IO exception while sending http request: null
+2020-01-02 15:27:44 INFO  Action:780 - Status of sending heartbeat response ioException occured while sending http request : null
+2020-01-02 15:27:44 INFO  HBTimer:29 - Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-01-02 15:32:44 INFO  Action:777 - Before calling heartbeat post method
+2020-01-02 15:32:44 ERROR HttpPostReq:313 - IO exception while sending http request: null
+2020-01-02 15:32:44 INFO  Action:780 - Status of sending heartbeat response ioException occured while sending http request : null
+2020-01-02 15:32:44 INFO  HBTimer:29 - Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-01-02 15:37:44 INFO  Action:777 - Before calling heartbeat post method
+2020-01-02 15:37:44 ERROR HttpPostReq:313 - IO exception while sending http request: null
+2020-01-02 15:37:44 INFO  Action:780 - Status of sending heartbeat response ioException occured while sending http request : null
+2020-01-02 15:37:44 INFO  HBTimer:29 - Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-01-02 15:42:44 INFO  Action:777 - Before calling heartbeat post method
+2020-01-02 15:42:44 ERROR HttpPostReq:313 - IO exception while sending http request: null
+2020-01-02 15:42:44 INFO  Action:780 - Status of sending heartbeat response ioException occured while sending http request : null
+2020-01-02 15:42:44 INFO  HBTimer:29 - Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-01-02 15:47:44 INFO  Action:777 - Before calling heartbeat post method
+2020-01-02 15:47:44 ERROR HttpPostReq:313 - IO exception while sending http request: null
+2020-01-02 15:47:44 INFO  Action:780 - Status of sending heartbeat response ioException occured while sending http request : null
+2020-01-02 15:47:44 INFO  HBTimer:29 - Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-01-02 15:52:44 INFO  Action:777 - Before calling heartbeat post method
+2020-01-02 15:52:44 ERROR HttpPostReq:313 - IO exception while sending http request: null
+2020-01-02 15:52:44 INFO  Action:780 - Status of sending heartbeat response ioException occured while sending http request : null
+2020-01-02 15:52:44 INFO  HBTimer:29 - Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-01-02 15:57:44 INFO  Action:777 - Before calling heartbeat post method
+2020-01-02 15:57:44 ERROR HttpPostReq:313 - IO exception while sending http request: null
+2020-01-02 15:57:44 INFO  Action:780 - Status of sending heartbeat response ioException occured while sending http request : null
+2020-01-02 15:57:44 INFO  HBTimer:29 - Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-01-02 16:02:44 INFO  Action:777 - Before calling heartbeat post method
+2020-01-02 16:02:44 ERROR HttpPostReq:313 - IO exception while sending http request: null
+2020-01-02 16:02:44 INFO  Action:780 - Status of sending heartbeat response ioException occured while sending http request : null
+2020-01-02 16:02:44 INFO  HBTimer:29 - Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-01-02 16:07:44 INFO  Action:777 - Before calling heartbeat post method
+2020-01-02 16:07:44 ERROR HttpPostReq:313 - IO exception while sending http request: null
+2020-01-02 16:07:44 INFO  Action:780 - Status of sending heartbeat response ioException occured while sending http request : null
+2020-01-02 16:07:44 INFO  HBTimer:29 - Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-01-02 16:12:44 INFO  Action:777 - Before calling heartbeat post method
+2020-01-02 16:12:44 ERROR HttpPostReq:313 - IO exception while sending http request: null
+2020-01-02 16:12:44 INFO  Action:780 - Status of sending heartbeat response ioException occured while sending http request : null
+2020-01-02 16:12:44 INFO  HBTimer:29 - Heart beat sent for IP : 10.37.129.2 location key : TestRR

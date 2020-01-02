@@ -518,27 +518,40 @@ public class Action {
 
 	public static void ValidateFiles(JSONObject jsonObj) throws Exception {
 
-		JsonParser jspr = new JsonParser();
-		String[] pathString = jspr.getPath(jsonObj);
-		try {
+			JsonParser jspr = new JsonParser();
+			String[] pathString = jspr.getPath(jsonObj);
 			String[] xmlFilesPath = pathString[0].split(",");
 			for (int eachXmlCount = 0; eachXmlCount < xmlFilesPath.length; eachXmlCount++) {
 				XmlUtiility.IsValidXML(xmlFilesPath[eachXmlCount].split("~")[0]);
 			}
-		} catch (Exception ex) {
-			log.error("xml err: " + ex);
-		//	ThrowException.CatchException(ex);
-			ThrowException.CatchExceptionWithErrorMsgId(ex,"Error in xml" ,"14");
-		}
 	}
 
 	public static void acknowledge(String jsonString) throws Exception {
 		
 		JSONObject jsonObj = JsonParser.ParseJson(jsonString);
-		
+		JsonParser jsonPars = new JsonParser();
 		String version = (String) jsonObj.get("version");
 		MessageQueue.VERSION = version;
 		Thread.sleep(1000);
+		
+		try {
+			MessageQueue.TORNADO_ENV =  (String) jsonPars.getJsonValueFromGroupKey(jsonObj, "region", "env");
+		if(MessageQueue.TORNADO_ENV.equals("development"))
+			MessageQueue.TORNADO_HOST = MessageQueue.TORNADO_HOST_DEV;
+		else if(MessageQueue.TORNADO_ENV.equals("production"))
+			MessageQueue.TORNADO_HOST = MessageQueue.TORNADO_HOST_LIVE_1;
+		else
+		{
+			log.error("Issue with environment value, process terminated.");
+			ThrowException.CustomExitWithErrorMsgID(null, "Invalid JSON environment value from Tornado", "14");
+		}
+		}
+		catch(Exception ex)
+		{
+			log.error("Issue with environment value, process terminated.");
+			ThrowException.CustomExitWithErrorMsgID(null, "Invalid JSON environment value from Tornado", "14");
+		}
+		
 		INIReader iniRdr = new INIReader();
 		iniRdr.writeValueforKey(MessageQueue.TORNADO_HOST);
 		
@@ -553,7 +566,7 @@ public class Action {
 		//Action.AddVolumes(); // mount volume after creating message id.
 
 		// ***PnG***// This is to copy from different part to 050_Production.
-		JsonParser jsonPars = new JsonParser();
+		
 		Utils utls = new Utils();
 		String destinationFilePath = jsonPars.getMasterAIWithoutPathValidate(jsonObj, "Master");
 		String sourceFile = jsonPars.getJsonValueFromGroupKey(jsonObj, "aaw", "MasterTemplate");
@@ -566,15 +579,8 @@ public class Action {
 	
 		if(copyFileStatus != "") 
 		{
-			try {
-				if (!((String) jsonObj.get("type")).equals("multi"))
-					ValidateFiles(jsonObj);
-			} catch (java.lang.NullPointerException Ex) {
-				log.error(Ex.getMessage());
-				MessageQueue.ERROR += "\nInvalid Json request";
-				fls.AppendFileString("\nInvalid Json request:" + " \n");
-				ThrowException.CustomExitWithErrorMsgID(Ex, "Invalid JSON request from Tornado", "14");
-			}
+			if (!((String) jsonObj.get("type")).equals("multi"))
+				ValidateFiles(jsonObj);
 			try {
 				
 				String workOrderNo  = jsonPars.getJsonValueForKey(jsonObj, "WO");
@@ -628,24 +634,107 @@ public class Action {
 			connection = (httpsCon.getURLConnection(urlStr, true));
 			if(connection != null)
 			{
-				connection.setConnectTimeout(60000 * 10);
-				connection.setReadTimeout(60000 * 10);
+				connection.setConnectTimeout(60000 * 5);
+				connection.setReadTimeout(60000 * 5);
 			}
 			if(connection == null)
 			{
 				System.out.println("XML compare : API connection failed");
+				log.error("XML compare : API connection failed");
 			}
-			else
-				System.out.println("XML compare : " + connection.getResponseCode());
+			else if((connection.getResponseCode() != HttpURLConnection.HTTP_OK) && MessageQueue.TORNADO_HOST.equals(MessageQueue.TORNADO_HOST_LIVE_1) && MessageQueue.TORNADO_ENV.equals("production"))
+			{
+		
+					try
+					{
+					log.info("Before calling update to server post method");
+					URL urlStr_2 = new URL(
+							MessageQueue.TORNADO_HOST_LIVE_2 + "/rest/pub/aaw/" + actionStr + "?mqid=" + (String) jsonObj.get("Id"));
+					connection = (httpsCon.getURLConnection(urlStr_2, true));
+					if(connection != null)
+					{
+						connection.setConnectTimeout(60000 * 5);
+						connection.setReadTimeout(60000 * 5);
+					}
+					if(connection == null)
+					{
+						System.out.println("XML compare : API connection failed");
+						log.error("XML compare : API connection failed");
+					}
+					else
+					{
+						System.out.println("XML compare : " + connection.getResponseCode());
+						log.error("XML compare API response : " + connection.getResponseCode());
+					}
+					
+					
+					if(connection != null)
+						connection.disconnect();
+					}
+					catch(java.net.SocketTimeoutException e)
+					{
+						log.error("Http response time out: " + (String)e.getMessage());
+						Action.UpdateErrorStatusWithRemark("26", "Road Runner not received any response: " +  (String) e.getMessage());
+					}
+					
+				}
+				else
+				{
+					System.out.println("XML compare: " + connection.getResponseCode());
+					log.error("XML compare API response : " + connection.getResponseCode());
+				}
+
 			if(connection != null)
 			connection.disconnect();
 			
 		}
 		catch (java.net.SocketTimeoutException ex)
 		{
+			
+			if(MessageQueue.TORNADO_HOST.equals(MessageQueue.TORNADO_HOST_LIVE_1) && MessageQueue.TORNADO_ENV.equals("production"))
+			{
+				try
+				{
+				HttpsConnection httpsCon = new HttpsConnection();
+				HttpURLConnection connection;
+				log.info("Before calling update to server post method");
+				URL urlStr = new URL(
+						MessageQueue.TORNADO_HOST_LIVE_2 + "/rest/pub/aaw/" + actionStr + "?mqid=" + (String) jsonObj.get("Id"));
+				connection = (httpsCon.getURLConnection(urlStr, true));
+				if(connection != null)
+				{
+					connection.setConnectTimeout(60000 * 5);
+					connection.setReadTimeout(60000 * 5);
+				}
+				if(connection == null)
+				{
+					System.out.println("XML compare : API connection failed");
+					log.error("XML compare : API connection failed");
+				}
+				else
+				{
+					System.out.println("XML compare : " + connection.getResponseCode());
+					log.error("XML compare API response : " + connection.getResponseCode());
+				}
+				
+				
+				if(connection != null)
+				connection.disconnect();
+				}
+				catch(java.net.SocketTimeoutException e)
+				{
+					log.error("Http response time out: " + (String)e.getMessage());
+					Action.UpdateErrorStatusWithRemark("26", "Road Runner not received any response: " +  (String) e.getMessage());
+				}
+			
+			}
+			else
+			{
+			
 			log.error("Http response time out: " + (String)ex.getMessage());
 			Action.UpdateErrorStatusWithRemark("26", "Road Runner not received any response: " +  (String) ex.getMessage());
 			//log.info("Sent error status id : 26 - Road runner not received any response");
+			}
 		}
 		catch (IOException ex)
 		{
@@ -672,7 +761,7 @@ public class Action {
 	public static void UpdateErrorStatus(String reportStr) throws IOException {
 		try {
 			HttpsConnection httpsCon = new HttpsConnection();
-			log.info("Before calling update erro status post method");
+			log.info("Before calling update error status post method");
 		    String postResponse = httpsCon.excuteErrorStatusHttpJsonPost(MessageQueue.TORNADO_HOST + "/rest/pub/rr/updatestatus",
 					MessageQueue.MSGID, reportStr);
 		    log.info("Status of sending error status response " + postResponse);

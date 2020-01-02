@@ -13,6 +13,25 @@ public class MessageQueue extends Action {
 	  protected final static String PASSWORD = "aaw";
 	  protected final static String VHOST = "AAW";
 	  
+	  
+	  protected static String TORNADO_HOST = "";
+	  protected static String TORNADO_ENV = "";
+	  
+	  protected final static String TORNADO_HOST_LIVE_1 = "https://172.28.42.157:8443/tornado";   //LIVE
+	  protected final static String TORNADO_HOST_LIVE_2 = " https://172.26.42.39:8443/tornado";	//LIVE alternative 
+	  
+	  protected final static String TORNADO_HOST_DEV = "http://172.28.42.151:8082/tornado"; // JAVA DEV IP for PITAA [PNG] Only.
+		
+	  
+	  
+
+	  
+	  
+	  
+	  
+	  
+	  /*
+	  
 	  protected final static String TORNADO_HOST = "https://172.28.42.157:8443/tornado_rr"; // JAVA NEW LIVE IP for PITAA[PNG] Only
 
 	  //PRV-168//	  protected final static String TORNADO_HOST = "http://172.28.42.168:8080/tornado_rr"; // JAVA LIVE IP for PITAA[PNG] Only.
@@ -23,7 +42,7 @@ public class MessageQueue extends Action {
 //	  protected final static String TORNADO_HOST = "https://172.28.42.157:8443/tornado"; // JAVA LIVE IP with Secure
 //	  protected final static String TORNADO_HOST = "https://devtornado.schawk.com";	//Dev tornado
 //	  protected final static String TORNADO_HOST = "http://172.28.42.151:8082/tornado"; //JAVA DEV Tornado 
-	  
+	  */
 	  
 	  public static boolean GATE = true;
 	  public static String MSGID = "";
