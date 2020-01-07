@@ -44,7 +44,7 @@ public class SEng{
 		}
 		catch(Exception ex)
 		{
-		//	log.error("Error on running script enginge: " + ex.getMessage());
+		//	log.error(MessageQueue.WORK_ORDER + ": " + "Error on running script enginge: " + ex.getMessage());
 			return ex.getMessage();
 		}
 		
@@ -64,8 +64,8 @@ public class SEng{
 		 }
 		 catch(Exception ex)
 		 {
-			 log.error("Issue on launching illustrator " + ex.getMessage());
-			 log.info("Error Status updated as 14 - Roadrunner exits on error");
+			 log.error(MessageQueue.WORK_ORDER + ": " + "Issue on launching illustrator " + ex.getMessage());
+			 log.info(MessageQueue.WORK_ORDER + ": " + "Error Status updated as 14 - Roadrunner exits on error");
 			 ThrowException.CatchExceptionWithErrorMsgId(new Exception("Illustrator"), "Roadrunner exits on error", "14");
 		 }
 	 }
@@ -127,7 +127,7 @@ public class SEng{
 		 if (fontMissing != "")
 		 {
 			 System.out.println(fontMissing);
-			 log.error("Font Missing :" + fontMissing);
+			 log.error(MessageQueue.WORK_ORDER + ": " + "Font Missing :" + fontMissing);
 			 ThrowException.CatchException(new Exception("Font Missing"));
 		 }
 	 }
@@ -185,7 +185,7 @@ public class SEng{
 		 }
 		 catch (Exception ex)
 		 {
-			 log.error("Failed to apply Swatch color merge");
+			 log.error(MessageQueue.WORK_ORDER + ": " + "Failed to apply Swatch color merge");
 			 return null;
 		 }
 		

@@ -26,11 +26,11 @@ public class HBTimer extends TimerTask
 		try 
 		{
 			Action.UpdateClientMachineRunningStatus(this.ipAddress, this.locationKey, this.category);
-			log.info("Heart beat sent for IP : " + this.ipAddress + " location key : " + this.locationKey );
+			log.info(MessageQueue.WORK_ORDER + ": " + "Heart beat sent for IP : " + this.ipAddress + " location key : " + this.locationKey );
 		}
 		catch (IOException ex) 
 		{
-			log.error("HeartBeat Client machine update error : " + ex.getMessage());
+			log.error(MessageQueue.WORK_ORDER + ": " + "HeartBeat Client machine update error : " + ex.getMessage());
 		}
 	}
 

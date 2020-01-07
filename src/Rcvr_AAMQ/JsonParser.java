@@ -34,7 +34,7 @@ public class JsonParser {
 		if(!Utils.IsFolderExists(xmlFolderPath))
 		{
 			Action.UpdateErrorStatusWithRemark("23", "Folder path does not exists: " + xmlFolderPath);
-			log.error("Folder doesn't exists: " + xmlFolderPath);
+			log.error(MessageQueue.WORK_ORDER + ": " + "Folder doesn't exists: " + xmlFolderPath);
 	//		ThrowException.CustomExit(new Exception("Folder path does not exists "), "Folder path does not exists " + "--" + xmlFolderPath);
 			ThrowException.CustomExitWithErrorMsgID(new Exception("Folder path does not exists "), xmlFolderPath.toString(), "23");
 		}
@@ -50,7 +50,7 @@ public String geFilePathFromJson(JSONObject jsonObj, String keyString) throws Ex
 	if(!utils.FileExists(docFilePath))
 	{
 		Action.UpdateErrorStatusWithRemark("23", "Folder path does not exists: " + docFilePath);  //File not found error status to Tornado API
-		log.error("Folder or File doesn't exists: " + docFilePath);
+		log.error(MessageQueue.WORK_ORDER + ": " + "Folder or File doesn't exists: " + docFilePath);
 	//	ThrowException.CustomExit(new Exception("Folder path or File does not exists "), "Folder path or file does not exists: "+docFilePath);
 		ThrowException.CustomExitWithErrorMsgID(new Exception("Folder path does not exists "), docFilePath.toString(), "23");
 		
@@ -77,7 +77,7 @@ public String[] getMultiPath(JSONObject jsonObj, String xmlFileName) throws Numb
 	if(rtArray[1] != "TRUE")
 	{
 		Action.UpdateErrorStatusWithRemark("23", "Folder path does not exists: " + docFile[Integer.parseInt(rtArray[0])]);  //File not found error status to Tornado API
-		log.error("File path doesn't exists: " + docFile[Integer.parseInt(rtArray[0])]);
+		log.error(MessageQueue.WORK_ORDER + ": " + "File path doesn't exists: " + docFile[Integer.parseInt(rtArray[0])]);
 	//	ThrowException.CustomExit(new Exception("File Path or File does not exists "), "File path or file does not exists " + docFile[Integer.parseInt(rtArray[0])]);
 		ThrowException.CustomExitWithErrorMsgID(new Exception("Folder path does not exists "), docFile[Integer.parseInt(rtArray[0])], "23");
 	}
@@ -141,7 +141,7 @@ public  String[] getPath(JSONObject jsonObj) throws NumberFormatException, Excep
 	rtArray = utils.ArrayOfFileExists(docFile);
 	if(rtArray[1] != "TRUE"){
 		Action.UpdateErrorStatusWithRemark("23", "File Path or File does not exists  " + docFile[Integer.parseInt(rtArray[0])]);
-		log.error("File path doesn't exists: " + docFile[Integer.parseInt(rtArray[0])]);
+		log.error(MessageQueue.WORK_ORDER + ": " + "File path doesn't exists: " + docFile[Integer.parseInt(rtArray[0])]);
 	//	ThrowException.CustomExit(new Exception("File Path or File does not exists "), "File path or file does not exists " + docFile[Integer.parseInt(rtArray[0])]);
 		ThrowException.CustomExitWithErrorMsgID(new Exception("Folder path does not exists "), docFile[Integer.parseInt(rtArray[0])], "23");
 	}
@@ -168,7 +168,7 @@ public String getJsonValueForKey(JSONObject jsonObj, String jsonKey)
 	}
 	catch(Exception Ex)
 	{
-	   log.error("Invalid Key value search '" + jsonKey+"'" + "  " + Ex.getMessage());	
+	   log.error(MessageQueue.WORK_ORDER + ": " + "Invalid Key value search '" + jsonKey+"'" + "  " + Ex.getMessage());	
 	}
 	return null;
 }
@@ -182,7 +182,7 @@ public boolean getJsonBooleanValueForKey(JSONObject jsonObj,String jsonGroupKey,
 	}
 	catch(Exception Ex)
 	{
-	   log.error("Invalid Key value search '" + jsonKey+"'" + "  " + Ex.getMessage());	
+	   log.error(MessageQueue.WORK_ORDER + ": " + "Invalid Key value search '" + jsonKey+"'" + "  " + Ex.getMessage());	
 	}
 	return false;
 }
@@ -197,7 +197,7 @@ public String getJsonValueFromGroupKey(JSONObject jsonObj, String jsonGroupKey, 
 	}
 	catch(Exception Ex)
 	{
-	   log.error("Invalid Key value search '" + jsonGroupKey +", "+ jsonKey + "'" + "  " + Ex.getMessage());	
+	   log.error(MessageQueue.WORK_ORDER + ": " + "Invalid Key value search '" + jsonGroupKey +", "+ jsonKey + "'" + "  " + Ex.getMessage());	
 	}
 	return null;
 }

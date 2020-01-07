@@ -81,7 +81,7 @@ public class HttpsConnection
 		   }
 		   catch(Exception ex)
 		   {
-			   log.error("Report failed to send " + ex.getMessage());
+			   log.error(MessageQueue.WORK_ORDER + ": " + "Report failed to send " + ex.getMessage());
 			   System.out.println("Report failed to send");
 		   }
 		   
@@ -101,7 +101,7 @@ public class HttpsConnection
 		catch (Exception e) 
 		{
 		    e.printStackTrace();
-			log.error("Error at execute post: " + e.getMessage());
+			log.error(MessageQueue.WORK_ORDER + ": " + "Error at execute post: " + e.getMessage());
 		    return null;
 		}
 		finally
@@ -143,7 +143,7 @@ public class HttpsConnection
 	    }
 	    catch (Exception e) 
 	    { 
-	    	log.error("Error at Connection trust: " + e.getMessage());
+	    	log.error(MessageQueue.WORK_ORDER + ": " + "Error at Connection trust: " + e.getMessage());
 	    } 
 	}
 
@@ -174,7 +174,7 @@ public class HttpsConnection
 	   }
 	   catch(Exception ex)
 	   {
-		   log.error("Error at HttpsUrConnection: " + ex.getMessage());
+		   log.error(MessageQueue.WORK_ORDER + ": " + "Error at HttpsUrConnection: " + ex.getMessage());
 		   return null;
 	   }
 	   
@@ -192,7 +192,7 @@ public class HttpsConnection
 	   }
 	   catch (Exception ex)
 	   {
-		   log.error("Exception on sendign report to tornado");
+		   log.error(MessageQueue.WORK_ORDER + ": " + "Exception on sendign report to tornado");
 		   return "exception on report sending to tornado\n";
 	   }
 	   String jsonData=user.toString();
@@ -212,7 +212,7 @@ public class HttpsConnection
 	   }
 	   catch (Exception ex)
 	   {
-		   log.error("Exception on report sending to tornado");
+		   log.error(MessageQueue.WORK_ORDER + ": " + "Exception on report sending to tornado");
 		   return "exception on report sending to tornado\n";
 	   }
 	   String jsonData=user.toString();
@@ -233,7 +233,7 @@ public class HttpsConnection
 	   }
 	   catch (Exception ex)
 	   {
-		   log.error("Exception on report sending to tornado: " + ex.getMessage());
+		   log.error(MessageQueue.WORK_ORDER + ": " + "Exception on report sending to tornado: " + ex.getMessage());
 		   return "exception on report sending to tornado\n";
 	   }
 	   String jsonData=user.toString();
@@ -254,7 +254,7 @@ public class HttpsConnection
 	   }
 	   catch (Exception ex)
 	   {
-		   log.error("Exception on report sending: " + ex.getMessage());
+		   log.error(MessageQueue.WORK_ORDER + ": " + "Exception on report sending: " + ex.getMessage());
 		   return "exception on report sending to tornado\n";
 	   }
 	   String jsonData=user.toString();
@@ -306,15 +306,15 @@ class HttpPostReq
         }
         catch (UnsupportedEncodingException e)
         {
-        	log.error("Error encoding api url: " + e.getMessage());
+        	log.error(MessageQueue.WORK_ORDER + ": " + "Error encoding api url: " + e.getMessage());
         	return ("error while encoding api url : " + e.getMessage());
         }
         catch (IOException e){
-        	log.error("IO exception while sending http request: " + e.getMessage());
+        	log.error(MessageQueue.WORK_ORDER + ": " + "IO exception while sending http request: " + e.getMessage());
         	return ("ioException occured while sending http request : " + e.getMessage());
         }
         catch(Exception e){
-        	log.error("Exception while sending http request: " + e.getMessage());
+        	log.error(MessageQueue.WORK_ORDER + ": " + "Exception while sending http request: " + e.getMessage());
         	return ("exception occured while sending http request : " + e.getMessage());
         }
         finally{

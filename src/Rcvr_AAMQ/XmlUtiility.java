@@ -211,7 +211,7 @@ public class XmlUtiility
 			    
 	      } catch (Exception ex) {
 	         
-	    	  log.error("No private elements " + ex.getMessage());
+	    	  log.error(MessageQueue.WORK_ORDER + ": " + "No private elements " + ex.getMessage());
 	    	  throw ex;
 	    	
 	      }
@@ -345,7 +345,7 @@ public class XmlUtiility
 			    
 	      } catch (Exception ex) {
 	         
-	    	  log.error("No private elements " + ex.getMessage());
+	    	  log.error(MessageQueue.WORK_ORDER + ": " + "No private elements " + ex.getMessage());
 	    	  throw ex;
 	    	
 	      }
@@ -551,7 +551,7 @@ public class XmlUtiility
 		   catch (Exception ex)
 {
 	         
-	    	  log.error("No private elements " + ex.getMessage());
+	    	  log.error(MessageQueue.WORK_ORDER + ": " + "No private elements " + ex.getMessage());
 	    	  throw ex;
 	    	
 	      }

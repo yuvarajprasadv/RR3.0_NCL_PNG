@@ -24,7 +24,7 @@ public class FileSystem
 	  File file = new File(filename);
 	  if (!file.exists() || !file.isFile()) 
 	  {
-		 log.error("File does not exist");
+		 log.error(MessageQueue.WORK_ORDER + ": " + "File does not exist");
 	     System.out.println("File doesn\'t exist");
 		 return -1;
 	  }
@@ -41,7 +41,7 @@ public class FileSystem
 	   } 
 	   catch (IOException e) 
 	   {
-		   log.error("Exception on creating file");
+		   log.error(MessageQueue.WORK_ORDER + ": " + "Exception on creating file");
 			e.printStackTrace();
 	   }
 	   return false;
@@ -75,7 +75,7 @@ public class FileSystem
 		}
 		catch(Exception ex)
 		{
-			log.error("Error on file reading :" + ex.getMessage() );
+			log.error(MessageQueue.WORK_ORDER + ": " + "Error on file reading :" + ex.getMessage() );
 			System.out.println(ex.getMessage());
 		}
 		return null;
@@ -94,7 +94,7 @@ public class FileSystem
 	   }
 	   catch(Exception ex)
 	   {
-		   log.error("Error on file reading:"+ ex.getMessage());
+		   log.error(MessageQueue.WORK_ORDER + ": " + "Error on file reading:"+ ex.getMessage());
 		   System.out.println("err"+ ex.getMessage());
 	   }  
 	   return null;

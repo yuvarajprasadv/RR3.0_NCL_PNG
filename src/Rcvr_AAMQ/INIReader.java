@@ -51,7 +51,7 @@ public class INIReader
     	}
     	catch(Exception ex)
     	{
-    		log.error("Error reading INI file :" + ex.getMessage());
+    		log.error(MessageQueue.WORK_ORDER + ": " + "Error reading INI file :" + ex.getMessage());
     	}
     }
     
@@ -83,7 +83,7 @@ public class INIReader
     		}
     		catch(Exception ex)
     		{
-    			log.error("Error reading INI file - " + ex.getMessage());
+    			log.error(MessageQueue.WORK_ORDER + ": " + "Error reading INI file - " + ex.getMessage());
     		}
     }
     
@@ -99,7 +99,7 @@ public class INIReader
    	 catch(Exception e)
    	 {
    		System.out.println("ERR writing INI  " + e.getMessage());
-   		log.error("Error Writing INI file :" + e.getMessage());
+   		log.error(MessageQueue.WORK_ORDER + ": " + "Error Writing INI file :" + e.getMessage());
    	 }		
     }
     

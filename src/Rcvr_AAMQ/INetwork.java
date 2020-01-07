@@ -15,7 +15,7 @@ public class INetwork
 	            return (ipAddr.getHostAddress());
 	        } catch (UnknownHostException ex) 
 	        {
-	        		log.error("Error on fetching client IP address");
+	        		log.error(MessageQueue.WORK_ORDER + ": " + "Error on fetching client IP address");
 	            ex.printStackTrace();
 	        }
 			return null;

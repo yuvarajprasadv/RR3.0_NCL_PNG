@@ -27,16 +27,16 @@ public class Action {
 
 		//RR in Progress status
 		Action.UpdateErrorStatus("4"); //RR In Progress (4) status to Tornado API
-		log.info("RR started processing");
+		log.info(MessageQueue.WORK_ORDER + ": " + "RR started processing");
 		
 		SEng.CallAdobeIllustrator();
-		log.info("Illustrator activated to load file..");
+		log.info(MessageQueue.WORK_ORDER + ": " + "Illustrator activated to load file..");
 
 		String[] appFonts = SEng.GetApplicationFonts().split(",");
 		Thread.sleep(2000);
 
 		SEng.OpenDocument(jspr.geFilePathFromJson(jsonObj, "Master"));
-		log.info("AI file and other dependend file opening..");
+		log.info(MessageQueue.WORK_ORDER + ": " + "AI file and other dependend file opening..");
 
 		String dcFont = SEng.GetDocumentFonts();
 		if (!dcFont.equalsIgnoreCase("error")) {
@@ -75,7 +75,7 @@ public class Action {
 		
 		////Swatch from xml // for  PNG
 		
-		log.info("TyphoonShadow called");
+		log.info(MessageQueue.WORK_ORDER + ": " + "TyphoonShadow called");
 
 		String errorMsg = fls.ReadFileReport("error.txt");
 		if (errorMsg.contains("\n") && errorMsg.length() != 1)
@@ -170,7 +170,7 @@ public class Action {
 				}
 			}
 
-			log.info("Pdf and xml generated..");
+			log.info(MessageQueue.WORK_ORDER + ": " + "Pdf and xml generated..");
 			
 			
 					////----PNG---// Only 3D xml
@@ -190,8 +190,8 @@ public class Action {
 						
 						
 						//PNG set swatch  White color  to White 2
-					//	SEng.SetSwathColorFromTo("White 2", "White");  //// only for NCL P  -  N  -  G
-					//	SEng.SetLayerVisibleOff(); //// only for NCL  P  - N  -  G
+						SEng.SetSwathColorFromTo("White 2", "White");  //// only for NCL P  -  N  -  G
+						SEng.SetLayerVisibleOff(); //// only for NCL  P  - N  -  G
 						
 						
 						
@@ -239,12 +239,12 @@ public class Action {
 		SEng.PostDocumentClose();
 
 		sendRespStatusMsg("delivered");
-		log.info("Completed process for job id  '" + MessageQueue.MSGID + "' ");
+		log.info(MessageQueue.WORK_ORDER + ": " + "Completed process for job id  '" + MessageQueue.MSGID + "' ");
 		Thread.sleep(1000);
 
 		
 		Action.UpdateToServer(jsonObj, "xmlcompare");
-		log.info("Xml comparison completed..");
+		log.info(MessageQueue.WORK_ORDER + ": " + "Xml comparison completed..");
 		
 
 		Action.UpdateReport(jsonObj, fls.ReadFileReport("Report.txt"));
@@ -276,13 +276,13 @@ public class Action {
 		ArrayList arrConsolidateDetailedReport = new ArrayList();
 
 		SEng.CallAdobeIllustrator();
-		log.info("Illustrator activated to load file..");
+		log.info(MessageQueue.WORK_ORDER + ": " + "Illustrator activated to load file..");
 
 		String[] appFonts = SEng.GetApplicationFonts().split(",");
 		Thread.sleep(5000);
 
 		SEng.OpenDocument(jspr.geFilePathFromJson(jsonObj, "Master"));
-		log.info("AI file and other dependent file opening..");
+		log.info(MessageQueue.WORK_ORDER + ": " + "AI file and other dependent file opening..");
 
 		String dcFont = SEng.GetDocumentFonts();
 		if (dcFont.length() != 0) {
@@ -332,7 +332,7 @@ public class Action {
 
 			SEng.CallTyphoonShadow(arrString);
 
-			log.info("TyphoonShadow called");
+			log.info(MessageQueue.WORK_ORDER + ": " + "TyphoonShadow called");
 
 			String[] fileName = new String[4];
 			if (fileNameToSave != null) {
@@ -379,7 +379,7 @@ public class Action {
 				}
 			}
 			Thread.sleep(4000);
-			log.info("Pdf and xml generated..");
+			log.info(MessageQueue.WORK_ORDER + ": " + "Pdf and xml generated..");
 			ConsolidateErrorReport(fls, arrErrReport, arrConsolidateErrorReport, arrDetailedReport,
 					arrConsolidateDetailedReport, xmlFiles[eachXmlCount]);
 		}
@@ -387,20 +387,20 @@ public class Action {
 		Thread.sleep(7000);
 		SEng.PostDocumentClose();
 		sendRespStatusMsg("delivered");
-		log.info("Completed process for job id  '" + MessageQueue.MSGID + "' ");
+		log.info(MessageQueue.WORK_ORDER + ": " + "Completed process for job id  '" + MessageQueue.MSGID + "' ");
 
 		Action.UpdateToServer(jsonObj, "xmlcompare");
-		log.info("Xml comparision completed..");
+		log.info(MessageQueue.WORK_ORDER + ": " + "Xml comparision completed..");
 
 		Action.sendStatusMsg(arrConsolidateErrorReport.toString());
-		log.info("Completed sending error report..");
+		log.info(MessageQueue.WORK_ORDER + ": " + "Completed sending error report..");
 		Action.UpdateReport(jsonObj, arrConsolidateDetailedReport.toString());
-		log.info("Completed sending of detailed report..");
+		log.info(MessageQueue.WORK_ORDER + ": " + "Completed sending of detailed report..");
 
 		MessageQueue.ERROR = "";
 		Thread.sleep(1000);
 		MessageQueue.GATE = true;
-		log.info("Completed job..");
+		log.info(MessageQueue.WORK_ORDER + ": " + "Completed job..");
 	}
 
 	
@@ -446,7 +446,7 @@ public class Action {
 		}
 		catch(Exception ex)
 		{
-			log.error("Error on swatch color merge");
+			log.error(MessageQueue.WORK_ORDER + ": " + "Error on swatch color merge");
 		}
 		 
 	}
@@ -532,6 +532,7 @@ public class Action {
 		JsonParser jsonPars = new JsonParser();
 		String version = (String) jsonObj.get("version");
 		MessageQueue.VERSION = version;
+		MessageQueue.WORK_ORDER  = jsonPars.getJsonValueForKey(jsonObj, "WO");
 		Thread.sleep(1000);
 		
 		try {
@@ -542,13 +543,13 @@ public class Action {
 			MessageQueue.TORNADO_HOST = MessageQueue.TORNADO_HOST_LIVE_1;
 		else
 		{
-			log.error("Issue with environment value, process terminated.");
+			log.error(MessageQueue.WORK_ORDER + ": " + "Issue with environment value, process terminated.");
 			ThrowException.CustomExitWithErrorMsgID(null, "Invalid JSON environment value from Tornado", "14");
 		}
 		}
 		catch(Exception ex)
 		{
-			log.error("Issue with environment value, process terminated.");
+			log.error(MessageQueue.WORK_ORDER + ": " + "Issue with environment value, process terminated.");
 			ThrowException.CustomExitWithErrorMsgID(null, "Invalid JSON environment value from Tornado", "14");
 		}
 		
@@ -585,14 +586,14 @@ public class Action {
 				
 				String workOrderNo  = jsonPars.getJsonValueForKey(jsonObj, "WO");
 				sendRespStatusMsg("received" + "::" + iNet.GetClientIPAddr());
-				log.info("Message received acknowledgement for job id  '" + MessageQueue.MSGID + "' " + " WO: " + workOrderNo);
+				log.info(MessageQueue.WORK_ORDER + ": " + "Message received acknowledgement for job id  '" + MessageQueue.MSGID + "' " + " WO: " + workOrderNo);
 	
 				if (!((String) jsonObj.get("type")).equals("multi"))
 					actionSeq(jsonObj);
 				else
 					multiActionSeq(jsonObj);
 			} catch (Exception ex) {
-				log.error("Msg Ack err: " + ex);
+				log.error(MessageQueue.WORK_ORDER + ": " + "Msg Ack err: " + ex);
 			}
 		}
 
@@ -600,10 +601,10 @@ public class Action {
 
 	public static void sendRespStatusMsg(String status) throws Exception {
 		try {
-			log.info("Before calling send report status message post method");
+			log.info(MessageQueue.WORK_ORDER + ": " + "Before calling send report status message post method");
 			String postResponse = HttpConnection.excutePost("http://" + MessageQueue.HOST_IP + ":8080/AAW/message/resp",
 					MessageQueue.MSGID + "::" + status);
-			log.info("Status of sending report status msg response " + postResponse);
+			log.info(MessageQueue.WORK_ORDER + ": " + "Status of sending report status msg response " + postResponse);
 		} catch (Exception ex) {
 			log.error(ex);
 		}
@@ -612,11 +613,11 @@ public class Action {
 
 	public static void sendStatusMsg(String status) throws Exception {
 		try {
-			log.info("Before calling send status message post method");
+			log.info(MessageQueue.WORK_ORDER + ": " + "Before calling send status message post method");
 			String postResponse = HttpConnection.excutePost("http://" + MessageQueue.HOST_IP + ":8080/AAW/message/error",
 					MessageQueue.MSGID + "::" + status);
 
-			log.info("Status of sending status msg response " + postResponse);
+			log.info(MessageQueue.WORK_ORDER + ": " + "Status of sending status msg response " + postResponse);
 		} catch (Exception ex) {
 			log.error(ex);
 		}
@@ -628,7 +629,7 @@ public class Action {
 		{
 			HttpsConnection httpsCon = new HttpsConnection();
 			HttpURLConnection connection;
-			log.info("Before calling update to server post method");
+			log.info(MessageQueue.WORK_ORDER + ": " + "Before calling update to server post method");
 			URL urlStr = new URL(
 					MessageQueue.TORNADO_HOST + "/rest/pub/aaw/" + actionStr + "?mqid=" + (String) jsonObj.get("Id"));
 			connection = (httpsCon.getURLConnection(urlStr, true));
@@ -640,14 +641,14 @@ public class Action {
 			if(connection == null)
 			{
 				System.out.println("XML compare : API connection failed");
-				log.error("XML compare : API connection failed");
+				log.error(MessageQueue.WORK_ORDER + ": " + "XML compare : API connection failed");
 			}
 			else if((connection.getResponseCode() != HttpURLConnection.HTTP_OK) && MessageQueue.TORNADO_HOST.equals(MessageQueue.TORNADO_HOST_LIVE_1) && MessageQueue.TORNADO_ENV.equals("production"))
 			{
 		
 					try
 					{
-					log.info("Before calling update to server post method");
+					log.info(MessageQueue.WORK_ORDER + ": " + "Before calling update to server post method");
 					URL urlStr_2 = new URL(
 							MessageQueue.TORNADO_HOST_LIVE_2 + "/rest/pub/aaw/" + actionStr + "?mqid=" + (String) jsonObj.get("Id"));
 					connection = (httpsCon.getURLConnection(urlStr_2, true));
@@ -659,12 +660,12 @@ public class Action {
 					if(connection == null)
 					{
 						System.out.println("XML compare : API connection failed");
-						log.error("XML compare : API connection failed");
+						log.error(MessageQueue.WORK_ORDER + ": " + "XML compare : API connection failed");
 					}
 					else
 					{
 						System.out.println("XML compare : " + connection.getResponseCode());
-						log.error("XML compare API response : " + connection.getResponseCode());
+						log.error(MessageQueue.WORK_ORDER + ": " + "XML compare API response : " + connection.getResponseCode());
 					}
 					
 					
@@ -673,7 +674,7 @@ public class Action {
 					}
 					catch(java.net.SocketTimeoutException e)
 					{
-						log.error("Http response time out: " + (String)e.getMessage());
+						log.error(MessageQueue.WORK_ORDER + ": " + "Http response time out: " + (String)e.getMessage());
 						Action.UpdateErrorStatusWithRemark("26", "Road Runner not received any response: " +  (String) e.getMessage());
 					}
 					
@@ -681,7 +682,7 @@ public class Action {
 				else
 				{
 					System.out.println("XML compare: " + connection.getResponseCode());
-					log.error("XML compare API response : " + connection.getResponseCode());
+					log.error(MessageQueue.WORK_ORDER + ": " + "XML compare API response : " + connection.getResponseCode());
 				}
 
 			if(connection != null)
@@ -697,7 +698,7 @@ public class Action {
 				{
 				HttpsConnection httpsCon = new HttpsConnection();
 				HttpURLConnection connection;
-				log.info("Before calling update to server post method");
+				log.info(MessageQueue.WORK_ORDER + ": " + "Before calling update to server post method");
 				URL urlStr = new URL(
 						MessageQueue.TORNADO_HOST_LIVE_2 + "/rest/pub/aaw/" + actionStr + "?mqid=" + (String) jsonObj.get("Id"));
 				connection = (httpsCon.getURLConnection(urlStr, true));
@@ -709,12 +710,12 @@ public class Action {
 				if(connection == null)
 				{
 					System.out.println("XML compare : API connection failed");
-					log.error("XML compare : API connection failed");
+					log.error(MessageQueue.WORK_ORDER + ": " + "XML compare : API connection failed");
 				}
 				else
 				{
 					System.out.println("XML compare : " + connection.getResponseCode());
-					log.error("XML compare API response : " + connection.getResponseCode());
+					log.error(MessageQueue.WORK_ORDER + ": " + "XML compare API response : " + connection.getResponseCode());
 				}
 				
 				
@@ -723,7 +724,7 @@ public class Action {
 				}
 				catch(java.net.SocketTimeoutException e)
 				{
-					log.error("Http response time out: " + (String)e.getMessage());
+					log.error(MessageQueue.WORK_ORDER + ": " + "Http response time out: " + (String)e.getMessage());
 					Action.UpdateErrorStatusWithRemark("26", "Road Runner not received any response: " +  (String) e.getMessage());
 				}
 			
@@ -731,42 +732,42 @@ public class Action {
 			else
 			{
 			
-			log.error("Http response time out: " + (String)ex.getMessage());
+			log.error(MessageQueue.WORK_ORDER + ": " + "Http response time out: " + (String)ex.getMessage());
 			Action.UpdateErrorStatusWithRemark("26", "Road Runner not received any response: " +  (String) ex.getMessage());
-			//log.info("Sent error status id : 26 - Road runner not received any response");
+			//log.info(MessageQueue.WORK_ORDER + ": " + "Sent error status id : 26 - Road runner not received any response");
 			}
 		}
 		catch (IOException ex)
 		{
-			log.error("Http IO exception: " + ex.getMessage());
+			log.error(MessageQueue.WORK_ORDER + ": " + "Http IO exception: " + ex.getMessage());
 		}
 		catch (Exception ex) 
 		{
-			log.error("Error Http connection: " + (String) ex.getMessage());
+			log.error(MessageQueue.WORK_ORDER + ": " + "Error Http connection: " + (String) ex.getMessage());
 		}
 	}
 
 	public static void UpdateReport(JSONObject jsonObj, String reportStr) throws IOException {
 		try {
 			HttpsConnection httpsCon = new HttpsConnection();
-			log.info("Before calling update report post method");
+			log.info(MessageQueue.WORK_ORDER + ": " + "Before calling update report post method");
 			String postResponse  = httpsCon.excuteHttpJsonPost(MessageQueue.TORNADO_HOST + "/rest/pub/aaw/finalreport",
 					(String) jsonObj.get("Id"), reportStr);
-			log.info("Status of updating  report response " + postResponse);
+			log.info(MessageQueue.WORK_ORDER + ": " + "Status of updating  report response " + postResponse);
 		} catch (Exception ex) {
-			log.error("Error when updating report " + (String) ex.getMessage());
+			log.error(MessageQueue.WORK_ORDER + ": " + "Error when updating report " + (String) ex.getMessage());
 		}
 	}
 	
 	public static void UpdateErrorStatus(String reportStr) throws IOException {
 		try {
 			HttpsConnection httpsCon = new HttpsConnection();
-			log.info("Before calling update error status post method");
+			log.info(MessageQueue.WORK_ORDER + ": " + "Before calling update error status post method");
 		    String postResponse = httpsCon.excuteErrorStatusHttpJsonPost(MessageQueue.TORNADO_HOST + "/rest/pub/rr/updatestatus",
 					MessageQueue.MSGID, reportStr);
-		    log.info("Status of sending error status response " + postResponse);
+		    log.info(MessageQueue.WORK_ORDER + ": " + "Status of sending error status response " + postResponse);
 		} catch (Exception ex) {
-			log.error("Error when sending error status : " + (String) ex.getMessage());
+			log.error(MessageQueue.WORK_ORDER + ": " + "Error when sending error status : " + (String) ex.getMessage());
 		}
 	}
 	public static void UpdateClientMachineRunningStatus(String ipAddress, String locationKey, String category) throws IOException {
@@ -774,27 +775,27 @@ public class Action {
 		{
 		//	https://172.28.42.168:8443/tornado_rr/rest/pub/rr/rrstatusOfHeartBeat
 			HttpsConnection httpsCon = new HttpsConnection();
-			log.info("Before calling heartbeat post method");
-		    String postResponse = httpsCon.excuteClientMachineStatusHttpJsonPost(MessageQueue.TORNADO_HOST + "/rest/pub/rr/rrstatusOfHeartBeat",
+			log.info(MessageQueue.WORK_ORDER + ": " + "Before calling heartbeat post method");
+		    String postResponse = httpsCon.excuteClientMachineStatusHttpJsonPost(MessageQueue.TORNADO_HOST_LIVE_1 + "/rest/pub/rr/rrstatusOfHeartBeat",
 					ipAddress, locationKey, category);
-		    log.info("Status of sending heartbeat response " + postResponse);
+		    log.info(MessageQueue.WORK_ORDER + ": " + "Status of sending heartbeat response " + postResponse);
 		} catch (Exception ex) 
 		{
 			
-			log.error("Error while sending HB running status :" + (String) ex.getMessage());
+			log.error(MessageQueue.WORK_ORDER + ": " + "Error while sending HB running status :" + (String) ex.getMessage());
 		}
 	}
 	
 	public static void UpdateErrorStatusWithRemark(String reportStr, String remarks) throws IOException {
 		try {
-			log.info("Before sending error status :" + reportStr + " - remark :" + remarks);
+			log.info(MessageQueue.WORK_ORDER + ": " + "Before sending error status :" + reportStr + " - remark :" + remarks);
 			HttpsConnection httpsCon = new HttpsConnection();
 		    String postResponse = httpsCon.excuteErrorStatusHttpJsonPostWithRemark(MessageQueue.TORNADO_HOST + "/rest/pub/rr/updatestatus",
 					MessageQueue.MSGID, reportStr, remarks);
-		   log.info("Error status sent :" + reportStr + " - remark : " + remarks + " response : " + postResponse);
+		   log.info(MessageQueue.WORK_ORDER + ": " + "Error status sent :" + reportStr + " - remark : " + remarks + " response : " + postResponse);
 		} catch (Exception ex) 
 		{
-			log.error("Error when updating error status with remark :" + (String) ex.getMessage());
+			log.error(MessageQueue.WORK_ORDER + ": " + "Error when updating error status with remark :" + (String) ex.getMessage());
 		}
 	}
 

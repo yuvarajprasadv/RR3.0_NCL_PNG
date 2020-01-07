@@ -58,7 +58,7 @@ public static String excutePost(String targetURL, String urlParameters)
 	  }
 	  catch (Exception e) 
 	  {
-		log.error("Error on execute post method "  + e.getMessage());
+		log.error(MessageQueue.WORK_ORDER + ": " + "Error on execute post method "  + e.getMessage());
 	    return null;
 	  } 
 	  finally 
@@ -108,7 +108,7 @@ private void trustAllHosts()
     } 
     catch (Exception e) 
     { 
-       log.error("Error on trust connection " + e.getMessage());
+       log.error(MessageQueue.WORK_ORDER + ": " + "Error on trust connection " + e.getMessage());
     } 
 }
 
