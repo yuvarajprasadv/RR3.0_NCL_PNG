@@ -384,8 +384,8 @@ public class SEng{
 		 
 	 public static String MountVolume(String serverName, String userName, String userPass, String shareDirectory) throws Exception  
 	 {	 
-		 userName = "asia\\\\weblogic";
-		 userPass = "417@sia123";
+		 userName = "asia\\\\chautoscript";
+		 userPass = "TeamI#ndi@";
 		String scriptString = "tell application \"Finder\" \n"
 		+ "with timeout of "+ timeOutSec +" seconds \n"
 		+ "set serverName to "+ '"' +serverName + '"' +" \n"

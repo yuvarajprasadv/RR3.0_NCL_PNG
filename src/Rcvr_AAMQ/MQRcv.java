@@ -25,7 +25,7 @@ public class MQRcv extends MessageQueue {
     factory.setPassword(MessageQueue.PASSWORD);
     factory.setRequestedChannelMax(1);
     factory.setAutomaticRecoveryEnabled(true);
-    factory.setNetworkRecoveryInterval(10000);
+    factory.setNetworkRecoveryInterval(5000);
     factory.setRequestedHeartbeat(5);
     Connection connection = null;
     Channel channel = null;
