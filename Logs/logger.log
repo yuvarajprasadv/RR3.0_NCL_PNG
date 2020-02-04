@@ -12,3 +12,8 @@
 2020-01-06 15:31:03 INFO  Action:778 - : Before calling heartbeat post method
 2020-01-06 15:31:04 INFO  Action:781 - : Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
 2020-01-06 15:31:04 INFO  HBTimer:29 - : Heart beat sent for IP : 10.52.8.66 location key : TestRR
+2020-01-23 10:44:23 INFO  MQRcv:80 - TestRR:TestRRDivision
+2020-01-23 10:44:23 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
+2020-01-23 10:44:24 INFO  Action:950 - : Before calling heartbeat post method
+2020-01-23 10:44:25 INFO  Action:953 - : Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-01-23 10:44:25 INFO  HBTimer:32 - : Heart beat sent for IP : 192.168.2.1 location key : TestRR

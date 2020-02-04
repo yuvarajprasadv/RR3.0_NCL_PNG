@@ -13,16 +13,16 @@ public class INetwork
 	        try {
 	            InetAddress ipAddr = InetAddress.getLocalHost();
 	            return (ipAddr.getHostAddress());
-	        } catch (UnknownHostException ex) 
+	        } catch (Exception ex) 
 	        {
 	        		log.error(MessageQueue.WORK_ORDER + ": " + "Error on fetching client IP address");
-	            ex.printStackTrace();
+	           // ex.printStackTrace();
 	        }
 			return null;
 	  }
 	 public static void main(String[] args)
 	 {
-		 INetwork nt = new INetwork();
+	// INetwork nt = new INetwork();
 		// System.out.println(nt.GetClientIPAddr());
 	 }
 

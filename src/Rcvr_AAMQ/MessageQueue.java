@@ -17,17 +17,17 @@ public class MessageQueue extends Action {
 	  protected static String TORNADO_HOST = "";
 	  protected static String TORNADO_ENV = "";
 	  
-//	  protected final static String TORNADO_HOST_LIVE_1 = "http://tornado.schawk.com/tornado";	//LIVE dns 
-//	  protected final static String TORNADO_HOST_LIVE_2 = "http://172.26.42.39:8080/tornado";	//LIVE alternative 
-//	  protected final static String TORNADO_HOST_LIVE_3 = "http://172.28.42.157:8080/tornado";   //LIVE
-//	  
-//	  protected final static String TORNADO_HOST_DEV = "http://172.28.42.151:8082/tornado"; // JAVA DEV IP for PITAA [PNG] Only.
-		
-	  protected final static String TORNADO_HOST_LIVE_1 = "https://tornado.schawk.com/tornado";	//LIVE dns 
-	  protected final static String TORNADO_HOST_LIVE_2 = "https://172.26.42.39:8080/tornado";	//LIVE alternative 
-	  protected final static String TORNADO_HOST_LIVE_3 = "https://172.28.42.157:8080/tornado";   //LIVE
+	  protected final static String TORNADO_HOST_LIVE_1 = "http://tornado.schawk.com/tornado";	//LIVE dns 
+	  protected final static String TORNADO_HOST_LIVE_2 = "http://172.26.42.39:8080/tornado";	//LIVE alternative 
+	  protected final static String TORNADO_HOST_LIVE_3 = "http://172.28.42.157:8080/tornado";   //LIVE
 	  
-	  protected final static String TORNADO_HOST_DEV = "https://172.28.42.151:8082/tornado"; // JAVA DEV IP for PITAA [PNG] Only.
+	  protected final static String TORNADO_HOST_DEV = "http://172.28.42.151:8082/tornado"; // JAVA DEV IP for PITAA [PNG] Only.
+		
+//	  protected final static String TORNADO_HOST_LIVE_1 = "https://tornado.schawk.com/tornado";	//LIVE dns 
+//	  protected final static String TORNADO_HOST_LIVE_2 = "https://172.26.42.39:8080/tornado";	//LIVE alternative 
+//	  protected final static String TORNADO_HOST_LIVE_3 = "https://172.28.42.157:8080/tornado";   //LIVE
+//	  
+//	  protected final static String TORNADO_HOST_DEV = "https://172.28.42.151:8082/tornado"; // JAVA DEV IP for PITAA [PNG] Only.
 	  
 	  /*
 	  

@@ -189,12 +189,10 @@ public class Action {
 						Thread.sleep(4000);
 						
 						
+						
 						//PNG set swatch  White color  to White 2
 						SEng.SetSwathColorFromTo("White 2", "White");  //// only for NCL P  -  N  -  G
-						SEng.SetLayerVisibleOff(); //// only for NCL  P  - N  -  G
-						
-						
-						
+						SEng.SetLayerVisibleOff();					  //// only for NCL  P  - N  -  G
 						
 						
 						

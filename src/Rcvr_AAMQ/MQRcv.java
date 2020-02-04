@@ -87,9 +87,10 @@ public class MQRcv extends MessageQueue {
  //   Action.Mount(); //// not reading row by row
     
     INetwork iNet = new INetwork();
-    Timer timer = new Timer();
-    timer.schedule(new HBTimer(iNet.GetClientIPAddr(), bindingKey, "Wave Road Runner"),  5000, 300000);
-
+  //  Timer timer = new Timer();
+ //   timer.schedule(new HBTimer(iNet.GetClientIPAddr(), bindingKey, "Wave Road Runner", ),  5000, 300000);
+    HBTimer hbTimer = new HBTimer(iNet.GetClientIPAddr(), bindingKey, "Wave Road Runner", 300000);
+    hbTimer.start();
     MessageQueue.RecvMessage(channel, queueName);
 
   }
