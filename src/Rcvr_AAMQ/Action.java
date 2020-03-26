@@ -69,7 +69,7 @@ public class Action {
 
 		Thread.sleep(1000);
 		////Swatch from xml // for  PNG
-		SwatchMergeFromXML(jspr.geFilePathFromJson(jsonObj, "XMLFile"), "SL_ColorName","PANTONE");
+	////	SwatchMergeFromXML(jspr.geFilePathFromJson(jsonObj, "XMLFile"), "SL_ColorName","PANTONE");
 	//	SwatchMergeFromXML(jspr.geFilePathFromJson(jsonObj, "XMLFile"), "SL_ColorName","P&G");
 		
 		
@@ -181,6 +181,7 @@ public class Action {
 						Thread.sleep(7000);
 						String jsonString = jspr.updateJsonForMultipleJob(jsonObj, "999_Delete_at_Archive/", "3DXML.xml");
 						String[] newArryStr= new String[1];
+						
 						newArryStr[0] = jsonString;
 						newArryStr[0] = utils.RemoveForwardSlash(newArryStr[0]);
 						newArryStr[0] = newArryStr[0].replace("\"", "'");
@@ -191,8 +192,8 @@ public class Action {
 						
 						
 						//PNG set swatch  White color  to White 2
-						SEng.SetSwathColorFromTo("White 2", "White");  //// only for NCL P  -  N  -  G
-						SEng.SetLayerVisibleOff();					  //// only for NCL  P  - N  -  G
+					//	SEng.SetSwathColorFromTo("White 2", "White");  //// only for NCL P  -  N  -  G
+					//	SEng.SetLayerVisibleOff();					  //// only for NCL  P  - N  -  G
 						
 						
 						
@@ -539,6 +540,8 @@ public class Action {
 			MessageQueue.TORNADO_HOST = MessageQueue.TORNADO_HOST_DEV;
 		else if(MessageQueue.TORNADO_ENV.equals("production"))
 			MessageQueue.TORNADO_HOST = MessageQueue.TORNADO_HOST_LIVE_1;
+		else if(MessageQueue.TORNADO_ENV.equals("qa"))
+			MessageQueue.TORNADO_HOST = MessageQueue.TORNADO_HOST_QA;
 		else
 		{
 			log.error(MessageQueue.WORK_ORDER + ": " + "Issue with environment value, process terminated.");
@@ -762,7 +765,7 @@ public class Action {
 				{
 					System.out.println("XML compare: " + connection.getResponseCode());
 				//	log.error(MessageQueue.WORK_ORDER + ": " + "XML compare API response : " + connection.getResponseCode());
-					log.error(MessageQueue.WORK_ORDER + ": " + "XML compare API: "+ MessageQueue.TORNADO_HOST_LIVE_1 + "/rest/pub/aaw/" + actionStr + "?mqid=" + (String) jsonObj.get("Id")  +" - response : " + connection.getResponseCode());
+					log.error(MessageQueue.WORK_ORDER + ": " + "XML compare API: "+ MessageQueue.TORNADO_HOST + "/rest/pub/aaw/" + actionStr + "?mqid=" + (String) jsonObj.get("Id")  +" - response : " + connection.getResponseCode());
 					
 				}
 

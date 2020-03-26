@@ -22,6 +22,7 @@ public class MessageQueue extends Action {
 	  protected final static String TORNADO_HOST_LIVE_3 = "http://172.28.42.157:8080/tornado";   //LIVE
 	  
 	  protected final static String TORNADO_HOST_DEV = "http://172.28.42.151:8082/tornado"; // JAVA DEV IP for PITAA [PNG] Only.
+	  protected final static String TORNADO_HOST_QA = "https://qatornado.schawk.com/tornado"; // JAVA QA IP 
 		
 //	  protected final static String TORNADO_HOST_LIVE_1 = "https://tornado.schawk.com/tornado";	//LIVE dns 
 //	  protected final static String TORNADO_HOST_LIVE_2 = "https://172.26.42.39:8080/tornado";	//LIVE alternative 

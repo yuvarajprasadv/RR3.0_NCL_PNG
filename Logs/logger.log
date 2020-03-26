@@ -17,3 +17,434 @@
 2020-01-23 10:44:24 INFO  Action:950 - : Before calling heartbeat post method
 2020-01-23 10:44:25 INFO  Action:953 - : Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
 2020-01-23 10:44:25 INFO  HBTimer:32 - : Heart beat sent for IP : 192.168.2.1 location key : TestRR
+2020-02-04 18:10:31 INFO  MQRcv:80 - TestRR:TestRRDivision
+2020-02-04 18:10:31 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
+2020-02-04 18:10:31 INFO  Action:948 - : Before calling heartbeat post method
+2020-02-04 18:10:32 INFO  Action:951 - : Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 18:10:32 INFO  HBTimer:32 - : Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 18:11:59 INFO  Action:602 - 401400544: Before calling send report status message post method
+2020-02-04 18:11:59 INFO  Action:605 - 401400544: Status of sending report status msg response Success
+2020-02-04 18:11:59 INFO  Action:587 - 401400544: Message received acknowledgement for job id  '212b2987-7527-4c08-b215-0f61d296f762'  WO: 401400544
+2020-02-04 18:11:59 INFO  Action:935 - 401400544: Before calling update error status post method
+2020-02-04 18:12:00 INFO  Action:938 - 401400544: Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-02-04 18:12:00 INFO  Action:30 - 401400544: RR started processing
+2020-02-04 18:12:00 INFO  Action:33 - 401400544: Illustrator activated to load file..
+2020-02-04 18:12:08 INFO  Action:39 - 401400544: AI file and other dependend file opening..
+2020-02-04 18:15:26 INFO  Action:78 - 401400544: TyphoonShadow called
+2020-02-04 18:15:27 INFO  Action:173 - 401400544: Pdf and xml generated..
+2020-02-04 18:15:27 ERROR JsonParser:185 - 401400544: Invalid Key value search 'RR3DXML'  null
+2020-02-04 18:15:32 INFO  Action:948 - 401400544: Before calling heartbeat post method
+2020-02-04 18:15:33 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 18:15:33 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 18:15:35 INFO  Action:602 - 401400544: Before calling send report status message post method
+2020-02-04 18:15:35 INFO  Action:605 - 401400544: Status of sending report status msg response Success
+2020-02-04 18:15:35 INFO  Action:240 - 401400544: Completed process for job id  '212b2987-7527-4c08-b215-0f61d296f762' 
+2020-02-04 18:15:36 INFO  Action:633 - 401400544: Before calling url: http://tornado.schawk.com/tornado/rest/pub/aaw/xmlcompare?mqid=212b2987-7527-4c08-b215-0f61d296f762
+2020-02-04 18:15:37 INFO  Action:655 - 401400544: Before calling url: http://172.26.42.39:8080/tornado/rest/pub/aaw/xmlcompare?mqid=212b2987-7527-4c08-b215-0f61d296f762
+2020-02-04 18:15:37 INFO  Action:245 - 401400544: Xml comparison completed..
+2020-02-04 18:15:37 INFO  Action:923 - 401400544: Before calling update report post method
+2020-02-04 18:15:38 INFO  Action:926 - 401400544: Status of updating  report response {"status":"error","code":"1","detailsObj":{"aawpusher":"id.not.found"}}
+2020-02-04 18:15:38 INFO  Action:614 - 401400544: Before calling send status message post method
+2020-02-04 18:15:38 INFO  Action:618 - 401400544: Status of sending status msg response 
+2020-02-04 18:16:16 INFO  Action:602 - 401400544: Before calling send report status message post method
+2020-02-04 18:16:16 INFO  Action:605 - 401400544: Status of sending report status msg response Success
+2020-02-04 18:16:16 INFO  Action:587 - 401400544: Message received acknowledgement for job id  'be418cd4-7019-4840-833d-3aa777744c4f'  WO: 401400544
+2020-02-04 18:16:16 INFO  Action:935 - 401400544: Before calling update error status post method
+2020-02-04 18:16:17 INFO  Action:938 - 401400544: Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-02-04 18:16:17 INFO  Action:30 - 401400544: RR started processing
+2020-02-04 18:16:19 INFO  Action:33 - 401400544: Illustrator activated to load file..
+2020-02-04 18:16:21 INFO  Action:39 - 401400544: AI file and other dependend file opening..
+2020-02-04 18:16:46 INFO  Action:78 - 401400544: TyphoonShadow called
+2020-02-04 18:16:46 INFO  Action:173 - 401400544: Pdf and xml generated..
+2020-02-04 18:16:46 ERROR JsonParser:185 - 401400544: Invalid Key value search 'RR3DXML'  null
+2020-02-04 18:16:59 INFO  MQRcv:80 - TestRR:TestRRDivision
+2020-02-04 18:16:59 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
+2020-02-04 18:16:59 INFO  Action:948 - : Before calling heartbeat post method
+2020-02-04 18:17:00 INFO  Action:951 - : Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 18:17:00 INFO  HBTimer:32 - : Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 18:17:44 INFO  Action:602 - 401400544: Before calling send report status message post method
+2020-02-04 18:17:45 INFO  Action:605 - 401400544: Status of sending report status msg response Success
+2020-02-04 18:17:45 INFO  Action:587 - 401400544: Message received acknowledgement for job id  'a034ded0-41fd-4067-9a8a-94c0157c4095'  WO: 401400544
+2020-02-04 18:17:45 INFO  Action:935 - 401400544: Before calling update error status post method
+2020-02-04 18:17:45 INFO  Action:938 - 401400544: Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-02-04 18:17:45 INFO  Action:30 - 401400544: RR started processing
+2020-02-04 18:17:45 INFO  Action:33 - 401400544: Illustrator activated to load file..
+2020-02-04 18:18:04 INFO  Action:39 - 401400544: AI file and other dependend file opening..
+2020-02-04 18:24:23 INFO  MQRcv:80 - TestRR:TestRRDivision
+2020-02-04 18:24:24 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
+2020-02-04 18:24:24 INFO  Action:948 - : Before calling heartbeat post method
+2020-02-04 18:24:25 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 18:24:25 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 18:24:25 INFO  Action:602 - 401400544: Before calling send report status message post method
+2020-02-04 18:24:25 INFO  Action:605 - 401400544: Status of sending report status msg response Success
+2020-02-04 18:24:25 INFO  Action:587 - 401400544: Message received acknowledgement for job id  '809a27c4-4357-4c1b-a809-08f7bf133261'  WO: 401400544
+2020-02-04 18:24:25 INFO  Action:935 - 401400544: Before calling update error status post method
+2020-02-04 18:24:26 INFO  Action:938 - 401400544: Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-02-04 18:24:26 INFO  Action:30 - 401400544: RR started processing
+2020-02-04 18:24:26 INFO  Action:33 - 401400544: Illustrator activated to load file..
+2020-02-04 18:24:33 INFO  Action:39 - 401400544: AI file and other dependend file opening..
+2020-02-04 18:24:59 INFO  Action:78 - 401400544: TyphoonShadow called
+2020-02-04 18:25:03 INFO  Action:173 - 401400544: Pdf and xml generated..
+2020-02-04 18:25:03 ERROR JsonParser:185 - 401400544: Invalid Key value search 'RR3DXML'  null
+2020-02-04 18:25:12 INFO  Action:602 - 401400544: Before calling send report status message post method
+2020-02-04 18:25:12 INFO  Action:605 - 401400544: Status of sending report status msg response Success
+2020-02-04 18:25:12 INFO  Action:240 - 401400544: Completed process for job id  '809a27c4-4357-4c1b-a809-08f7bf133261' 
+2020-02-04 18:25:13 INFO  Action:633 - 401400544: Before calling url: http://tornado.schawk.com/tornado/rest/pub/aaw/xmlcompare?mqid=809a27c4-4357-4c1b-a809-08f7bf133261
+2020-02-04 18:25:14 INFO  Action:655 - 401400544: Before calling url: http://172.26.42.39:8080/tornado/rest/pub/aaw/xmlcompare?mqid=809a27c4-4357-4c1b-a809-08f7bf133261
+2020-02-04 18:25:14 INFO  Action:245 - 401400544: Xml comparison completed..
+2020-02-04 18:25:14 INFO  Action:923 - 401400544: Before calling update report post method
+2020-02-04 18:25:15 INFO  Action:926 - 401400544: Status of updating  report response {"status":"error","code":"1","detailsObj":{"aawpusher":"id.not.found"}}
+2020-02-04 18:25:15 INFO  Action:614 - 401400544: Before calling send status message post method
+2020-02-04 18:25:15 INFO  Action:618 - 401400544: Status of sending status msg response 
+2020-02-04 18:29:25 INFO  Action:948 - 401400544: Before calling heartbeat post method
+2020-02-04 18:29:25 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 18:29:25 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 18:30:38 INFO  Action:602 - 401400544: Before calling send report status message post method
+2020-02-04 18:30:38 INFO  Action:605 - 401400544: Status of sending report status msg response Success
+2020-02-04 18:30:38 INFO  Action:587 - 401400544: Message received acknowledgement for job id  'dc9e4659-2c8a-4ce0-9456-c616f347de47'  WO: 401400544
+2020-02-04 18:30:38 INFO  Action:935 - 401400544: Before calling update error status post method
+2020-02-04 18:30:38 INFO  Action:938 - 401400544: Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-02-04 18:30:38 INFO  Action:30 - 401400544: RR started processing
+2020-02-04 18:30:40 INFO  Action:33 - 401400544: Illustrator activated to load file..
+2020-02-04 18:30:50 INFO  Action:39 - 401400544: AI file and other dependend file opening..
+2020-02-04 18:30:55 INFO  Action:78 - 401400544: TyphoonShadow called
+2020-02-04 18:31:04 INFO  Action:173 - 401400544: Pdf and xml generated..
+2020-02-04 18:31:35 INFO  Action:602 - 401400544: Before calling send report status message post method
+2020-02-04 18:31:35 INFO  Action:605 - 401400544: Status of sending report status msg response Success
+2020-02-04 18:31:35 INFO  Action:240 - 401400544: Completed process for job id  'dc9e4659-2c8a-4ce0-9456-c616f347de47' 
+2020-02-04 18:31:36 INFO  Action:633 - 401400544: Before calling url: http://172.28.42.151:8082/tornado/rest/pub/aaw/xmlcompare?mqid=dc9e4659-2c8a-4ce0-9456-c616f347de47
+2020-02-04 18:31:37 ERROR Action:765 - 401400544: XML compare API: http://tornado.schawk.com/tornado/rest/pub/aaw/xmlcompare?mqid=dc9e4659-2c8a-4ce0-9456-c616f347de47 - response : 500
+2020-02-04 18:31:37 INFO  Action:245 - 401400544: Xml comparison completed..
+2020-02-04 18:31:37 INFO  Action:923 - 401400544: Before calling update report post method
+2020-02-04 18:31:37 INFO  Action:926 - 401400544: Status of updating  report response {"status":"error","code":"1","detailsObj":{"aawpusher":"id.not.found"}}
+2020-02-04 18:31:37 INFO  Action:614 - 401400544: Before calling send status message post method
+2020-02-04 18:31:37 INFO  Action:618 - 401400544: Status of sending status msg response 
+2020-02-04 18:34:25 INFO  Action:948 - 401400544: Before calling heartbeat post method
+2020-02-04 18:34:26 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 18:34:26 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 18:37:11 INFO  Action:602 - 401400544: Before calling send report status message post method
+2020-02-04 18:37:12 INFO  Action:605 - 401400544: Status of sending report status msg response Success
+2020-02-04 18:37:12 INFO  Action:587 - 401400544: Message received acknowledgement for job id  'ec3acd46-c403-4efc-8b01-1dc238144303'  WO: 401400544
+2020-02-04 18:37:12 INFO  Action:935 - 401400544: Before calling update error status post method
+2020-02-04 18:37:12 INFO  Action:938 - 401400544: Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-02-04 18:37:12 INFO  Action:30 - 401400544: RR started processing
+2020-02-04 18:37:14 INFO  Action:33 - 401400544: Illustrator activated to load file..
+2020-02-04 18:37:33 INFO  Action:39 - 401400544: AI file and other dependend file opening..
+2020-02-04 18:37:38 INFO  Action:78 - 401400544: TyphoonShadow called
+2020-02-04 18:37:52 INFO  Action:173 - 401400544: Pdf and xml generated..
+2020-02-04 18:39:26 INFO  Action:948 - 401400544: Before calling heartbeat post method
+2020-02-04 18:39:26 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 18:39:26 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 18:58:29 INFO  MQRcv:80 - TestRR:TestRRDivision
+2020-02-04 18:58:29 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
+2020-02-04 18:58:29 INFO  Action:948 - : Before calling heartbeat post method
+2020-02-04 18:58:30 INFO  Action:951 - : Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 18:58:30 INFO  HBTimer:32 - : Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 18:58:35 INFO  Action:602 - 401400544: Before calling send report status message post method
+2020-02-04 18:58:35 INFO  Action:605 - 401400544: Status of sending report status msg response Success
+2020-02-04 18:58:35 INFO  Action:587 - 401400544: Message received acknowledgement for job id  '0bac22b8-3c04-48cf-9612-22492dce9733'  WO: 401400544
+2020-02-04 18:58:35 INFO  Action:935 - 401400544: Before calling update error status post method
+2020-02-04 18:58:35 INFO  Action:938 - 401400544: Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-02-04 18:58:35 INFO  Action:30 - 401400544: RR started processing
+2020-02-04 18:58:35 INFO  Action:33 - 401400544: Illustrator activated to load file..
+2020-02-04 18:58:54 INFO  Action:39 - 401400544: AI file and other dependend file opening..
+2020-02-04 18:58:59 INFO  Action:78 - 401400544: TyphoonShadow called
+2020-02-04 18:59:13 INFO  Action:173 - 401400544: Pdf and xml generated..
+2020-02-04 19:00:57 INFO  Action:602 - 401400544: Before calling send report status message post method
+2020-02-04 19:00:57 INFO  Action:605 - 401400544: Status of sending report status msg response Success
+2020-02-04 19:00:57 INFO  Action:240 - 401400544: Completed process for job id  '0bac22b8-3c04-48cf-9612-22492dce9733' 
+2020-02-04 19:00:58 INFO  Action:633 - 401400544: Before calling url: http://172.28.42.151:8082/tornado/rest/pub/aaw/xmlcompare?mqid=0bac22b8-3c04-48cf-9612-22492dce9733
+2020-02-04 19:00:58 ERROR Action:765 - 401400544: XML compare API: http://tornado.schawk.com/tornado/rest/pub/aaw/xmlcompare?mqid=0bac22b8-3c04-48cf-9612-22492dce9733 - response : 500
+2020-02-04 19:00:58 INFO  Action:245 - 401400544: Xml comparison completed..
+2020-02-04 19:00:58 INFO  Action:923 - 401400544: Before calling update report post method
+2020-02-04 19:00:58 INFO  Action:926 - 401400544: Status of updating  report response {"status":"error","code":"1","detailsObj":{"aawpusher":"id.not.found"}}
+2020-02-04 19:00:58 INFO  Action:614 - 401400544: Before calling send status message post method
+2020-02-04 19:00:58 INFO  Action:618 - 401400544: Status of sending status msg response 
+2020-02-04 19:03:30 INFO  Action:948 - 401400544: Before calling heartbeat post method
+2020-02-04 19:03:30 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 19:03:30 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 19:08:30 INFO  Action:948 - 401400544: Before calling heartbeat post method
+2020-02-04 19:08:31 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 19:08:31 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 19:09:28 INFO  Action:602 - 401400544: Before calling send report status message post method
+2020-02-04 19:09:28 INFO  Action:605 - 401400544: Status of sending report status msg response Success
+2020-02-04 19:09:28 INFO  Action:587 - 401400544: Message received acknowledgement for job id  'f29ec0b8-f3eb-44d0-ae2d-1b4dcc254b69'  WO: 401400544
+2020-02-04 19:09:28 INFO  Action:935 - 401400544: Before calling update error status post method
+2020-02-04 19:09:28 INFO  Action:938 - 401400544: Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-02-04 19:09:28 INFO  Action:30 - 401400544: RR started processing
+2020-02-04 19:09:28 INFO  Action:33 - 401400544: Illustrator activated to load file..
+2020-02-04 19:09:43 INFO  Action:39 - 401400544: AI file and other dependend file opening..
+2020-02-04 19:09:49 INFO  Action:78 - 401400544: TyphoonShadow called
+2020-02-04 19:10:01 INFO  Action:173 - 401400544: Pdf and xml generated..
+2020-02-04 19:11:37 INFO  Action:602 - 401400544: Before calling send report status message post method
+2020-02-04 19:11:37 INFO  Action:605 - 401400544: Status of sending report status msg response Success
+2020-02-04 19:11:37 INFO  Action:240 - 401400544: Completed process for job id  'f29ec0b8-f3eb-44d0-ae2d-1b4dcc254b69' 
+2020-02-04 19:11:38 INFO  Action:633 - 401400544: Before calling url: http://172.28.42.151:8082/tornado/rest/pub/aaw/xmlcompare?mqid=f29ec0b8-f3eb-44d0-ae2d-1b4dcc254b69
+2020-02-04 19:11:38 ERROR Action:765 - 401400544: XML compare API: http://tornado.schawk.com/tornado/rest/pub/aaw/xmlcompare?mqid=f29ec0b8-f3eb-44d0-ae2d-1b4dcc254b69 - response : 500
+2020-02-04 19:11:38 INFO  Action:245 - 401400544: Xml comparison completed..
+2020-02-04 19:11:38 INFO  Action:923 - 401400544: Before calling update report post method
+2020-02-04 19:11:38 INFO  Action:926 - 401400544: Status of updating  report response {"status":"error","code":"1","detailsObj":{"aawpusher":"id.not.found"}}
+2020-02-04 19:11:38 INFO  Action:614 - 401400544: Before calling send status message post method
+2020-02-04 19:11:38 INFO  Action:618 - 401400544: Status of sending status msg response 
+2020-02-04 19:13:31 INFO  Action:948 - 401400544: Before calling heartbeat post method
+2020-02-04 19:13:31 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 19:13:31 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 19:16:55 INFO  Action:602 - 401400544: Before calling send report status message post method
+2020-02-04 19:16:56 INFO  Action:605 - 401400544: Status of sending report status msg response Success
+2020-02-04 19:16:56 INFO  Action:587 - 401400544: Message received acknowledgement for job id  '1e6e062a-2238-46e5-9c80-09ecb20ffd09'  WO: 401400544
+2020-02-04 19:16:56 INFO  Action:935 - 401400544: Before calling update error status post method
+2020-02-04 19:16:56 INFO  Action:938 - 401400544: Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-02-04 19:16:56 INFO  Action:30 - 401400544: RR started processing
+2020-02-04 19:16:56 INFO  Action:33 - 401400544: Illustrator activated to load file..
+2020-02-04 19:17:12 INFO  Action:39 - 401400544: AI file and other dependend file opening..
+2020-02-04 19:17:17 INFO  Action:78 - 401400544: TyphoonShadow called
+2020-02-04 19:17:31 INFO  Action:173 - 401400544: Pdf and xml generated..
+2020-02-04 19:18:10 INFO  Action:602 - 401400544: Before calling send report status message post method
+2020-02-04 19:18:10 INFO  Action:605 - 401400544: Status of sending report status msg response Success
+2020-02-04 19:18:10 INFO  Action:240 - 401400544: Completed process for job id  '1e6e062a-2238-46e5-9c80-09ecb20ffd09' 
+2020-02-04 19:18:11 INFO  Action:633 - 401400544: Before calling url: http://172.28.42.151:8082/tornado/rest/pub/aaw/xmlcompare?mqid=1e6e062a-2238-46e5-9c80-09ecb20ffd09
+2020-02-04 19:18:11 ERROR Action:765 - 401400544: XML compare API: http://tornado.schawk.com/tornado/rest/pub/aaw/xmlcompare?mqid=1e6e062a-2238-46e5-9c80-09ecb20ffd09 - response : 500
+2020-02-04 19:18:11 INFO  Action:245 - 401400544: Xml comparison completed..
+2020-02-04 19:18:11 INFO  Action:923 - 401400544: Before calling update report post method
+2020-02-04 19:18:11 INFO  Action:926 - 401400544: Status of updating  report response {"status":"error","code":"1","detailsObj":{"aawpusher":"id.not.found"}}
+2020-02-04 19:18:11 INFO  Action:614 - 401400544: Before calling send status message post method
+2020-02-04 19:18:11 INFO  Action:618 - 401400544: Status of sending status msg response 
+2020-02-04 19:18:31 INFO  Action:948 - 401400544: Before calling heartbeat post method
+2020-02-04 19:18:32 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 19:18:32 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 19:19:41 INFO  Action:602 - 401400544: Before calling send report status message post method
+2020-02-04 19:19:41 INFO  Action:605 - 401400544: Status of sending report status msg response Success
+2020-02-04 19:19:41 INFO  Action:587 - 401400544: Message received acknowledgement for job id  '2cc66ade-a60a-4246-a9c1-a388d5389598'  WO: 401400544
+2020-02-04 19:19:41 INFO  Action:935 - 401400544: Before calling update error status post method
+2020-02-04 19:19:41 INFO  Action:938 - 401400544: Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-02-04 19:19:41 INFO  Action:30 - 401400544: RR started processing
+2020-02-04 19:19:41 INFO  Action:33 - 401400544: Illustrator activated to load file..
+2020-02-04 19:19:49 INFO  Action:39 - 401400544: AI file and other dependend file opening..
+2020-02-04 19:20:24 INFO  Action:78 - 401400544: TyphoonShadow called
+2020-02-04 19:20:24 INFO  Action:173 - 401400544: Pdf and xml generated..
+2020-02-04 19:20:24 ERROR JsonParser:185 - 401400544: Invalid Key value search 'RR3DXML'  null
+2020-02-04 19:20:32 INFO  Action:602 - 401400544: Before calling send report status message post method
+2020-02-04 19:20:32 INFO  Action:605 - 401400544: Status of sending report status msg response Success
+2020-02-04 19:20:32 INFO  Action:240 - 401400544: Completed process for job id  '2cc66ade-a60a-4246-a9c1-a388d5389598' 
+2020-02-04 19:20:33 INFO  Action:633 - 401400544: Before calling url: http://172.28.42.151:8082/tornado/rest/pub/aaw/xmlcompare?mqid=2cc66ade-a60a-4246-a9c1-a388d5389598
+2020-02-04 19:20:33 ERROR Action:765 - 401400544: XML compare API: http://tornado.schawk.com/tornado/rest/pub/aaw/xmlcompare?mqid=2cc66ade-a60a-4246-a9c1-a388d5389598 - response : 500
+2020-02-04 19:20:33 INFO  Action:245 - 401400544: Xml comparison completed..
+2020-02-04 19:20:33 INFO  Action:923 - 401400544: Before calling update report post method
+2020-02-04 19:20:33 INFO  Action:926 - 401400544: Status of updating  report response {"status":"error","code":"1","detailsObj":{"aawpusher":"id.not.found"}}
+2020-02-04 19:20:33 INFO  Action:614 - 401400544: Before calling send status message post method
+2020-02-04 19:20:33 INFO  Action:618 - 401400544: Status of sending status msg response 
+2020-02-04 19:21:33 INFO  Action:602 - 401400544: Before calling send report status message post method
+2020-02-04 19:21:33 INFO  Action:605 - 401400544: Status of sending report status msg response Success
+2020-02-04 19:21:33 INFO  Action:587 - 401400544: Message received acknowledgement for job id  '69173576-69ad-4f94-b8f2-a6485b543aed'  WO: 401400544
+2020-02-04 19:21:33 INFO  Action:935 - 401400544: Before calling update error status post method
+2020-02-04 19:21:33 INFO  Action:938 - 401400544: Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-02-04 19:21:33 INFO  Action:30 - 401400544: RR started processing
+2020-02-04 19:21:33 INFO  Action:33 - 401400544: Illustrator activated to load file..
+2020-02-04 19:21:48 INFO  Action:39 - 401400544: AI file and other dependend file opening..
+2020-02-04 19:21:58 INFO  Action:78 - 401400544: TyphoonShadow called
+2020-02-04 19:22:02 INFO  Action:173 - 401400544: Pdf and xml generated..
+2020-02-04 19:22:02 ERROR JsonParser:185 - 401400544: Invalid Key value search 'RR3DXML'  null
+2020-02-04 19:22:11 INFO  Action:602 - 401400544: Before calling send report status message post method
+2020-02-04 19:22:12 INFO  Action:605 - 401400544: Status of sending report status msg response Success
+2020-02-04 19:22:12 INFO  Action:240 - 401400544: Completed process for job id  '69173576-69ad-4f94-b8f2-a6485b543aed' 
+2020-02-04 19:22:13 INFO  Action:633 - 401400544: Before calling url: http://172.28.42.151:8082/tornado/rest/pub/aaw/xmlcompare?mqid=69173576-69ad-4f94-b8f2-a6485b543aed
+2020-02-04 19:22:13 ERROR Action:765 - 401400544: XML compare API: http://tornado.schawk.com/tornado/rest/pub/aaw/xmlcompare?mqid=69173576-69ad-4f94-b8f2-a6485b543aed - response : 500
+2020-02-04 19:22:13 INFO  Action:245 - 401400544: Xml comparison completed..
+2020-02-04 19:22:13 INFO  Action:923 - 401400544: Before calling update report post method
+2020-02-04 19:22:13 INFO  Action:926 - 401400544: Status of updating  report response {"status":"error","code":"1","detailsObj":{"aawpusher":"id.not.found"}}
+2020-02-04 19:22:13 INFO  Action:614 - 401400544: Before calling send status message post method
+2020-02-04 19:22:13 INFO  Action:618 - 401400544: Status of sending status msg response 
+2020-02-04 19:23:03 INFO  MQRcv:80 - TestRRPNG:TestRRPNGDivision
+2020-02-04 19:23:03 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
+2020-02-04 19:23:03 INFO  Action:948 - : Before calling heartbeat post method
+2020-02-04 19:23:04 INFO  Action:951 - : Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 19:23:04 INFO  HBTimer:32 - : Heart beat sent for IP : 10.37.129.2 location key : TestRRPNG
+2020-02-04 19:23:32 INFO  Action:948 - 401400544: Before calling heartbeat post method
+2020-02-04 19:23:32 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 19:23:32 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 19:23:42 INFO  Action:602 - 401400544: Before calling send report status message post method
+2020-02-04 19:23:42 INFO  Action:605 - 401400544: Status of sending report status msg response Success
+2020-02-04 19:23:42 INFO  Action:587 - 401400544: Message received acknowledgement for job id  '7b0a452c-b278-4878-9f16-455b9af4f5a6'  WO: 401400544
+2020-02-04 19:23:42 INFO  Action:935 - 401400544: Before calling update error status post method
+2020-02-04 19:23:42 INFO  Action:938 - 401400544: Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-02-04 19:23:42 INFO  Action:30 - 401400544: RR started processing
+2020-02-04 19:23:43 INFO  Action:33 - 401400544: Illustrator activated to load file..
+2020-02-04 19:23:52 INFO  Action:39 - 401400544: AI file and other dependend file opening..
+2020-02-04 19:24:03 INFO  Action:78 - 401400544: TyphoonShadow called
+2020-02-04 19:24:13 INFO  Action:173 - 401400544: Pdf and xml generated..
+2020-02-04 19:28:04 INFO  Action:948 - 401400544: Before calling heartbeat post method
+2020-02-04 19:28:05 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 19:28:05 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRRPNG
+2020-02-04 19:28:32 INFO  Action:948 - 401400544: Before calling heartbeat post method
+2020-02-04 19:28:33 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 19:28:33 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 19:32:46 INFO  MQRcv:80 - TestRRPNG:TestRRPNGDivision
+2020-02-04 19:32:46 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
+2020-02-04 19:32:46 INFO  Action:950 - : Before calling heartbeat post method
+2020-02-04 19:32:47 INFO  Action:953 - : Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 19:32:47 INFO  HBTimer:32 - : Heart beat sent for IP : 10.37.129.2 location key : TestRRPNG
+2020-02-04 19:33:12 INFO  Action:604 - 401400544: Before calling send report status message post method
+2020-02-04 19:33:12 INFO  Action:607 - 401400544: Status of sending report status msg response Success
+2020-02-04 19:33:12 INFO  Action:589 - 401400544: Message received acknowledgement for job id  '40d3009e-18ae-4432-9cc0-1782637f5e0c'  WO: 401400544
+2020-02-04 19:33:12 INFO  Action:937 - 401400544: Before calling update error status post method
+2020-02-04 19:33:12 INFO  Action:940 - 401400544: Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-02-04 19:33:12 INFO  Action:30 - 401400544: RR started processing
+2020-02-04 19:33:33 INFO  Action:948 - 401400544: Before calling heartbeat post method
+2020-02-04 19:33:34 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 19:33:34 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 19:33:53 INFO  Action:33 - 401400544: Illustrator activated to load file..
+2020-02-04 19:37:47 INFO  Action:950 - 401400544: Before calling heartbeat post method
+2020-02-04 19:37:48 INFO  Action:953 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 19:37:48 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRRPNG
+2020-02-04 19:38:34 INFO  Action:948 - 401400544: Before calling heartbeat post method
+2020-02-04 19:38:34 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 19:38:34 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 19:42:48 INFO  Action:950 - 401400544: Before calling heartbeat post method
+2020-02-04 19:42:49 INFO  Action:953 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 19:42:49 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRRPNG
+2020-02-04 19:43:34 INFO  Action:948 - 401400544: Before calling heartbeat post method
+2020-02-04 19:43:35 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 19:43:35 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 19:43:56 INFO  Action:39 - 401400544: AI file and other dependend file opening..
+2020-02-04 19:47:49 INFO  Action:950 - 401400544: Before calling heartbeat post method
+2020-02-04 19:47:49 INFO  Action:953 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 19:47:49 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRRPNG
+2020-02-04 19:48:35 INFO  Action:948 - 401400544: Before calling heartbeat post method
+2020-02-04 19:48:35 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 19:48:35 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 19:53:35 INFO  Action:948 - 401400544: Before calling heartbeat post method
+2020-02-04 19:53:36 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 19:53:36 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 19:58:36 INFO  Action:948 - 401400544: Before calling heartbeat post method
+2020-02-04 19:58:36 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 19:58:36 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 20:03:36 INFO  Action:948 - 401400544: Before calling heartbeat post method
+2020-02-04 20:03:37 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 20:03:37 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 20:05:43 INFO  MQRcv:80 - TestRRPNG:TestRRPNGDivision
+2020-02-04 20:05:43 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
+2020-02-04 20:05:43 INFO  Action:950 - : Before calling heartbeat post method
+2020-02-04 20:05:44 INFO  Action:953 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 20:05:44 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRRPNG
+2020-02-04 20:05:45 INFO  Action:604 - 401400544: Before calling send report status message post method
+2020-02-04 20:05:45 INFO  Action:607 - 401400544: Status of sending report status msg response Success
+2020-02-04 20:05:45 INFO  Action:589 - 401400544: Message received acknowledgement for job id  'd76ec2b8-6b59-4e7b-ab74-450e10dc2bcd'  WO: 401400544
+2020-02-04 20:05:45 INFO  Action:937 - 401400544: Before calling update error status post method
+2020-02-04 20:05:45 INFO  Action:940 - 401400544: Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-02-04 20:05:45 INFO  Action:30 - 401400544: RR started processing
+2020-02-04 20:05:46 INFO  Action:33 - 401400544: Illustrator activated to load file..
+2020-02-04 20:06:04 INFO  Action:39 - 401400544: AI file and other dependend file opening..
+2020-02-04 20:06:44 INFO  Action:78 - 401400544: TyphoonShadow called
+2020-02-04 20:06:57 INFO  Action:173 - 401400544: Pdf and xml generated..
+2020-02-04 20:08:37 INFO  Action:948 - 401400544: Before calling heartbeat post method
+2020-02-04 20:08:37 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 20:08:37 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 20:10:44 INFO  Action:950 - 401400544: Before calling heartbeat post method
+2020-02-04 20:10:45 INFO  Action:953 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 20:10:45 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRRPNG
+2020-02-04 20:13:20 INFO  MQRcv:80 - TestRRPNG:TestRRPNGDivision
+2020-02-04 20:13:20 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
+2020-02-04 20:13:20 INFO  Action:950 - : Before calling heartbeat post method
+2020-02-04 20:13:21 INFO  Action:953 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 20:13:21 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRRPNG
+2020-02-04 20:13:21 INFO  Action:604 - 401400544: Before calling send report status message post method
+2020-02-04 20:13:21 INFO  Action:607 - 401400544: Status of sending report status msg response Success
+2020-02-04 20:13:21 INFO  Action:589 - 401400544: Message received acknowledgement for job id  '4fdb974d-25f4-4c6e-82c1-4de3e65d60c5'  WO: 401400544
+2020-02-04 20:13:21 INFO  Action:937 - 401400544: Before calling update error status post method
+2020-02-04 20:13:22 INFO  Action:940 - 401400544: Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-02-04 20:13:22 INFO  Action:30 - 401400544: RR started processing
+2020-02-04 20:13:22 INFO  Action:33 - 401400544: Illustrator activated to load file..
+2020-02-04 20:13:33 INFO  Action:39 - 401400544: AI file and other dependend file opening..
+2020-02-04 20:13:37 INFO  Action:948 - 401400544: Before calling heartbeat post method
+2020-02-04 20:13:38 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 20:13:38 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 20:18:21 INFO  Action:950 - 401400544: Before calling heartbeat post method
+2020-02-04 20:18:21 INFO  Action:953 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 20:18:21 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRRPNG
+2020-02-04 20:18:38 INFO  Action:948 - 401400544: Before calling heartbeat post method
+2020-02-04 20:18:38 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 20:18:38 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 20:18:51 INFO  MQRcv:80 - TestRRPNG:TestRRPNGDivision
+2020-02-04 20:18:51 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
+2020-02-04 20:18:51 INFO  Action:950 - : Before calling heartbeat post method
+2020-02-04 20:18:52 INFO  Action:953 - : Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 20:18:52 INFO  HBTimer:32 - : Heart beat sent for IP : 10.37.129.2 location key : TestRRPNG
+2020-02-04 20:21:04 INFO  Action:604 - 401400544: Before calling send report status message post method
+2020-02-04 20:21:05 INFO  Action:607 - 401400544: Status of sending report status msg response Success
+2020-02-04 20:21:05 INFO  Action:589 - 401400544: Message received acknowledgement for job id  '10ab77d8-667c-4191-bef1-c5b7bd4c1734'  WO: 401400544
+2020-02-04 20:21:05 INFO  Action:937 - 401400544: Before calling update error status post method
+2020-02-04 20:21:05 INFO  Action:940 - 401400544: Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-02-04 20:21:05 INFO  Action:30 - 401400544: RR started processing
+2020-02-04 20:21:05 INFO  Action:33 - 401400544: Illustrator activated to load file..
+2020-02-04 20:21:20 INFO  Action:39 - 401400544: AI file and other dependend file opening..
+2020-02-04 20:23:38 INFO  Action:948 - 401400544: Before calling heartbeat post method
+2020-02-04 20:23:39 INFO  Action:951 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 20:23:39 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRR
+2020-02-04 20:23:52 INFO  Action:950 - 401400544: Before calling heartbeat post method
+2020-02-04 20:23:53 INFO  Action:953 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 20:23:53 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRRPNG
+2020-02-04 20:25:15 INFO  MQRcv:80 - TestRRPNG:TestRRPNGDivision
+2020-02-04 20:25:15 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
+2020-02-04 20:25:15 INFO  Action:950 - : Before calling heartbeat post method
+2020-02-04 20:25:16 INFO  Action:953 - : Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 20:25:16 INFO  HBTimer:32 - : Heart beat sent for IP : 10.37.129.2 location key : TestRRPNG
+2020-02-04 20:26:40 INFO  Action:604 - 401400544: Before calling send report status message post method
+2020-02-04 20:26:40 INFO  Action:607 - 401400544: Status of sending report status msg response Success
+2020-02-04 20:26:40 INFO  Action:589 - 401400544: Message received acknowledgement for job id  '94d740f1-0d5e-49a0-92a0-112d0a3d2105'  WO: 401400544
+2020-02-04 20:26:40 INFO  Action:937 - 401400544: Before calling update error status post method
+2020-02-04 20:26:40 INFO  Action:940 - 401400544: Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-02-04 20:26:40 INFO  Action:30 - 401400544: RR started processing
+2020-02-04 20:26:41 INFO  Action:33 - 401400544: Illustrator activated to load file..
+2020-02-04 20:26:56 INFO  Action:39 - 401400544: AI file and other dependend file opening..
+2020-02-04 20:30:16 INFO  MQRcv:80 - TestRRPNG:TestRRPNGDivision
+2020-02-04 20:30:16 INFO  MQRcv:85 -  [*] Waiting for messages. To exit press CTRL+C
+2020-02-04 20:30:16 INFO  Action:950 - : Before calling heartbeat post method
+2020-02-04 20:30:17 INFO  Action:953 - : Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 20:30:17 INFO  HBTimer:32 - : Heart beat sent for IP : 10.37.129.2 location key : TestRRPNG
+2020-02-04 20:31:18 INFO  Action:604 - 401400544: Before calling send report status message post method
+2020-02-04 20:31:18 INFO  Action:607 - 401400544: Status of sending report status msg response Success
+2020-02-04 20:31:18 INFO  Action:589 - 401400544: Message received acknowledgement for job id  '6d81facb-f468-4721-8a1c-3b5475afa5eb'  WO: 401400544
+2020-02-04 20:31:18 INFO  Action:937 - 401400544: Before calling update error status post method
+2020-02-04 20:31:18 INFO  Action:940 - 401400544: Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-02-04 20:31:18 INFO  Action:30 - 401400544: RR started processing
+2020-02-04 20:31:19 INFO  Action:33 - 401400544: Illustrator activated to load file..
+2020-02-04 20:31:34 INFO  Action:39 - 401400544: AI file and other dependend file opening..
+2020-02-04 20:32:01 INFO  Action:78 - 401400544: TyphoonShadow called
+2020-02-04 20:32:13 INFO  Action:173 - 401400544: Pdf and xml generated..
+2020-02-04 20:33:08 INFO  Action:604 - 401400544: Before calling send report status message post method
+2020-02-04 20:33:08 INFO  Action:607 - 401400544: Status of sending report status msg response Success
+2020-02-04 20:33:08 INFO  Action:242 - 401400544: Completed process for job id  '6d81facb-f468-4721-8a1c-3b5475afa5eb' 
+2020-02-04 20:33:09 INFO  Action:635 - 401400544: Before calling url: http://172.28.42.151:8082/tornado/rest/pub/aaw/xmlcompare?mqid=6d81facb-f468-4721-8a1c-3b5475afa5eb
+2020-02-04 20:33:09 ERROR Action:767 - 401400544: XML compare API: http://tornado.schawk.com/tornado/rest/pub/aaw/xmlcompare?mqid=6d81facb-f468-4721-8a1c-3b5475afa5eb - response : 500
+2020-02-04 20:33:09 INFO  Action:247 - 401400544: Xml comparison completed..
+2020-02-04 20:33:09 INFO  Action:925 - 401400544: Before calling update report post method
+2020-02-04 20:33:09 INFO  Action:928 - 401400544: Status of updating  report response {"status":"error","code":"1","detailsObj":{"aawpusher":"id.not.found"}}
+2020-02-04 20:33:09 INFO  Action:616 - 401400544: Before calling send status message post method
+2020-02-04 20:33:09 INFO  Action:620 - 401400544: Status of sending status msg response 
+2020-02-04 20:35:17 INFO  Action:950 - 401400544: Before calling heartbeat post method
+2020-02-04 20:35:18 INFO  Action:953 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 20:35:18 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRRPNG
+2020-02-04 20:36:33 INFO  Action:604 - 401400544: Before calling send report status message post method
+2020-02-04 20:36:33 INFO  Action:607 - 401400544: Status of sending report status msg response Success
+2020-02-04 20:36:33 INFO  Action:589 - 401400544: Message received acknowledgement for job id  '329809bd-807a-45fd-a665-c753d0f3332b'  WO: 401400544
+2020-02-04 20:36:33 INFO  Action:937 - 401400544: Before calling update error status post method
+2020-02-04 20:36:33 INFO  Action:940 - 401400544: Status of sending error status response {"status":"error","code":"error","detailsObj":"Mqid, Status and Remark is required"}
+2020-02-04 20:36:33 INFO  Action:30 - 401400544: RR started processing
+2020-02-04 20:36:34 INFO  Action:33 - 401400544: Illustrator activated to load file..
+2020-02-04 20:36:42 INFO  Action:39 - 401400544: AI file and other dependend file opening..
+2020-02-04 20:36:57 INFO  Action:78 - 401400544: TyphoonShadow called
+2020-02-04 20:36:59 INFO  Action:173 - 401400544: Pdf and xml generated..
+2020-02-04 20:36:59 ERROR JsonParser:185 - 401400544: Invalid Key value search 'RR3DXML'  null
+2020-02-04 20:37:08 INFO  Action:604 - 401400544: Before calling send report status message post method
+2020-02-04 20:37:08 INFO  Action:607 - 401400544: Status of sending report status msg response Success
+2020-02-04 20:37:09 INFO  Action:242 - 401400544: Completed process for job id  '329809bd-807a-45fd-a665-c753d0f3332b' 
+2020-02-04 20:37:10 INFO  Action:635 - 401400544: Before calling url: http://172.28.42.151:8082/tornado/rest/pub/aaw/xmlcompare?mqid=329809bd-807a-45fd-a665-c753d0f3332b
+2020-02-04 20:37:10 ERROR Action:767 - 401400544: XML compare API: http://tornado.schawk.com/tornado/rest/pub/aaw/xmlcompare?mqid=329809bd-807a-45fd-a665-c753d0f3332b - response : 500
+2020-02-04 20:37:10 INFO  Action:247 - 401400544: Xml comparison completed..
+2020-02-04 20:37:10 INFO  Action:925 - 401400544: Before calling update report post method
+2020-02-04 20:37:10 INFO  Action:928 - 401400544: Status of updating  report response {"status":"error","code":"1","detailsObj":{"aawpusher":"id.not.found"}}
+2020-02-04 20:37:10 INFO  Action:616 - 401400544: Before calling send status message post method
+2020-02-04 20:37:10 INFO  Action:620 - 401400544: Status of sending status msg response 
+2020-02-04 20:40:18 INFO  Action:950 - 401400544: Before calling heartbeat post method
+2020-02-04 20:40:18 INFO  Action:953 - 401400544: Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-02-04 20:40:18 INFO  HBTimer:32 - 401400544: Heart beat sent for IP : 10.37.129.2 location key : TestRRPNG
