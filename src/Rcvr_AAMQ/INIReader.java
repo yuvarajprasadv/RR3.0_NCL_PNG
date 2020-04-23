@@ -24,6 +24,25 @@ public class INIReader
     File fileName = file.toFile();
     
     
+    
+    public void readRRINI() throws Exception
+    {
+		try
+		{
+		    Utils utils = new Utils();
+		    Ini ini = new Ini(new FileReader(utils.ConvertToAbsolutePath("RR.ini").toString()));
+		  
+    			String temp = ini.get("RR_WAVE").fetch("CATEGORY");
+    			MessageQueue.category = temp;
+		    		
+		}
+		catch(Exception ex)
+		{
+			log.error(MessageQueue.WORK_ORDER + ": " + "Error reading INI file - " + ex.getMessage());
+		}
+    }
+    
+    
     public  void readIniForSingle() throws Exception
     {
   

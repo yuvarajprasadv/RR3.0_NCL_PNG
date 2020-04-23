@@ -1,6 +1,8 @@
 package Rcvr_AAMQ;
 
 
+import java.io.File;
+import java.lang.management.ManagementFactory;
 import java.util.Timer;
 
 import org.apache.log4j.Logger;
@@ -18,6 +20,10 @@ public class MQRcv extends MessageQueue {
 	}
 	
   public static void main(String[] argv) throws Exception {
+	  
+	  System.setProperty("apple.laf.useScreenMenuBar", "true");
+	  System.setProperty("com.apple.mrj.application.apple.menu.about.name", "RoadRunnerTestRR");
+	  
 	ConnectionFactory factory = new ConnectionFactory();
     factory.setHost(MessageQueue.HOST_IP);
     factory.setVirtualHost(MessageQueue.VHOST);
@@ -87,9 +93,13 @@ public class MQRcv extends MessageQueue {
  //   Action.Mount(); //// not reading row by row
     
     INetwork iNet = new INetwork();
+    INIReader ini = new INIReader();  // only for COTY NCL
+	ini.readRRINI();					// only for COTY NCL
+
   //  Timer timer = new Timer();
  //   timer.schedule(new HBTimer(iNet.GetClientIPAddr(), bindingKey, "Wave Road Runner", ),  5000, 300000);
-    HBTimer hbTimer = new HBTimer(iNet.GetClientIPAddr(), bindingKey, "Wave Road Runner", 300000);
+    HBTimer hbTimer = new HBTimer(iNet.GetClientIPAddr(), bindingKey, MessageQueue.category, 300000);
+//    HBTimer hbTimer = new HBTimer(iNet.GetClientIPAddr(), bindingKey, "Wave Road Runner", 3000);
     hbTimer.start();
     MessageQueue.RecvMessage(channel, queueName);
 

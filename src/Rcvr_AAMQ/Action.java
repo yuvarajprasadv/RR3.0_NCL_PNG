@@ -70,7 +70,7 @@ public class Action {
 		Thread.sleep(1000);
 		////Swatch from xml // for  PNG
 	////	SwatchMergeFromXML(jspr.geFilePathFromJson(jsonObj, "XMLFile"), "SL_ColorName","PANTONE");
-	//	SwatchMergeFromXML(jspr.geFilePathFromJson(jsonObj, "XMLFile"), "SL_ColorName","P&G");
+		SwatchMergeFromXML(jspr.geFilePathFromJson(jsonObj, "XMLFile"), "SL_ColorName","P&G");
 		
 		
 		////Swatch from xml // for  PNG
@@ -179,7 +179,22 @@ public class Action {
 					if(is3DXMLAI)
 					{
 						Thread.sleep(7000);
-						String jsonString = jspr.updateJsonForMultipleJob(jsonObj, "999_Delete_at_Archive/", "3DXML.xml");
+						String jsonString = "";
+						String XML3D_Save_Path = "";
+						String primaryPath = jspr.getJsonValueFromGroupKey(jsonObj, "aaw", "Path");
+						
+						if(utils.FileExists(primaryPath+"050_Production_Art/052_PA_Working_Files/01_Roadrunner/3DXML.xml"))
+						{
+							jsonString = jspr.updateJsonForMultipleJob(jsonObj, "050_Production_Art/052_PA_Working_Files/01_Roadrunner/", "3DXML.xml");
+							XML3D_Save_Path = "050_Production_Art/052_PA_Working_Files/01_Roadrunner";
+						}
+//						else if(utils.FileExists(primaryPath+"999_Delete_at_Archive/3DXML.xml"))
+//						{
+//							jsonString = jspr.updateJsonForMultipleJob(jsonObj, "999_Delete_at_Archive/", "3DXML.xml");
+//							XML3D_Save_Path = "999_Delete_at_Archive";
+//						}
+						if(jsonString != "")
+						{
 						String[] newArryStr= new String[1];
 						
 						newArryStr[0] = jsonString;
@@ -192,8 +207,8 @@ public class Action {
 						
 						
 						//PNG set swatch  White color  to White 2
-					//	SEng.SetSwathColorFromTo("White 2", "White");  //// only for NCL P  -  N  -  G
-					//	SEng.SetLayerVisibleOff();					  //// only for NCL  P  - N  -  G
+						SEng.SetSwathColorFromTo("White 2", "White");  //// only for NCL P  -  N  -  G
+						SEng.SetLayerVisibleOff();					  //// only for NCL  P  - N  -  G
 						
 						
 						
@@ -201,17 +216,21 @@ public class Action {
 						Thread.sleep(1000);
 						String fileRenameString = jspr.getJsonValueForKey(jsonObj, "WO") + "_3dxml";
 						
-						String road_runnerDirPath = utils.RemoveForwardSlash((String) jspr.getJsonValueForKey(jsonObj, "Path") + "999_Delete_at_Archive/road_runner");
+					//	String road_runnerDirPath = utils.RemoveForwardSlash((String) jspr.getJsonValueForKey(jsonObj, "Path") + "999_Delete_at_Archive/road_runner");
+						String road_runnerDirPath = utils.RemoveForwardSlash((String) jspr.getJsonValueForKey(jsonObj, "Path") + XML3D_Save_Path +"/");
 						if(!Utils.IsFolderExists(road_runnerDirPath))
 						{
 							utils.CreateNewDirectory(road_runnerDirPath, false);
 						}
 						
-						fileName[0] = utils.RemoveForwardSlash((String) jspr.getJsonValueForKey(jsonObj, "Path") + "999_Delete_at_Archive/");
+					//	fileName[0] = utils.RemoveForwardSlash((String) jspr.getJsonValueForKey(jsonObj, "Path") + "999_Delete_at_Archive/");
+						fileName[0] = utils.RemoveForwardSlash((String) jspr.getJsonValueForKey(jsonObj, "Path") + XML3D_Save_Path +"/");
+						
 						fileName[1] = road_runnerDirPath + "/" + fileRenameString;
 						fileName[2] = fileName[0] + fileRenameString;
 						fileName[3] = fileName[0] + fileRenameString;
 						SEng.PostDocumentProcessFor3DXML(fileName);
+						}
 
 					}
 					
@@ -241,7 +260,6 @@ public class Action {
 		log.info(MessageQueue.WORK_ORDER + ": " + "Completed process for job id  '" + MessageQueue.MSGID + "' ");
 		Thread.sleep(1000);
 
-		
 		Action.UpdateToServer(jsonObj, "xmlcompare");
 		log.info(MessageQueue.WORK_ORDER + ": " + "Xml comparison completed..");
 		
@@ -455,7 +473,7 @@ public class Action {
 		return filePath.substring(0, index);
 	}
 
-	public static boolean PostMultipleJobPreProcess() {
+	public static boolean PostMultipleJobPreProcess() throws IOException {
 		Utils utls = new Utils();
 		boolean eskoPluginbool = false;
 		String eskoPdfPlugin = "";
@@ -570,16 +588,18 @@ public class Action {
 		// ***PnG***// This is to copy from different part to 050_Production.
 		
 		Utils utls = new Utils();
-		String destinationFilePath = jsonPars.getMasterAIWithoutPathValidate(jsonObj, "Master");
-		String sourceFile = jsonPars.getJsonValueFromGroupKey(jsonObj, "aaw", "MasterTemplate");
-		
 		String copyFileStatus = "";
-		copyFileStatus = utls.CopyFileFromSourceToDestination(sourceFile, destinationFilePath); 
-		
-
+		String sourceFile = jsonPars.getJsonValueFromGroupKey(jsonObj, "aaw", "MasterTemplate");
+		if(sourceFile != null)
+		if(!sourceFile.isEmpty())
+		{
+			String destinationFilePath = jsonPars.getMasterAIWithoutPathValidate(jsonObj, "Master");
+			copyFileStatus = utls.CopyFileFromSourceToDestination(sourceFile, destinationFilePath); 
+		}
 		// ***PnG**//
+		
 	
-		if(copyFileStatus != "") 
+		if(copyFileStatus != "" && !sourceFile.isEmpty() && sourceFile != null) 
 		{
 			if (!((String) jsonObj.get("type")).equals("multi"))
 				ValidateFiles(jsonObj);
@@ -597,6 +617,25 @@ public class Action {
 				log.error(MessageQueue.WORK_ORDER + ": " + "Msg Ack err: " + ex);
 			}
 		}
+		else if(sourceFile.isEmpty())
+		{
+			if (!((String) jsonObj.get("type")).equals("multi"))
+				ValidateFiles(jsonObj);
+			try {
+				
+				String workOrderNo  = jsonPars.getJsonValueForKey(jsonObj, "WO");
+				sendRespStatusMsg("received" + "::" + iNet.GetClientIPAddr());
+				log.info(MessageQueue.WORK_ORDER + ": " + "Message received acknowledgement for job id  '" + MessageQueue.MSGID + "' " + " WO: " + workOrderNo);
+	
+				if (!((String) jsonObj.get("type")).equals("multi"))
+					actionSeq(jsonObj);
+				else
+					multiActionSeq(jsonObj);
+			} catch (Exception ex) {
+				log.error(MessageQueue.WORK_ORDER + ": " + "Msg Ack err: " + ex);
+			}
+		}
+		
 
 	}
 
@@ -946,12 +985,18 @@ public class Action {
 	public static void UpdateClientMachineRunningStatus(String ipAddress, String locationKey, String category) throws IOException {
 		try 
 		{
-		//	https://172.28.42.168:8443/tornado_rr/rest/pub/rr/rrstatusOfHeartBeat
+			ipAddress = ipAddress;
+			locationKey=locationKey;
+			category=category;
+			
 			HttpsConnection httpsCon = new HttpsConnection();
-			log.info(MessageQueue.WORK_ORDER + ": " + "Before calling heartbeat post method");
+			log.info(MessageQueue.WORK_ORDER + ": " + "Before calling heartbeat post method " + ipAddress +" " + locationKey + " " + category);
 		    String postResponse = httpsCon.excuteClientMachineStatusHttpJsonPost(MessageQueue.TORNADO_HOST_LIVE_1 + "/rest/pub/rr/rrstatusOfHeartBeat",
 					ipAddress, locationKey, category);
+		    String postResponseDev = httpsCon.excuteClientMachineStatusHttpJsonPost(MessageQueue.TORNADO_HOST_DEV + "/rest/pub/rr/rrstatusOfHeartBeat",
+					ipAddress, locationKey, category);
 		    log.info(MessageQueue.WORK_ORDER + ": " + "Status of sending heartbeat response " + postResponse);
+		    log.info(MessageQueue.WORK_ORDER + ": " + "Status of sending heartbeat response dev " + postResponseDev);
 		} catch (Exception ex) 
 		{
 			
@@ -965,7 +1010,7 @@ public class Action {
 			HttpsConnection httpsCon = new HttpsConnection();
 		    String postResponse = httpsCon.excuteErrorStatusHttpJsonPostWithRemark(MessageQueue.TORNADO_HOST + "/rest/pub/rr/updatestatus",
 					MessageQueue.MSGID, reportStr, remarks);
-		   log.info(MessageQueue.WORK_ORDER + ": " + "Error status sent :" + reportStr + " - remark : " + remarks + " response : " + postResponse);
+		   log.info(MessageQueue.WORK_ORDER + ": " + "Error status sent : " + MessageQueue.TORNADO_HOST + "/rest/pub/rr/updatestatus" + MessageQueue.MSGID +" - " + reportStr + "\n remark : " + remarks + "\n response : " + postResponse);
 		} catch (Exception ex) 
 		{
 			log.error(MessageQueue.WORK_ORDER + ": " + "Error when updating error status with remark :" + (String) ex.getMessage());

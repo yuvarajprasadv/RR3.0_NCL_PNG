@@ -1,6 +1,7 @@
 package Rcvr_AAMQ;
 
 import java.io.IOException;
+import java.lang.management.ManagementFactory;
 
 import org.apache.log4j.Logger;
 
@@ -11,8 +12,9 @@ public class HBTimer extends Thread
 {
 	static Logger log = LogMQ.monitor("Rcvr_AAMQ.HBTimer");
 	String ipAddress, locationKey, category;
+	String pid = ManagementFactory.getRuntimeMXBean().getName();
 	int delay;
-
+	
 	public HBTimer(String ip_Address, String location_Key, String category_Type, int delay_time) 
 	{
 		this.ipAddress = ip_Address;
@@ -23,11 +25,12 @@ public class HBTimer extends Thread
 
 	public void run() 
 	{
+		String ar = ("KILL -CONT "+ pid.split("@")[0]);
 		while(true)
 		{  
 		    try
 		    {
-		    		
+	    			Runtime.getRuntime().exec(ar);
 		    		Action.UpdateClientMachineRunningStatus(this.ipAddress, this.locationKey, this.category);
 		    		log.info(MessageQueue.WORK_ORDER + ": " + "Heart beat sent for IP : " + this.ipAddress + " location key : " + this.locationKey );
 		    		Thread.sleep(this.delay);

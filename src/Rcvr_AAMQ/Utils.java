@@ -130,8 +130,9 @@ public class Utils {
 	}
 	
 	
-	public boolean FileExists(String pathString)
+	public boolean FileExists(String pathString) throws IOException
 	{
+		Action action = new Action();
 		try
 		{
 			File file = new File(pathString);
@@ -140,6 +141,7 @@ public class Utils {
 		catch (Exception Ex)
 		{
 			System.out.println(Ex.getMessage());
+			action.UpdateErrorStatusWithRemark("23", "File path doesn't exists: " + pathString);
 			return false;
 		}
 	}
@@ -537,7 +539,7 @@ public class Utils {
 	    		Utils utls = new Utils();
 	    		int index = ToDestinationFolder.lastIndexOf("/");
 	    		String fileName = ToDestinationFolder.substring(index, ToDestinationFolder.length());
-	    		String destinationFolderpath = ToDestinationFolder.substring(0, index) + fileName;
+	   		String destinationFolderpath = ToDestinationFolder.substring(0, index) + fileName;
 	    		String SourceFile = fromSourceFile +"/"+ fileName;
 	    		if(!utls.FileExists(SourceFile))
 			{

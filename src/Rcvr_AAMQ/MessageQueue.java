@@ -17,12 +17,16 @@ public class MessageQueue extends Action {
 	  protected static String TORNADO_HOST = "";
 	  protected static String TORNADO_ENV = "";
 	  
-	  protected final static String TORNADO_HOST_LIVE_1 = "http://tornado.schawk.com/tornado";	//LIVE dns 
-	  protected final static String TORNADO_HOST_LIVE_2 = "http://172.26.42.39:8080/tornado";	//LIVE alternative 
-	  protected final static String TORNADO_HOST_LIVE_3 = "http://172.28.42.157:8080/tornado";   //LIVE
+	  protected final static String TORNADO_HOST_LIVE_1 = "http://172.28.42.157:8080/tornado"; //LIVE
+	  protected final static String TORNADO_HOST_LIVE_2 = "http://172.26.42.39:8080/tornado";	//LIVE alternative  /// for http 8080  	
+	  protected final static String TORNADO_HOST_LIVE_3 = "http://tornado.schawk.com/tornado";	//LIVE dns // for https 8443
 	  
 	  protected final static String TORNADO_HOST_DEV = "http://172.28.42.151:8082/tornado"; // JAVA DEV IP for PITAA [PNG] Only.
-	  protected final static String TORNADO_HOST_QA = "https://qatornado.schawk.com/tornado"; // JAVA QA IP 
+	  protected final static String TORNADO_HOST_QA = "http://172.28.42.168:8080/tornado"; // JAVA QA
+	  
+	  
+	//  protected final static String TORNADO_HOST_QA = "https://qatornado.schawk.com/tornado"; // JAVA QA IP it not working 
+//172.26.42.39:8443
 		
 //	  protected final static String TORNADO_HOST_LIVE_1 = "https://tornado.schawk.com/tornado";	//LIVE dns 
 //	  protected final static String TORNADO_HOST_LIVE_2 = "https://172.26.42.39:8080/tornado";	//LIVE alternative 
@@ -62,9 +66,12 @@ public class MessageQueue extends Action {
 	  public static boolean mPdfPreset = false;
 	  public static boolean mPdfNormalised = false;
 	  
+	  //RRWAVEINI
+	  public static String category = "Wave Road Runner";
+	  
 
 //	 protected final static String HOST_IP = "10.52.8.31";			// local system
-//	 protected final static String HOST_IP = "192.168.43.10";			// local system
+//	 protected final static String HOST_IP = "192.168.43.30";			// local system
 //	 protected final static String HOST_IP = "172.28.42.158";			// LIVE
 	 protected final static String HOST_IP =  "S2PTTRNMSGQ01P.asia.schawk.com"; //LIVE Dns
 	 

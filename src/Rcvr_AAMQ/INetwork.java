@@ -1,17 +1,19 @@
 package Rcvr_AAMQ;
 
-import java.net.InetAddress;
-import java.net.UnknownHostException;
+import java.net.*;
+import java.util.Collections;
+import java.util.Enumeration;
 
 import org.apache.log4j.Logger;
 
 public class INetwork 
 {
 	static Logger log = LogMQ.monitor("Rcvr_AAMQ.INetwork");
-	 public String GetClientIPAddr()
+	 public String GetClientIPAddrs()
 	 {
 	        try {
 	            InetAddress ipAddr = InetAddress.getLocalHost();
+	          
 	            return (ipAddr.getHostAddress());
 	        } catch (Exception ex) 
 	        {
@@ -20,10 +22,36 @@ public class INetwork
 	        }
 			return null;
 	  }
-	 public static void main(String[] args)
+	 
+	 
+		public String GetClientIPAddr()
+		{
+			try
+			{
+			Enumeration<NetworkInterface> nets = NetworkInterface.getNetworkInterfaces();
+		    for (NetworkInterface netint : Collections.list(nets))
+		    {
+		        Enumeration<InetAddress> inetAddresses = netint.getInetAddresses();
+		        if(netint.getDisplayName().equals("en0"))
+		        for (InetAddress inetAddress : Collections.list(inetAddresses)) 
+		        {
+		        		if((inetAddress.toString().split("\\.")).length ==  4 )
+		            return inetAddress.getHostAddress();
+		        }
+		     }
+			return null;
+			}
+			catch (Exception SocketException)
+			{
+				return null;
+			}
+		}
+
+	 public static void main(String[] args) throws UnknownHostException
 	 {
-	// INetwork nt = new INetwork();
-		// System.out.println(nt.GetClientIPAddr());
+		 INetwork inet = new INetwork();
+		 System.out.println( inet.GetClientIPAddr());
+		    
 	 }
 
 }
