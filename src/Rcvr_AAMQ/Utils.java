@@ -4,14 +4,11 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
-import java.nio.file.StandardCopyOption;
-import java.nio.channels.FileChannel;
-import java.nio.file.CopyOption;
+
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -40,10 +37,13 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import Rcvr_AAMQ.FileSystem;
+
 public class Utils {
 	
 	static Logger log = LogMQ.monitor("Rcvr_AAMQ.Utils");
 	private String[] fileLists;
+	
 	public static String jsonParser(String jsonString) {
 
 		try {
@@ -132,7 +132,7 @@ public class Utils {
 	
 	public boolean FileExists(String pathString) throws IOException
 	{
-		Action action = new Action();
+		FileSystem fls = new FileSystem();
 		try
 		{
 			File file = new File(pathString);
@@ -141,7 +141,8 @@ public class Utils {
 		catch (Exception Ex)
 		{
 			System.out.println(Ex.getMessage());
-			action.UpdateErrorStatusWithRemark("23", "File path doesn't exists: " + pathString);
+			fls.AppendFileString("\nFile path doesn't exists: " + pathString+ " \n");
+			Action.UpdateErrorStatusWithRemark("23", "File path doesn't exists: " + pathString);
 			return false;
 		}
 	}

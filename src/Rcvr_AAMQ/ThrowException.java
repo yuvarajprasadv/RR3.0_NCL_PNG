@@ -21,6 +21,7 @@ public class ThrowException {
 		Thread.sleep(5000);
 		Action.UpdateErrorStatusWithRemark("14", "Roadrunner exits on error ");//RR error exit (14) status to Tornado API
 		log.info("Sent error status id 14:" + "Roadrunner exits on error");
+		MessageQueue.WORK_ORDER = "";
 		MessageQueue.GATE = true;
 		}
 	}
@@ -41,6 +42,7 @@ public class ThrowException {
 		Thread.sleep(5000);
 		Action.UpdateErrorStatusWithRemark(id, "Roadrunner exits on error " + errorMsg);//RR error exit (14) status to Tornado API
 		log.info("Sent error status id " + id + ": Roadrunner exits on error " + errorMsg.toString());
+		MessageQueue.WORK_ORDER = "";
 		MessageQueue.GATE = true;
 		}
 	}

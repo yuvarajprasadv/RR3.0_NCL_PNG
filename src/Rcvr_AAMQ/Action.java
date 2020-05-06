@@ -269,7 +269,7 @@ public class Action {
 		MessageQueue.ERROR += errorMsg;
 		Action.sendStatusMsg((String) MessageQueue.ERROR);
 		MessageQueue.ERROR = "";
-		
+		MessageQueue.WORK_ORDER = "";
 		Thread.sleep(1000);
 		MessageQueue.GATE = true;
 
