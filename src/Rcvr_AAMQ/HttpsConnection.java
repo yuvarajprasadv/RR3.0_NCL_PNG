@@ -174,7 +174,7 @@ public class HttpsConnection
 	   }
 	   catch(Exception ex)
 	   {
-		   log.error(MessageQueue.WORK_ORDER + ": " + "Error at HttpsUrConnection: " + ex.getMessage());
+		   log.error(MessageQueue.WORK_ORDER + ": " + "Error at HttpsUrlConnection: " + ex.getMessage());
 		   return null;
 	   }
 	   
