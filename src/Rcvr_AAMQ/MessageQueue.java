@@ -21,7 +21,7 @@ public class MessageQueue extends Action {
 	  
 	  protected final static String TORNADO_HOST_LIVE_1 = "http://172.28.42.157:8080/tornado"; //LIVE
 	  protected final static String TORNADO_HOST_LIVE_2 = "http://172.26.42.39:8080/tornado";	//LIVE alternative  /// for http 8080  	
-	  protected final static String TORNADO_HOST_LIVE_3 = "http://tornado.schawk.com/tornado";	//LIVE dns // for https 8443
+	  protected final static String TORNADO_HOST_LIVE_3 = "https://tornado.schawk.com/tornado";	//LIVE dns // for https 8443
 	  
 	  protected final static String TORNADO_HOST_DEV = "http://172.28.42.151:8082/tornado"; // JAVA DEV IP for PITAA [PNG] Only.
 	  protected final static String TORNADO_HOST_QA = "http://172.28.42.168:8080/tornado"; // JAVA QA
@@ -80,7 +80,6 @@ public class MessageQueue extends Action {
 	  static Logger log = LogMQ.monitor("Rcvr_AAMQ.MessageQueue");
 	  
 	  public static void RecvMessage(Channel channel, String queueName) throws Exception {
-		  
 		 if (GATE)
 		 {
 			MessageQueue.ERROR = "";
@@ -101,10 +100,13 @@ public class MessageQueue extends Action {
 		          Date date = new Date();
 		          SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 		          System.out.println(" [x] Received: "+formatter.format(date)+" '" + envelope.getRoutingKey() + "':'" + message + "'");
-				  
+		          log.info("Message received: "+formatter.format(date)+" '" + envelope.getRoutingKey() + "':'" + message + "'");
+		          
+		          
+		          
 				  try {
 					  MESSAGE = message;
-					Action.acknowledge(message);
+					  Action.acknowledge(message);
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

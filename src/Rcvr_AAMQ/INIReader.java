@@ -4,27 +4,28 @@ import org.apache.log4j.Logger;
 import org.ini4j.*;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import javax.print.attribute.standard.PDLOverrideSupported;
 
 
 
 public class INIReader 
 {
 	static Logger log = LogMQ.monitor("Rcvr_AAMQ.INIReader");
-	
 	Utils utl = new Utils();
     Path file = Paths.get(utl.ConvertToAbsolutePath("/Applications/Adobe Illustrator "+ MessageQueue.VERSION +"/Plug-ins.localized/Sgk/Configuration/RoadRunner.ini"));
+    
+    
     
     File fileName = file.toFile();
     
     
     
+
+	
     public void readRRINI() throws Exception
     {
 		try

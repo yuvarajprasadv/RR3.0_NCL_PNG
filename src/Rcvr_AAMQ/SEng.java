@@ -170,17 +170,17 @@ public class SEng{
 		 ExecuteAppleScript(scriptString);
 	 	}
 	 
-	 public static String SwatchTest(String arryStr[]) throws Exception  
+	 public static String SwatchTest() throws Exception  
 	 {
 
 		 try
 		 {
 		 Utils utils = new Utils();
-		 String pathString = utils.GetPathFromResource("SwatchTest.js");
+		 String pathString = utils.GetPathFromResource("GetSwatchList.js");
 		 String scriptString = "tell application "+ '"' +"Applications:Adobe Illustrator "+ MessageQueue.VERSION +":Adobe Illustrator.app"+'"' +"\n with timeout of "+ timeOutSec +" seconds \n"
-			+ "do javascript (file "+'"'+pathString+'"'+")  with arguments {"+ '"'+arryStr[0]+'"' +", "+ '"'+arryStr[1]+'"' +"} \n"
-			+ "end timeout \n"
-			+ "end tell";
+				 + "do javascript (file "+'"'+pathString+'"'+") \n"
+				 + "end timeout \n"
+				 + "end tell";
 		 return ExecuteAppleScript(scriptString);
 		 }
 		 catch (Exception ex)

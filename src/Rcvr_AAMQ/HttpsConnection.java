@@ -32,9 +32,20 @@ import java.nio.charset.Charset;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
+import org.apache.http.client.config.RequestConfig;
+import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.config.Registry;
+import org.apache.http.config.RegistryBuilder;
+import org.apache.http.conn.socket.ConnectionSocketFactory;
+import org.apache.http.conn.socket.PlainConnectionSocketFactory;
+import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
 import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
+import org.apache.http.ssl.SSLContextBuilder;
+import org.apache.http.ssl.TrustStrategy;
 
 public class HttpsConnection 
 {
@@ -54,13 +65,15 @@ public class HttpsConnection
    {
 	   System.setProperty ("jsse.enableSNIExtension", "false");
 	   HttpsURLConnection connection = null;
-
 	   try 
 	   {
 		   trustAllHosts();
 		   URL url = new URL(targetURL);
 		   connection = (HttpsURLConnection)url.openConnection();
-		     
+
+		   connection.setConnectTimeout(6000 * 10);
+		   connection.setReadTimeout(6000 * 10);
+		   
 		   connection.setRequestMethod("POST");
 		    
 		   connection.setRequestProperty("Content-Type","application/x-www-form-urlencoded"); 
@@ -223,6 +236,12 @@ public class HttpsConnection
    
    public String excuteClientMachineStatusHttpJsonPost(String targetURL, String machine_ip, String location_key, String category) 
    {
+	   RequestConfig reqConfig = RequestConfig
+			      .custom()
+			      .setConnectTimeout(1000 * 60)
+			      .setConnectionRequestTimeout(1000 * 60)
+			      .setSocketTimeout(1000 * 60)
+			      .build();
 	  
 	   JSONObject user=new JSONObject();
 	   try
@@ -230,20 +249,28 @@ public class HttpsConnection
 		   user.put("ip", machine_ip);
 		   user.put("key", location_key);
 		   user.put("category", category);
+
+		   String jsonData=user.toString();
+		   HttpPostReq httpPostReq=new HttpPostReq();
+		   HttpPost httpPost=httpPostReq.createConnectivity(targetURL , "myusername", "mypassword");
+		   httpPost.setConfig(reqConfig);
+		   return httpPostReq.executeReq( jsonData, httpPost);
 	   }
 	   catch (Exception ex)
 	   {
 		   log.error(MessageQueue.WORK_ORDER + ": " + "Exception on report sending to tornado: " + ex.getMessage());
 		   return "exception on report sending to tornado\n";
 	   }
-	   String jsonData=user.toString();
-	   HttpPostReq httpPostReq=new HttpPostReq();
-	   HttpPost httpPost=httpPostReq.createConnectivity(targetURL , "myusername", "mypassword");
-	   return httpPostReq.executeReq( jsonData, httpPost);
    }
    
    public String excuteErrorStatusHttpJsonPostWithRemark(String targetURL, String autoartwork_mq_id, String autoartwork_overall_status, String autoartwork_remarks) 
    {
+	   RequestConfig reqConfig = RequestConfig
+			      .custom()
+			      .setConnectTimeout(1000 * 5)
+			      .setConnectionRequestTimeout(1000 * 5)
+			      .setSocketTimeout(1000 * 5)
+			      .build();
 	  
 	   JSONObject user=new JSONObject();
 	   try
@@ -258,8 +285,10 @@ public class HttpsConnection
 		   return "exception on report sending to tornado\n";
 	   }
 	   String jsonData=user.toString();
-	   HttpPostReq httpPostReq=new HttpPostReq();
+	   HttpPostReq httpPostReq = new HttpPostReq();
+	   
 	   HttpPost httpPost=httpPostReq.createConnectivity(targetURL , "myusername", "mypassword");
+	   httpPost.setConfig(reqConfig);
 	   return httpPostReq.executeReq( jsonData, httpPost);
    }
    
@@ -322,18 +351,100 @@ class HttpPostReq
         }
     }
      
-    String executeHttpRequest(String jsonData,  HttpPost httpPost)  throws UnsupportedEncodingException, IOException
+    @SuppressWarnings("deprecation")
+	String executeHttpRequest(String jsonData,  HttpPost httpPost)  throws UnsupportedEncodingException, IOException, Exception
     {
+    	
+
         HttpResponse response=null;
         String line = "";
         StringBuffer result = new StringBuffer();
         httpPost.setEntity(new StringEntity(jsonData));
-        HttpClient client = HttpClientBuilder.create().build();
+        
+        int timeout = 240; //(240 * 1000  = 4min)
+        RequestConfig config = RequestConfig.custom()
+          .setConnectTimeout(timeout * 1000)
+          .setConnectionRequestTimeout(timeout * 1000)
+          .setSocketTimeout(timeout * 1000).build();
+
+        
+//        CloseableHttpClient client = 
+//          HttpClientBuilder.create().setDefaultRequestConfig(config).build();
+//        
+        
+        HttpClientBuilder b = HttpClientBuilder.create();
+
+        // setup a Trust Strategy that allows all certificates.
+        //
+        SSLContext sslContext = new SSLContextBuilder().loadTrustMaterial(null, new TrustStrategy()
+           {
+              public boolean isTrusted(X509Certificate[] arg0, String arg1) throws CertificateException
+              {
+                 return true;
+              }
+           }).build();
+        b.setSslcontext(sslContext);
+
+        // don't check Hostnames, either.
+        //      -- use SSLConnectionSocketFactory.getDefaultHostnameVerifier(), if you don't want to weaken
+        HostnameVerifier hostnameVerifier = SSLConnectionSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER;
+
+        // here's the special part:
+        //      -- need to create an SSL Socket Factory, to use our weakened "trust strategy";
+        //      -- and create a Registry, to register it.
+        //
+        SSLConnectionSocketFactory sslSocketFactory = new SSLConnectionSocketFactory(sslContext, hostnameVerifier);
+        Registry<ConnectionSocketFactory> socketFactoryRegistry = RegistryBuilder.<ConnectionSocketFactory> create().register("http", PlainConnectionSocketFactory.getSocketFactory()).register("https", sslSocketFactory).build();
+
+        // now, we create connection-manager using our Registry.
+        //      -- allows multi-threaded use
+        PoolingHttpClientConnectionManager connMgr = new PoolingHttpClientConnectionManager(socketFactoryRegistry);
+        b.setConnectionManager(connMgr);
+
+        // finally, build the HttpClient;
+        //      -- done!
+        
+       
+        CloseableHttpClient client =  b.setDefaultRequestConfig(config).build();
+        
+        
+        
+     //   HttpClient client = HttpClientBuilder.create().build();
         response = client.execute(httpPost);
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
         while ((line = reader.readLine()) != null){ result.append(line); }
         
         return result.toString();
+    
+    	
+    	
+    	
+    	
+    	/*
+        HttpResponse response=null;
+        String line = "";
+        StringBuffer result = new StringBuffer();
+        httpPost.setEntity(new StringEntity(jsonData));
+        
+        int timeout = 240; //(240 * 1000  = 4min)
+        RequestConfig config = RequestConfig.custom()
+          .setConnectTimeout(timeout * 1000)
+          .setConnectionRequestTimeout(timeout * 1000)
+          .setSocketTimeout(timeout * 1000).build();
+        CloseableHttpClient client = 
+          HttpClientBuilder.create().setDefaultRequestConfig(config).build();
+        
+     //   HttpClient client = HttpClientBuilder.create().build();
+        response = client.execute(httpPost);
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
+        while ((line = reader.readLine()) != null){ result.append(line); }
+        
+        return result.toString();
+        
+        */
+    	
     }
+
 }

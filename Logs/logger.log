@@ -1,6 +1,38 @@
-2020-05-11 13:40:53 INFO  MQRcv:86 - TestRRPNG:TestRRPNGDivision
-2020-05-11 13:40:53 INFO  MQRcv:91 -  [*] Waiting for messages. To exit press CTRL+C
-2020-05-11 13:40:53 INFO  Action:1383 - : Before calling heartbeat post method 192.168.43.30 TestRRPNG Coty Road Runner
-2020-05-11 13:40:54 INFO  Action:1388 - : Status of sending heartbeat response {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
-2020-05-11 13:40:54 INFO  Action:1389 - : Status of sending heartbeat response dev {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
-2020-05-11 13:40:54 INFO  HBTimer:35 - : Heart beat sent for IP : 192.168.43.30 location key : TestRRPNG
+2020-06-05 10:42:13 INFO  MQRcv:86 - TestRRPNG:TestRRPNGDivision
+2020-06-05 10:42:13 INFO  MQRcv:91 -  [*] Waiting for messages. To exit press CTRL+C
+2020-06-05 10:42:13 INFO  Action:1413 - : Before calling heartbeat post method 192.168.43.30 TestRRPNG Coty Road Runner
+2020-06-05 10:42:15 INFO  Action:1421 - : Status of sending heartbeat response Live{"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-06-05 10:42:15 INFO  Action:1422 - : Status of sending heartbeat response dev {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-06-05 10:42:15 INFO  HBTimer:35 - : Heart beat sent for IP : 192.168.43.30 location key : TestRRPNG
+2020-06-05 10:42:42 INFO  MQRcv:86 - TestRRPNG:TestRRPNGDivision
+2020-06-05 10:42:42 INFO  MQRcv:91 -  [*] Waiting for messages. To exit press CTRL+C
+2020-06-05 10:42:42 INFO  Action:1413 - : Before calling heartbeat post method 192.168.43.30 TestRRPNG Coty Road Runner
+2020-06-05 10:42:44 INFO  Action:1421 - : Status of sending heartbeat response Live{"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-06-05 10:42:44 INFO  Action:1422 - : Status of sending heartbeat response dev {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-06-05 10:42:44 INFO  HBTimer:35 - : Heart beat sent for IP : 192.168.43.30 location key : TestRRPNG
+2020-06-05 10:42:48 INFO  MessageQueue:103 - Message received: 05-06-2020 10:42:48 'TestRRPNG':'{"settings":[{"useBlackIfAlreadyBold":"false","considerSemiboldAsBold":"true","considerObliqueAsItalic":"true","considerBlackAsBold":"true","replaceBrTagWithSpace":"true"}],"styleAttributes":[{"Italic":"true","Strikethrough":"true","Underline":"true","Bold":"true","Subscript":"true","Superscript":"true"}],"textformat":[{"addSpaceBetweenElements":"true","useTabasTabular":"true","useBrasLineBreak":"true","rulefortextframe":"true"}],"isApplyRule":false,"aaw":[{"Path":"\/Users\/yuvaraj\/Desktop\/Test\/401893123-PNGNCL\/","Master":"050_Production_Art\/91180820.002_CNFP_ID.ai","Revision":"01","WO":"401893124","XMLFile":"100_XML\/A01\/GS1_40191885501.xml","MasterTemplate":"\/Users\/yuvaraj\/Desktop\/Test\/401893123-PNGNCL\/"}],"Id":"80dcbb4f-c842-4d04-9bc0-a7508fdb41ce","region":[{"ProjectName":"RRNEWCASTLE_PnG_V001","env":"production","RR3DXML":false,"key":"vitastar","Location":"TestRRPNG"}],"type":"none","version":"CC 2018"}'
+2020-06-05 10:42:49 INFO  Action:695 - 401893124: Before calling send report status message post method
+2020-06-05 10:42:50 INFO  Action:698 - 401893124: Status of sending report status msg response Success
+2020-06-05 10:42:50 INFO  Action:655 - 401893124: Message received acknowledgement for job id  '80dcbb4f-c842-4d04-9bc0-a7508fdb41ce'  WO: 401893124
+2020-06-05 10:42:50 INFO  Action:1432 - 401893124: Before sending error status :23 - remark :File Path or File does not exists : /Volumes/Tornado FMCG Library//PnG//Haircare//Pantene///PAN0001//Copy Template//ILST-00038756.001_SHBP_.ai
+2020-06-05 10:42:54 INFO  Action:1437 - 401893124: Error status sent : https://tornado.schawk.com/tornado/rest/pub/rr/updatestatusbfe1f572-a8da-41b8-b5db-894d09e589a7 - 23
+ remark : File Path or File does not exists : /Volumes/Tornado FMCG Library//PnG//Haircare//Pantene///PAN0001//Copy Template//ILST-00038756.001_SHBP_.ai
+ response : {"status":"success","code":"0","detailsObj":"POST Received"}
+2020-06-05 10:44:03 INFO  MQRcv:86 - TestRRPNG:TestRRPNGDivision
+2020-06-05 10:44:04 INFO  MQRcv:91 -  [*] Waiting for messages. To exit press CTRL+C
+2020-06-05 10:44:04 INFO  Action:1413 - : Before calling heartbeat post method 192.168.43.30 TestRRPNG Coty Road Runner
+2020-06-05 10:44:05 INFO  Action:1421 - : Status of sending heartbeat response Live{"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-06-05 10:44:05 INFO  Action:1422 - : Status of sending heartbeat response dev {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-06-05 10:44:05 INFO  HBTimer:35 - : Heart beat sent for IP : 192.168.43.30 location key : TestRRPNG
+2020-06-05 10:44:06 INFO  MessageQueue:103 - Message received: 05-06-2020 10:44:06 'TestRRPNG':'{"settings":[{"useBlackIfAlreadyBold":"false","considerSemiboldAsBold":"true","considerObliqueAsItalic":"true","considerBlackAsBold":"true","replaceBrTagWithSpace":"true"}],"styleAttributes":[{"Italic":"true","Strikethrough":"true","Underline":"true","Bold":"true","Subscript":"true","Superscript":"true"}],"textformat":[{"addSpaceBetweenElements":"true","useTabasTabular":"true","useBrasLineBreak":"true","rulefortextframe":"true"}],"isApplyRule":false,"aaw":[{"Path":"\/Users\/yuvaraj\/Desktop\/Test\/401893123-PNGNCL\/","Master":"050_Production_Art\/91180820.002_CNFP_ID.ai","Revision":"01","WO":"401893124","XMLFile":"100_XML\/A01\/GS1_40191885501.xml","MasterTemplate":"\/Users\/yuvaraj\/Desktop\/Test\/401893123-PNGNCL\/"}],"Id":"e75913b5-8b0c-4af2-87a6-2497a9ff6830","region":[{"ProjectName":"RRNEWCASTLE_PnG_V001","env":"production","RR3DXML":false,"key":"vitastar","Location":"TestRRPNG"}],"type":"none","version":"CC 2018"}'
+2020-06-05 10:44:07 INFO  Action:695 - 401893124: Before calling send report status message post method
+2020-06-05 10:44:07 INFO  Action:698 - 401893124: Status of sending report status msg response Success
+2020-06-05 10:44:07 INFO  Action:655 - 401893124: Message received acknowledgement for job id  'e75913b5-8b0c-4af2-87a6-2497a9ff6830'  WO: 401893124
+2020-06-05 10:44:07 INFO  Action:1432 - 401893124: Before sending error status :23 - remark :File Path or File does not exists : /Volumes/Tornado FMCG Library//PnG//Haircare//Pantene///PAN0001//Copy Template//ILST-00038756.001_SHBP_.ai
+2020-06-05 10:44:12 INFO  Action:1437 - 401893124: Error status sent : https://tornado.schawk.com/tornado/rest/pub/rr/updatestatusbfe1f572-a8da-41b8-b5db-894d09e589a7 - 23
+ remark : File Path or File does not exists : /Volumes/Tornado FMCG Library//PnG//Haircare//Pantene///PAN0001//Copy Template//ILST-00038756.001_SHBP_.ai
+ response : {"status":"success","code":"0","detailsObj":"POST Received"}
+2020-06-05 10:49:05 INFO  Action:1413 - : Before calling heartbeat post method 192.168.43.30 TestRRPNG Coty Road Runner
+2020-06-05 10:49:06 INFO  Action:1421 - : Status of sending heartbeat response Live{"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-06-05 10:49:06 INFO  Action:1422 - : Status of sending heartbeat response dev {"status":"error","code":"error","detailsObj":"Invalid. Data not matched"}
+2020-06-05 10:49:06 INFO  HBTimer:35 - : Heart beat sent for IP : 192.168.43.30 location key : TestRRPNG

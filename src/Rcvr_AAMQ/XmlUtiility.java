@@ -11,7 +11,9 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilder;
@@ -503,6 +505,85 @@ public class XmlUtiility
 		return null;
 	   }
 	   
+	   
+	   
+	   public HashMap<String, String> ParsePrivateElementSwatchColor(String xmlFilePath, String privateElmTypeCode) throws Exception
+	   {
+		   HashMap<String, String> map = new HashMap<String, String>();
+
+			List<String>swatchColorList = new ArrayList<String>();  
+		   try{
+			   String privateElementTypeCode = "";
+			   
+			   Document dom = parseXmlFile(xmlFilePath);
+			   NodeList ld = dom.getElementsByTagName("privateElements").item(0).getChildNodes();
+			   for (int tmp=1; tmp < ld.getLength(); tmp++)
+			   {
+				   Node nd = ld.item(tmp);
+				   if(nd.getNodeType() == 1)
+				   {
+					  NodeList cld = nd.getChildNodes();
+					  String instSeqNumber = "";
+					  for(int eachChild=1; eachChild< cld.getLength(); eachChild++)
+					  {
+						  
+						  Node cnd = cld.item(eachChild);
+
+						  	if(cnd.getNodeName() == "privateElementTypeCode")
+							  privateElementTypeCode = cnd.getFirstChild().getNodeValue();
+						  	if(cnd.getNodeName() == "instanceSequence")
+						  	{
+						  		instSeqNumber = cnd.getFirstChild().getNodeValue();
+						  	}
+						  	
+						  	if(cnd.getNodeType()==1 && cnd.getChildNodes().getLength() > 1)
+							 {
+						  		
+						  		
+								  NodeList bdCldList = cnd.getChildNodes().item(1).getChildNodes().item(1).getChildNodes();
+								  for (int bdClCnt=0; bdClCnt < bdCldList.getLength(); bdClCnt++)
+								   {
+									   Node bdChild = bdCldList.item(bdClCnt);
+									   
+									   if(bdChild.getNodeType() == 1)
+									   {
+										   if (bdChild.hasChildNodes() && privateElementTypeCode.equals(privateElmTypeCode))
+										   {
+//											   System.out.println(instSeqNumber);
+//											   System.out.println(bdChild.getFirstChild().getNodeValue());
+											   
+											   map.put("Color Merge " + instSeqNumber,  bdChild.getFirstChild().getNodeValue());
+											   
+//											   if((bdChild.getFirstChild().getNodeValue()).contains(filterBy))
+//												   swatchColorList.add(bdChild.getFirstChild().getNodeValue());
+										   }
+									   }
+									   
+								   }
+								 
+							  }
+						  
+					  	}
+				   }
+			   } 
+			 
+	      } 
+		   catch (Exception ex)
+		   {
+	         
+	    	  log.error(MessageQueue.WORK_ORDER + ": " + "No private elements " + ex.getMessage());
+	    	  throw ex;
+	    	
+	      }	
+		   
+		return map;
+	   }
+	   
+	   
+	   
+	   
+	   
+	   
 	   public List<String> ParsePrivateElementSwatchColor(String xmlFilePath, String privateElmTypeCode, String filterBy) throws Exception
 	   {
 			List<String>swatchColorList = new ArrayList<String>();  
@@ -549,19 +630,76 @@ public class XmlUtiility
 			 
 	      } 
 		   catch (Exception ex)
-{
+		   {
 	         
 	    	  log.error(MessageQueue.WORK_ORDER + ": " + "No private elements " + ex.getMessage());
 	    	  throw ex;
 	    	
-	      }
-		//   System.out.println("gs1 parser");
+	      }	
+		return swatchColorList;
+	   }
+	   
+	   
+	   public List<String> ParsePrivateElementSwatchColor(String xmlFilePath, String privateElmTypeCode, List<String> filterBy) throws Exception
+	   {
+			List<String>swatchColorList = new ArrayList<String>();  
+		   try{
+			   String privateElementTypeCode = "";
+			   
+			   Document dom = parseXmlFile(xmlFilePath);
+			   NodeList ld = dom.getElementsByTagName("privateElements").item(0).getChildNodes();
+			   
+			   
+			   for (int tmp=1; tmp < ld.getLength(); tmp++)
+			   {
+				   Node nd = ld.item(tmp);
+				   if(nd.getNodeType() == 1)
+				   {
+					  NodeList cld = nd.getChildNodes();
+					  for(int eachChild=1; eachChild< cld.getLength(); eachChild++)
+					  {
+						  Node cnd = cld.item(eachChild);
+
+						  	if(cnd.getNodeName() == "privateElementTypeCode")
+							  privateElementTypeCode = cnd.getFirstChild().getNodeValue();
+						  	if(cnd.getNodeType()==1 && cnd.getChildNodes().getLength() > 1)
+							 {
+								  NodeList bdCldList = cnd.getChildNodes().item(1).getChildNodes().item(1).getChildNodes();
+								  for (int bdClCnt=0; bdClCnt < bdCldList.getLength(); bdClCnt++)
+								   {
+									   Node bdChild = bdCldList.item(bdClCnt);
+									   if(bdChild.getNodeType() == 1)
+									   {
+										   if (bdChild.hasChildNodes() && privateElementTypeCode.equals(privateElmTypeCode))
+										   {
+											   if((bdChild.getFirstChild().getNodeValue()).contains(filterBy.get(0)))
+												   swatchColorList.add(bdChild.getFirstChild().getNodeValue());
+										   }
+									   }
+									   
+								   }
+								 
+							  }
+						  
+					  	}
+				   }
+			   } 
+			 
+	      } 
+		   catch (Exception ex)
+		   {
+	         
+	    	  log.error(MessageQueue.WORK_ORDER + ": " + "No private elements " + ex.getMessage());
+	    	  throw ex;
+	    	
+	      }	
 		return swatchColorList;
 	   }
 	   
 	   
 		 public static void main(String[] args) throws Exception
 		 {
-
+			 XmlUtiility xmlt = new XmlUtiility();
+			 xmlt.ParsePrivateElementSwatchColor("/Users/yuvaraj/Downloads/GS1_40191810301.xml", "SL_ColorName");
 		 }
 }
